@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "watch:sass": "sass --no-source-map --watch src:dist/css/"
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:sass": "sass --no-source-map --watch src:dist/css/",
+    "build": "sass --no-source-map --watch src:dist/css/",
+    "start": "npm-run-all --parallel watch"
   },
   "keywords": [],
   "author": "",
