@@ -12,6 +12,9 @@ body {
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
 img,
@@ -24,5 +27,117 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.display-xl {
+  font-size: 14rem;
+}
+
+.display-lg {
+  font-size: 12rem;
+}
+
+.display-md {
+  font-size: 10rem;
+}
+
+.display-sm {
+  font-size: 8rem;
+}
+
+.heading-xl {
+  font-size: 6rem;
+}
+
+.heading-lg {
+  font-size: 4rem;
+}
+
+.heading-md {
+  font-size: 3.5rem;
+}
+
+.heading-sm {
+  font-size: 3rem;
+}
+
+.title-xl {
+  font-size: 2.75rem;
+}
+
+.title-lg {
+  font-size: 2rem;
+}
+
+.title-md {
+  font-size: 1.75rem;
+}
+
+.title-sm {
+  font-size: 1.25rem;
+}
+
+.body-xl {
+  font-size: 1.75rem;
+}
+
+.body-lg {
+  font-size: 1.5rem;
+}
+
+.body-md {
+  font-size: 1.25rem;
+}
+
+.body-sm {
+  font-size: 1rem;
+}
+
+.label-xl {
+  font-size: 1.125rem;
+}
+
+.label-lg {
+  font-size: 1rem;
+}
+
+.label-md {
+  font-size: 0.875rem;
+}
+
+.label-sm {
+  font-size: 0.75rem;
 }

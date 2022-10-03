@@ -1,3 +1,4 @@
+@use '../helpers' as h;
 *,
 *::after,
 *::before {
@@ -12,6 +13,9 @@ body {
 body {
   margin: 0;
   padding: 0;
+  font-size: h.$font-size;
+  font-family: h.$font-family;
+  line-height: h.$line-height;
 }
 
 img,
@@ -24,5 +28,13 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
