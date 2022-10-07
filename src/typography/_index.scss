@@ -1,40 +1,110 @@
+@use '../helpers' as m;
+
 $typography: (
   display: (
-    xl: 14rem,
-    lg: 12rem,
-    md: 10rem,
-    sm: 8rem,
+    default: (
+      xl: 14vw,
+      lg: 12vw,
+      md: 10vw,
+      sm: 8vw,
+    ),
   ),
   heading: (
-    xl: 6rem,
-    lg: 4rem,
-    md: 3.5rem,
-    sm: 3rem,
+    default: (
+      xl: 6rem,
+      lg: 4rem,
+      md: 3.5rem,
+      sm: 3rem,
+    ),
+    medium: (
+      xl: 4rem,
+      lg: 3rem,
+      md: 2.5rem,
+      sm: 2rem,
+    ),
+    small: (
+      xl: 3rem,
+      lg: 2.5rem,
+      md: 2rem,
+      sm: 1.75rem,
+    ),
   ),
   title: (
-    xl: 2.75rem,
-    lg: 2rem,
-    md: 1.75rem,
-    sm: 1.25rem,
+    default: (
+      xl: 2.75rem,
+      lg: 2rem,
+      md: 1.75rem,
+      sm: 1.25rem,
+    ),
+    medium: (
+      xl: 2rem,
+      lg: 1.75rem,
+      md: 1.5rem,
+      sm: 1.125rem,
+    ),
+    small: (
+      xl: 1.75rem,
+      lg: 1.5rem,
+      md: 1.25rem,
+      sm: 0.875rem,
+    ),
   ),
   body: (
-    xl: 1.75rem,
-    lg: 1.5rem,
-    md: 1.25rem,
-    sm: 1rem,
+    default: (
+      xl: 1.75rem,
+      lg: 1.375rem,
+      md: 1.25rem,
+      sm: 0.875,
+    ),
+    medium: (
+      xl: 1.5rem,
+      lg: 1.25rem,
+      md: 1.125rem,
+      sm: 0.75rem,
+    ),
+    small: (
+      xl: 1.25rem,
+      lg: 1.125rem,
+      md: 1.063rem,
+      sm: 0.75rem,
+    ),
   ),
   label: (
-    xl: 1.125rem,
-    lg: 1rem,
-    md: 0.875rem,
-    sm: 0.75rem,
+    default: (
+      xl: 1.125rem,
+      lg: 1rem,
+      md: 0.875rem,
+      sm: 0.75rem,
+    ),
   ),
 );
 
-@each $name, $size in $typography {
-  @each $size, $value in $size {
-    .#{$name}-#{$size} {
-      font-size: $value;
+// @each $name, $size in $typography {
+//   @each $size, $value in $size {
+//     .#{$name}-#{$size} {
+//       font-size: $value;
+//     }
+//   }
+// }
+
+@each $name, $breakpoints in $typography {
+  @debug $name $breakpoints;
+  @each $screen-size, $type-scale in $breakpoints {
+    @debug $screen-size $type-scale;
+    @if $screen-size != default {
+      @include m.mq($screen-size) {
+        @each $size, $value in $type-scale {
+          .#{$name}-#{$size} {
+            font-size: $value;
+          }
+        }
+      }
+    } @else {
+      @each $size, $value in $type-scale {
+        .#{$name}-#{$size} {
+          font-size: $value;
+        }
+      }
     }
   }
 }
