@@ -1,4 +1,4 @@
-@use '../helpers' as h;
+@use '../helpers/variables/font' as f;
 *,
 *::after,
 *::before {
@@ -13,13 +13,16 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-size: h.$font-size;
-  font-family: h.$font-family;
-  line-height: h.$line-height;
+  font-size: f.$font-size;
+  font-family: f.$font-family;
+  line-height: f.$line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img,
-video {
+video,
+svg {
   max-width: 100%;
   display: block;
 }
@@ -27,7 +30,8 @@ video {
 input,
 button,
 textarea,
-select {
+select,
+a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

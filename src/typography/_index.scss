@@ -79,18 +79,8 @@ $typography: (
   ),
 );
 
-// @each $name, $size in $typography {
-//   @each $size, $value in $size {
-//     .#{$name}-#{$size} {
-//       font-size: $value;
-//     }
-//   }
-// }
-
 @each $name, $breakpoints in $typography {
-  @debug $name $breakpoints;
   @each $screen-size, $type-scale in $breakpoints {
-    @debug $screen-size $type-scale;
     @if $screen-size != default {
       @include m.mq($screen-size) {
         @each $size, $value in $type-scale {

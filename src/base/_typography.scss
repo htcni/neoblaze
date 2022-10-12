@@ -1,3 +1,5 @@
+@use '../helpers/variables/font' as f;
+
 h1,
 h2,
 h3,
@@ -5,7 +7,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-weight: 600;
+  font-size: inherit;
+  font-weight: f.$heading-weight;
 }
 
 p {
@@ -20,4 +23,9 @@ ol {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
