@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+// Convert pixel to rem
+@function rem($px) {
+  @if math.is-unitless($px) {
+    @error "Property #{$px} must have px unit.";
+  }
+  @return math.div($px, 16px);
+}

@@ -1,10 +1,13 @@
 .btn {
+  appearance: auto;
+  display: inline-block;
   cursor: pointer;
   border: none;
   padding: 8px 16px;
   border-radius: 24px;
   text-align: center;
   color: white;
+
   &.btn--raised:hover {
     background-color: blue;
   }
