@@ -1,0 +1,28 @@
+.alert {
+  padding: 1.25rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--bg-neutral--light);
+
+  &-stripe {
+    border-left-width: 10px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  &-stripe--top {
+    border-top-width: 4px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  &-stripe--bottom {
+    border-bottom-width: 4px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+}

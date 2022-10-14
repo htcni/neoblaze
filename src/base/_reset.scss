@@ -21,10 +21,14 @@ body {
 }
 
 img,
-video,
-svg {
+video {
   max-width: 100%;
   display: block;
+}
+
+a,
+span {
+  display: inline-block;
 }
 
 input,
