@@ -350,26 +350,84 @@ a {
   border-radius: 0.375rem;
   border: 1px solid var(--bg-neutral--light);
 }
-.alert-stripe {
+.alert.alert-stripe {
   border-left-width: 10px;
   border-radius: 0;
   border-top: none;
   border-right: none;
   border-bottom: none;
 }
-.alert-stripe--top {
+.alert.alert-stripe--top {
   border-top-width: 4px;
   border-radius: 0;
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
-.alert-stripe--bottom {
+.alert.alert-stripe--bottom {
   border-bottom-width: 4px;
   border-radius: 0;
   border-top: none;
   border-right: none;
   border-left: none;
+}
+
+.chip {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--bg-neutral--light);
+}
+
+.badge {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: var(--bg-neutral--light);
+}
+.badge.badge-text {
+  min-width: 18px;
+  min-height: 18px;
+  padding: 1px 4px;
+}
+.badge-parent {
+  display: inline-block;
+  position: relative;
+}
+.badge__child {
+  position: absolute;
+  top: -10%;
+  right: -8%;
+}
+
+.box {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+.avatar {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--bg-primary);
+  vertical-align: middle;
+}
+.avatar.avatar-sm {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.avatar.avatar-md {
+  width: 2rem;
+  height: 2rem;
+}
+.avatar.avatar-lg {
+  width: 3rem;
+  height: 3rem;
+}
+.avatar.avatar-xl {
+  width: 4rem;
+  height: 4rem;
 }
 
 .bg-white {
@@ -5033,4 +5091,23 @@ y - vertical
   vertical-align: middle;
   width: 16px;
   height: 16px;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+.rounded-sm {
+  border-radius: 4px;
+}
+.rounded-md {
+  border-radius: 12px;
+}
+.rounded-lg {
+  border-radius: 24px;
+}
+.rounded-full {
+  border-radius: 999rem;
+}
+.rounded-none {
+  border-radius: 0;
 }

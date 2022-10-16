@@ -1,0 +1,25 @@
+@use '../helpers/mixins/shapes' as s;
+
+.rounded {
+  @include s.border-radius;
+
+  &-sm {
+    @include s.border-radius-sm;
+  }
+
+  &-md {
+    @include s.border-radius-md;
+  }
+
+  &-lg {
+    @include s.border-radius-lg;
+  }
+
+  &-full {
+    @include s.border-radius-full;
+  }
+
+  &-none {
+    @include s.border-radius-none;
+  }
+}

@@ -1,0 +1,30 @@
+.badge {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: var(--bg-neutral--light);
+
+  &.badge-text {
+    min-width: 18px;
+    min-height: 18px;
+    padding: 1px 4px;
+  }
+
+  &-parent {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__child {
+    position: absolute;
+    top: -10%;
+    right: -8%;
+  }
+}
+
+.box {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}

@@ -1,0 +1,23 @@
+@mixin border-radius {
+  border-radius: 6px;
+}
+
+@mixin border-radius-sm {
+  border-radius: 4px;
+}
+
+@mixin border-radius-md {
+  border-radius: 12px;
+}
+
+@mixin border-radius-lg {
+  border-radius: 24px;
+}
+
+@mixin border-radius-full {
+  border-radius: 999rem;
+}
+
+@mixin border-radius-none {
+  border-radius: 0;
+}
