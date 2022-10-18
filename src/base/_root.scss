@@ -1,96 +1,131 @@
 @use '../helpers/variables/colors' as c;
 :root {
   /*Backgrounds*/
+  --bg-transparent: #{map-get(c.$colors, 'transparent')};
+  --bg-white: #{map-get(c.$colors, 'white')};
+  --bg-black: #{map-get(c.$colors, 'black')};
+
+  //default style
+  --bg-default: #{map-get(c.$colors, gray-100)};
+  --bg-default--light: #{map-get(c.$colors, gray-50)};
+  --bg-default--ultra: #{map-get(c.$colors, gray-600)};
+
   //primary
   --bg-primary: #{map-get(c.$colors, blue-500)};
   --bg-primary--light: #{map-get(c.$colors, blue-100)};
+  --bg-primary--medium: #{map-get(c.$colors, blue-600)};
   --bg-primary--ultra: #{map-get(c.$colors, blue-700)};
   // secondary
   --bg-secondary: #{map-get(c.$colors, fuchsia-500)};
   --bg-secondary--light: #{map-get(c.$colors, fuchsia-100)};
+  --bg-secondary--medium: #{map-get(c.$colors, fuchsia-600)};
   --bg-secondary--ultra: #{map-get(c.$colors, fuchsia-700)};
   // info
   --bg-info: #{map-get(c.$colors, sky-500)};
   --bg-info--light: #{map-get(c.$colors, sky-100)};
+  --bg-info--medium: #{map-get(c.$colors, sky-600)};
   --bg-info--ultra: #{map-get(c.$colors, sky-700)};
   // warning
   --bg-warning: #{map-get(c.$colors, amber-500)};
   --bg-warning--light: #{map-get(c.$colors, amber-100)};
+  --bg-warning--medium: #{map-get(c.$colors, amber-600)};
   --bg-warning--ultra: #{map-get(c.$colors, amber-700)};
   // danger
   --bg-danger: #{map-get(c.$colors, red-500)};
   --bg-danger--light: #{map-get(c.$colors, red-100)};
+  --bg-danger--medium: #{map-get(c.$colors, red-600)};
   --bg-danger--ultra: #{map-get(c.$colors, red-700)};
   // success
   --bg-success: #{map-get(c.$colors, green-500)};
   --bg-success--light: #{map-get(c.$colors, green-100)};
+  --bg-success--medium: #{map-get(c.$colors, green-600)};
   --bg-success--ultra: #{map-get(c.$colors, green-700)};
   // neutral
   --bg-neutral: #{map-get(c.$colors, neutral-500)};
   --bg-neutral--light: #{map-get(c.$colors, neutral-100)};
+  --bg-neutral--medium: #{map-get(c.$colors, neutral-600)};
   --bg-neutral--ultra: #{map-get(c.$colors, neutral-700)};
 
   // Foreground
+  --fg-transparent: #{map-get(c.$colors, 'transparent')};
+  --fg-white: #{map-get(c.$colors, 'white')};
+  --fg-black: #{map-get(c.$colors, 'black')};
+
   //primary
   --fg-primary: #{map-get(c.$colors, blue-500)};
   --fg-primary--light: #{map-get(c.$colors, blue-100)};
+  --fg-primary--medium: #{map-get(c.$colors, blue-600)};
   --fg-primary--ultra: #{map-get(c.$colors, blue-700)};
   // secondary
   --fg-secondary: #{map-get(c.$colors, fuchsia-500)};
   --fg-secondary--light: #{map-get(c.$colors, fuchsia-100)};
+  --fg-secondary--medium: #{map-get(c.$colors, fuchsia-600)};
   --fg-secondary--ultra: #{map-get(c.$colors, fuchsia-700)};
   // info
   --fg-info: #{map-get(c.$colors, sky-500)};
   --fg-info--light: #{map-get(c.$colors, sky-100)};
+  --fg-info--medium: #{map-get(c.$colors, sky-600)};
   --fg-info--ultra: #{map-get(c.$colors, sky-700)};
   // warning
   --fg-warning: #{map-get(c.$colors, amber-500)};
   --fg-warning--light: #{map-get(c.$colors, amber-100)};
+  --fg-warning--medium: #{map-get(c.$colors, amber-600)};
   --fg-warning--ultra: #{map-get(c.$colors, amber-700)};
   // danger
   --fg-danger: #{map-get(c.$colors, red-500)};
   --fg-danger--light: #{map-get(c.$colors, red-100)};
+  --fg-danger--medium: #{map-get(c.$colors, red-600)};
   --fg-danger--ultra: #{map-get(c.$colors, red-700)};
   // success
   --fg-success: #{map-get(c.$colors, green-500)};
   --fg-success--light: #{map-get(c.$colors, green-100)};
-  --fg-success--ultra: #{map-get(c.$colors, green-700)};
+  --fg-success--medium: #{map-get(c.$colors, green-700)};
+  --fg-success--ultra: #{map-get(c.$colors, green-800)};
   // neutral
   --fg-neutral: #{map-get(c.$colors, neutral-500)};
   --fg-neutral--light: #{map-get(c.$colors, neutral-300)};
-  --fg-neutral--ultra: #{map-get(c.$colors, neutral-700)};
+  --fg-neutral--medium: #{map-get(c.$colors, neutral-600)};
+  --fg-neutral--ultra: #{map-get(c.$colors, neutral-900)};
   // base
-  --fg-text: #{map-get(c.$colors, 'neutral-800')};
+  --fg-text: #{map-get(c.$colors, neutral-800)};
   --fg-text--light: #{map-get(c.$colors, slate-600)};
+  --fg-text--medium: #{map-get(c.$colors, slate-700)};
   --fg-text--ultra: #{map-get(c.$colors, 'black')};
 
   /*Border*/
   //primary
   --bd-primary: #{map-get(c.$colors, blue-500)};
   --bd-primary--light: #{map-get(c.$colors, blue-100)};
+  --bd-primary--medium: #{map-get(c.$colors, blue-600)};
   --bd-primary--ultra: #{map-get(c.$colors, blue-700)};
   // secondary
   --bd-secondary: #{map-get(c.$colors, fuchsia-500)};
   --bd-secondary--light: #{map-get(c.$colors, fuchsia-100)};
+  --bd-secondary--medium: #{map-get(c.$colors, fuchsia-600)};
   --bd-secondary--ultra: #{map-get(c.$colors, fuchsia-700)};
   // info
   --bd-info: #{map-get(c.$colors, sky-500)};
   --bd-info--light: #{map-get(c.$colors, sky-100)};
+  --bd-info--medium: #{map-get(c.$colors, sky-600)};
   --bd-info--ultra: #{map-get(c.$colors, sky-700)};
   // warning
   --bd-warning: #{map-get(c.$colors, amber-500)};
   --bd-warning--light: #{map-get(c.$colors, amber-100)};
+  --bd-warning--medium: #{map-get(c.$colors, amber-600)};
   --bd-warning--ultra: #{map-get(c.$colors, amber-700)};
   // danger
   --bd-danger: #{map-get(c.$colors, red-500)};
   --bd-danger--light: #{map-get(c.$colors, red-100)};
+  --bd-danger--medium: #{map-get(c.$colors, red-600)};
   --bd-danger--ultra: #{map-get(c.$colors, red-700)};
   // success
   --bd-success: #{map-get(c.$colors, green-500)};
   --bd-success--light: #{map-get(c.$colors, green-100)};
+  --bd-success--medium: #{map-get(c.$colors, green-600)};
   --bd-success--ultra: #{map-get(c.$colors, green-700)};
   // neutral
   --bd-neutral: #{map-get(c.$colors, neutral-500)};
   --bd-neutral--light: #{map-get(c.$colors, neutral-100)};
+  --bd-neutral--medium: #{map-get(c.$colors, neutral-600)};
   --bd-neutral--ultra: #{map-get(c.$colors, neutral-700)};
 }

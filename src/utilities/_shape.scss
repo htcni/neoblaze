@@ -1,4 +1,4 @@
-@use '../helpers/mixins/shapes' as s;
+@use '../helpers/mixins/shape' as s;
 
 .rounded {
   @include s.border-radius;
@@ -17,6 +17,10 @@
 
   &-full {
     @include s.border-radius-full;
+  }
+
+  &-circle {
+    @include s.border-radius-circle;
   }
 
   &-none {

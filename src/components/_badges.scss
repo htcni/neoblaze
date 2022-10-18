@@ -6,9 +6,10 @@
   background-color: var(--bg-neutral--light);
 
   &.badge-text {
-    min-width: 18px;
-    min-height: 18px;
+    min-width: 16px;
+    min-height: 16px;
     padding: 1px 4px;
+    line-height: 1.2;
   }
 
   &-parent {
@@ -21,10 +22,4 @@
     top: -10%;
     right: -8%;
   }
-}
-
-.box {
-  width: 64px;
-  height: 64px;
-  display: inline-block;
 }

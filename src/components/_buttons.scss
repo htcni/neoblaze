@@ -1,43 +1,176 @@
+@use '../helpers/mixins/' as m;
+
 .btn {
   appearance: auto;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   cursor: pointer;
   border: none;
   padding: 8px 16px;
-  border-radius: 24px;
+  @include m.border-radius;
   text-align: center;
-  color: white;
+  background-color: var(--bg-default--light);
+  border: 1px solid var(--bg-default);
 
-  &.btn--raised:hover {
-    background-color: blue;
+  &.bg-primary:hover {
+    @include m.shadow;
+    background-color: var(--bg-primary--medium);
   }
 
-  &.btn--raised {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--primary);
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  &.bg-secondary:hover {
+    @include m.shadow;
+    background-color: var(--bg-secondary--medium);
   }
 
-  &.btn--outline {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
+  &.bg-info:hover {
+    @include m.shadow;
+    background-color: var(--bg-info--medium);
+  }
+  &.bg-warning:hover {
+    @include m.shadow;
+    background-color: var(--bg-warning--medium);
+  }
+  &.bg-danger:hover {
+    @include m.shadow;
+    background-color: var(--bg-danger--medium);
+  }
+  &.bg-success:hover {
+    @include m.shadow;
+    background-color: var(--bg-success--medium);
+  }
+  &.bg-neutral:hover {
+    @include m.shadow;
+    background-color: var(--bg-neutral--medium);
   }
 
-  &.btn--link {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--nb-color-primary-900);
+  &:hover {
+    background-color: var(--bg-default);
   }
 
-  // Colors
-  &.btn-success {
-    background-color: #1ed760;
+  &-outline {
+    background-color: var(--bg-transparent);
+    color: var(--fg-text);
+
+    &.bg-primary {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-primary--light);
+      }
+    }
+
+    &.bg-secondary {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-secondary--light);
+      }
+    }
+
+    &.bg-info {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-info--light);
+      }
+    }
+
+    &.bg-success {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-success--light);
+      }
+    }
+
+    &.bg-danger {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-danger--light);
+      }
+    }
+
+    &.bg-warning {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-warning--light);
+      }
+    }
+
+    &.bg-neutral {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-neutral--light);
+      }
+    }
   }
 
-  &.btn-secondary {
-    background-color: rgb(226, 42, 42);
+  &-outline:hover {
+    background-color: var(--bg-transparent);
   }
 
-  &.btn-danger {
+  &.btn-text {
+    background-color: var(--bg-transparent);
+    border: none;
+
+    &.bg-default:hover {
+      background-color: var(--bg-default--light);
+    }
+
+    &.bg-primary:hover {
+      background-color: var(--bg-primary--light);
+    }
+
+    &.bg-secondary:hover {
+      background-color: var(--bg-secondary--light);
+    }
+
+    &.bg-info:hover {
+      background-color: var(--bg-info--light);
+    }
+
+    &.bg-warning:hover {
+      background-color: var(--bg-warning--light);
+    }
+
+    &.bg-danger:hover {
+      background-color: var(--bg-danger--light);
+    }
+
+    &.bg-success:hover {
+      background-color: var(--bg-success--light);
+    }
+
+    &.bg-neutral:hover {
+      background-color: var(--bg-neutral--light);
+    }
   }
+
+  &.btn-link {
+    background-color: var(--bg-transparent);
+    border: none;
+  }
+
+  &.btn-link:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
 }

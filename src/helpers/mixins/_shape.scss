@@ -18,6 +18,10 @@
   border-radius: 999rem;
 }
 
+@mixin border-radius-circle {
+  border-radius: 50%;
+}
+
 @mixin border-radius-none {
   border-radius: 0;
 }
