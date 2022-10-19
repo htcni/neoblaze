@@ -3,6 +3,7 @@
   min-height: 0.875rem;
   border-radius: 2rem;
   text-align: center;
+  border: 0.125rem solid var(--bg-white);
   background-color: var(--bg-neutral--light);
 
   &.badge-text {

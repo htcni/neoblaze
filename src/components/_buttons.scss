@@ -9,6 +9,7 @@
   padding: 8px 16px;
   @include m.border-radius;
   text-align: center;
+  vertical-align: middle;
   background-color: var(--bg-default--light);
   border: 1px solid var(--bg-default);
 
@@ -44,7 +45,7 @@
   }
 
   &:hover {
-    background-color: var(--bg-default);
+    background-color: var(--bg-default--medium);
   }
 
   &-outline {
@@ -106,6 +107,23 @@
         background-color: var(--bg-neutral--light);
       }
     }
+
+    &.bg-black {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-black);
+        color: var(--fg-white);
+      }
+    }
+
+    &.bg-white {
+      background-color: var(--bg-transparent);
+
+      &:hover {
+        background-color: var(--bg-white);
+      }
+    }
   }
 
   &-outline:hover {
@@ -158,6 +176,13 @@
     span {
       text-decoration: underline;
     }
+  }
+
+  &.btn-icon {
+    padding: 0.313rem;
+    background-color: var(--bg-transparent);
+    border: 0;
+    line-height: 1;
   }
 
   &:disabled {

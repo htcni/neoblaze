@@ -6,7 +6,9 @@ $typography: (
       xl: 14vw,
       lg: 12vw,
       md: 10vw,
-      sm: 8vw,
+      null: 8vw,
+      sm: 6vw,
+      xs: 4vw,
     ),
   ),
   heading: (
@@ -14,67 +16,60 @@ $typography: (
       xl: 6rem,
       lg: 4rem,
       md: 3.5rem,
-      sm: 3rem,
+      null: 3rem,
+      sm: 2.25rem,
+      xs: 1.5rem,
     ),
     medium: (
       xl: 4rem,
       lg: 3rem,
-      md: 2.5rem,
-      sm: 2rem,
+      md: 3rem,
+      null: 2.5rem,
+      sm: 1.75rem,
+      xs: 1.25rem,
     ),
     small: (
       xl: 3rem,
       lg: 2.5rem,
       md: 2rem,
-      sm: 1.75rem,
+      null: 2rem,
+      sm: 1.5rem,
+      xs: 1.125,
     ),
   ),
   title: (
     default: (
-      xl: 2.75rem,
+      xl: 2.25rem,
       lg: 2rem,
       md: 1.75rem,
+      null: 1.5rem,
       sm: 1.25rem,
-    ),
-    medium: (
-      xl: 2rem,
-      lg: 1.75rem,
-      md: 1.5rem,
-      sm: 1.125rem,
-    ),
-    small: (
-      xl: 1.75rem,
-      lg: 1.5rem,
-      md: 1.25rem,
-      sm: 0.875rem,
+      xs: 1rem,
     ),
   ),
   body: (
     default: (
-      xl: 1.75rem,
-      lg: 1.375rem,
-      md: 1.25rem,
-      sm: 0.875,
-    ),
-    medium: (
-      xl: 1.5rem,
+      xl: 1.375rem,
       lg: 1.25rem,
       md: 1.125rem,
-      sm: 0.75rem,
+      null: 1rem,
+      sm: 0.875rem,
+      xs: 0.75rem,
     ),
-    small: (
+    medium: (
       xl: 1.25rem,
       lg: 1.125rem,
       md: 1.063rem,
-      sm: 0.75rem,
     ),
   ),
   label: (
     default: (
-      xl: 1.125rem,
-      lg: 1rem,
-      md: 0.875rem,
+      xl: 1.25rem,
+      lg: 1.125rem,
+      md: 1rem,
+      null: 0.875rem,
       sm: 0.75rem,
+      xs: 0.625rem,
     ),
   ),
 );
@@ -84,14 +79,14 @@ $typography: (
     @if $screen-size != default {
       @include m.mq($screen-size) {
         @each $size, $value in $type-scale {
-          .#{$name}-#{$size} {
+          .#{if($size, $name + '-' + $size, $name)} {
             font-size: $value;
           }
         }
       }
     } @else {
       @each $size, $value in $type-scale {
-        .#{$name}-#{$size} {
+        .#{if($size, $name + '-' + $size, $name)} {
           font-size: $value;
         }
       }

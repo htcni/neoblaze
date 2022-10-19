@@ -1,0 +1,30 @@
+@use '../helpers/mixins/' as m;
+
+.card {
+  @include m.border-radius;
+  @include m.shadow;
+
+  &__header {
+  }
+
+  &__image {
+    img {
+      object-fit: cover;
+      background-repeat: no-repeat;
+      height: auto;
+    }
+  }
+
+  &__content {
+  }
+
+  &__action {
+  }
+}
+
+.w-1 {
+  width: 275px;
+}
+.w-2 {
+  width: 375px;
+}

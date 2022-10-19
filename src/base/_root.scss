@@ -8,6 +8,7 @@
   //default style
   --bg-default: #{map-get(c.$colors, gray-100)};
   --bg-default--light: #{map-get(c.$colors, gray-50)};
+  --bg-default--medium: #d4d6da66;
   --bg-default--ultra: #{map-get(c.$colors, gray-600)};
 
   //primary
@@ -87,9 +88,9 @@
   --fg-neutral--medium: #{map-get(c.$colors, neutral-600)};
   --fg-neutral--ultra: #{map-get(c.$colors, neutral-900)};
   // base
-  --fg-text: #{map-get(c.$colors, neutral-800)};
-  --fg-text--light: #{map-get(c.$colors, slate-600)};
-  --fg-text--medium: #{map-get(c.$colors, slate-700)};
+  --fg-text: #{map-get(c.$colors, 'black')};
+  --fg-text--light: #{map-get(c.$colors, gray-200)};
+  --fg-text--medium: #{map-get(c.$colors, slate-400)};
   --fg-text--ultra: #{map-get(c.$colors, 'black')};
 
   /*Border*/
