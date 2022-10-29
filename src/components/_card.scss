@@ -7,11 +7,12 @@
   &__header {
   }
 
-  &__image {
+  &__img {
     img {
+      width: 100%;
+      block-size: auto;
       object-fit: cover;
       background-repeat: no-repeat;
-      height: auto;
     }
   }
 
