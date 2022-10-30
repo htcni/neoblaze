@@ -1,0 +1,24 @@
+@use '../helpers/mixins/' as m;
+
+.box {
+  @include m.border-radius-sm;
+  border: 1px solid var(--bg-default);
+
+  &__header {
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      block-size: auto;
+      object-fit: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__content {
+  }
+
+  &__action {
+  }
+}
