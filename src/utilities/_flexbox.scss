@@ -95,6 +95,12 @@
     .flex#{$breakpoint}-shrink-0 {
       flex-shrink: 0;
     }
+    .flex#{$breakpoint}-grow-1 {
+      flex-grow: 1;
+    }
+    .flex#{$breakpoint}-shrink-1 {
+      flex-shrink: 1;
+    }
 
     .flex#{$breakpoint}-self-auto {
       align-self: auto;

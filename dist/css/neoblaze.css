@@ -12,10 +12,10 @@
   --bg-primary--light: #cbdafa;
   --bg-primary--medium: #1e50be;
   --bg-primary--ultra: #173d92;
-  --bg-secondary: #c026d3;
-  --bg-secondary--light: #f0cbf4;
-  --bg-secondary--medium: #9c1fab;
-  --bg-secondary--ultra: #771883;
+  --bg-secondary: #7c3aed;
+  --bg-secondary--light: #e0d0fb;
+  --bg-secondary--medium: #642fc0;
+  --bg-secondary--ultra: #4d2493;
   --bg-info: #0284c7;
   --bg-info--light: #c2e1f2;
   --bg-info--medium: #026ba1;
@@ -550,7 +550,6 @@ a {
   min-height: 0.875rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.125rem solid var(--bg-white);
   background-color: var(--bg-neutral--light);
 }
 .badge.badge-text {
@@ -560,13 +559,12 @@ a {
   line-height: 1.2;
 }
 .badge-parent {
-  display: inline-block;
   position: relative;
 }
 .badge__child {
   position: absolute;
-  top: -10%;
-  right: -8%;
+  top: 0;
+  right: 0;
 }
 
 .avatar {
@@ -8294,7 +8292,7 @@ y - vertical
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .shadow-sm {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 6px 0px;
 }
 .shadow-md {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 16px;
@@ -8516,6 +8514,14 @@ y - vertical
   flex-shrink: 0;
 }
 
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
 .flex-self-auto {
   align-self: auto;
 }
@@ -8654,6 +8660,12 @@ y - vertical
   .flex-sm-shrink-0 {
     flex-shrink: 0;
   }
+  .flex-sm-grow-1 {
+    flex-grow: 1;
+  }
+  .flex-sm-shrink-1 {
+    flex-shrink: 1;
+  }
   .flex-sm-self-auto {
     align-self: auto;
   }
@@ -8778,6 +8790,12 @@ y - vertical
   }
   .flex-md-shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-md-grow-1 {
+    flex-grow: 1;
+  }
+  .flex-md-shrink-1 {
+    flex-shrink: 1;
   }
   .flex-md-self-auto {
     align-self: auto;

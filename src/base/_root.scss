@@ -17,10 +17,10 @@
   --bg-primary--medium: #{map-get(c.$colors, blue-600)};
   --bg-primary--ultra: #{map-get(c.$colors, blue-700)};
   // secondary
-  --bg-secondary: #{map-get(c.$colors, fuchsia-500)};
-  --bg-secondary--light: #{map-get(c.$colors, fuchsia-100)};
-  --bg-secondary--medium: #{map-get(c.$colors, fuchsia-600)};
-  --bg-secondary--ultra: #{map-get(c.$colors, fuchsia-700)};
+  --bg-secondary: #{map-get(c.$colors, violet-500)};
+  --bg-secondary--light: #{map-get(c.$colors, violet-100)};
+  --bg-secondary--medium: #{map-get(c.$colors, violet-600)};
+  --bg-secondary--ultra: #{map-get(c.$colors, violet-700)};
   // info
   --bg-info: #{map-get(c.$colors, sky-500)};
   --bg-info--light: #{map-get(c.$colors, sky-100)};

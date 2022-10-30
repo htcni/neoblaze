@@ -3,7 +3,6 @@
   min-height: 0.875rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.125rem solid var(--bg-white);
   background-color: var(--bg-neutral--light);
 
   &.badge-text {
@@ -14,13 +13,12 @@
   }
 
   &-parent {
-    display: inline-block;
     position: relative;
   }
 
   &__child {
     position: absolute;
-    top: -10%;
-    right: -8%;
+    top: 0;
+    right: 0;
   }
 }
