@@ -1,0 +1,11 @@
+.container {
+  max-inline-size: 1440px;
+
+  &-md {
+    max-inline-size: 980px;
+  }
+
+  &-sm {
+    max-inline-size: 780px;
+  }
+}

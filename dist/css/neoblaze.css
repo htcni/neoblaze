@@ -611,6 +611,16 @@ a {
   object-fit: cover;
   background-repeat: no-repeat;
 }
+.container {
+  max-inline-size: 1440px;
+}
+.container-md {
+  max-inline-size: 980px;
+}
+.container-sm {
+  max-inline-size: 780px;
+}
+
 .bg-white {
   background-color: #fff;
 }
