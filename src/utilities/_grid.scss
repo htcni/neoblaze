@@ -1,0 +1,211 @@
+@use '../helpers/mixins/breakpoints' as m;
+
+/*Grid*/
+// Columns
+// span
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    // cols default
+    .col#{$breakpoint}-auto {
+      grid-column: auto;
+    }
+
+    .col#{$breakpoint}-span-full {
+      grid-column: 1/-1;
+    }
+
+    @for $col from 1 through 12 {
+      // span
+      .col#{$breakpoint}-span-#{$col} {
+        grid-column: span + ' ' + #{$col} / span + ' ' + #{$col};
+      }
+    }
+  }
+}
+
+// col start
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    //auto
+    .col#{$breakpoint}-start-auto {
+      grid-column-start: auto;
+    }
+
+    @for $col from 1 through 13 {
+      // col start
+      .col#{$breakpoint}-start-#{$col} {
+        grid-column-start: #{$col};
+      }
+    }
+  }
+}
+
+// col-end
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    //auto
+    .col#{$breakpoint}-end-auto {
+      grid-column-end: auto;
+    }
+
+    @for $col from 1 through 13 {
+      // col end
+      .col#{$breakpoint}-end-#{$col} {
+        grid-column-end: #{$col};
+      }
+    }
+  }
+}
+
+// ____________________Rows______________________________
+// row span
+
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    // cols default
+    .row#{$breakpoint}-auto {
+      grid-row: auto;
+    }
+
+    .row#{$breakpoint}-span-full {
+      grid-row: 1/-1;
+    }
+
+    @for $col from 1 through 6 {
+      // span
+      .row#{$breakpoint}-span-#{$col} {
+        grid-row: span + ' ' + #{$col} / span + ' ' + #{$col};
+      }
+    }
+  }
+}
+
+// col start
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    //auto
+    .row#{$breakpoint}-start-auto {
+      grid-row-start: auto;
+    }
+
+    @for $col from 1 through 7 {
+      // col start
+      .row#{$breakpoint}-start-#{$col} {
+        grid-row-start: #{$col};
+      }
+    }
+  }
+}
+
+// col-end
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    //auto
+    .row#{$breakpoint}-end-auto {
+      grid-row-end: auto;
+    }
+
+    @for $col from 1 through 7 {
+      // col end
+      .row#{$breakpoint}-end-#{$col} {
+        grid-row-end: #{$col};
+      }
+    }
+  }
+}
+
+// Place Self
+
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    //auto
+    .place#{$breakpoint}-self-auto {
+      place-self: auto;
+    }
+
+    .place#{$breakpoint}-self-stretch {
+      place-self: stretch;
+    }
+
+    .place#{$breakpoint}-self-start {
+      place-self: start;
+    }
+
+    .place#{$breakpoint}-self-center {
+      place-self: center;
+    }
+
+    .place#{$breakpoint}-self-end {
+      place-self: end;
+    }
+
+    .place#{$breakpoint}-self-start-center {
+      place-self: start center;
+    }
+
+    .place#{$breakpoint}-self-start-end {
+      place-self: start end;
+    }
+
+    .place#{$breakpoint}-self-center-start {
+      place-self: center start;
+    }
+
+    .place#{$breakpoint}-self-center-end {
+      place-self: center end;
+    }
+
+    .place#{$breakpoint}-self-end-start {
+      place-self: end start;
+    }
+
+    .place#{$breakpoint}-self-end-center {
+      place-self: end center;
+    }
+
+    // auto flows
+    grid#{$breakpoint}-flow-row {
+      grid-auto-flow: row;
+    }
+    grid#{$breakpoint}-flow-col {
+      grid-auto-flow: column;
+    }
+    grid#{$breakpoint}-flow-dense {
+      grid-auto-flow: dense;
+    }
+    grid#{$breakpoint}-flow-row-dense {
+      grid-auto-flow: row dense;
+    }
+    grid#{$breakpoint}-flow-col-dense {
+      grid-auto-flow: column dense;
+    }
+  }
+}
