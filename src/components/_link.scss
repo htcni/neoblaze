@@ -1,0 +1,60 @@
+.link {
+  color: var(--link-default);
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &-default {
+    &:hover {
+      color: var(--fg-default);
+    }
+  }
+
+  &-primary {
+    &:hover {
+      color: var(--fg-primary);
+    }
+  }
+
+  &-secondary {
+    &:hover {
+      color: var(--fg-secondary);
+    }
+  }
+
+  &-info {
+    &:hover {
+      color: var(--fg-info);
+    }
+  }
+
+  &-success {
+    &:hover {
+      color: var(--fg-success);
+    }
+  }
+
+  &-danger {
+    &:hover {
+      color: var(--fg-danger);
+    }
+  }
+
+  &-warning {
+    &:hover {
+      color: var(--fg-warning);
+    }
+  }
+
+  &-neutral {
+    &:hover {
+      color: var(--fg-neutral);
+    }
+  }
+}

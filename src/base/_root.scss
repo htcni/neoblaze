@@ -129,4 +129,7 @@
   --bd-neutral--light: #{map-get(c.$colors, neutral-100)};
   --bd-neutral--medium: #{map-get(c.$colors, neutral-600)};
   --bd-neutral--ultra: #{map-get(c.$colors, neutral-700)};
+  // link
+  --link-default: #1a0dab;
+  // --link-default: #06c;#1a0dab
 }

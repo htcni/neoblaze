@@ -170,10 +170,8 @@
   &.btn-link {
     background-color: var(--bg-transparent);
     border: none;
-  }
 
-  &.btn-link:hover {
-    span {
+    &:hover {
       text-decoration: underline;
     }
   }
