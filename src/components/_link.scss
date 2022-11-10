@@ -6,55 +6,45 @@
     cursor: pointer;
   }
 
-  &:focus {
+  &:focus-visible {
     text-decoration: underline;
-  }
-
-  &-default {
-    &:hover {
-      color: var(--fg-default);
-    }
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
   }
 
   &-primary {
-    &:hover {
-      color: var(--fg-primary);
-    }
+    color: var(--primary);
   }
 
   &-secondary {
-    &:hover {
-      color: var(--fg-secondary);
-    }
+    color: var(--secondary);
   }
 
   &-info {
-    &:hover {
-      color: var(--fg-info);
-    }
+    color: var(--info);
   }
 
   &-success {
-    &:hover {
-      color: var(--fg-success);
-    }
+    color: var(--success);
   }
 
   &-danger {
-    &:hover {
-      color: var(--fg-danger);
-    }
+    color: var(--danger);
   }
 
   &-warning {
-    &:hover {
-      color: var(--fg-warning);
-    }
+    color: var(--warning);
   }
 
   &-neutral {
-    &:hover {
-      color: var(--fg-neutral);
-    }
+    color: var(--neutral);
+  }
+
+  &-black {
+    color: var(--black);
+  }
+
+  &-white {
+    color: var(--white);
   }
 }

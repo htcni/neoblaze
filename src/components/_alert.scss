@@ -1,28 +1,92 @@
 .alert {
-  padding: 1.25rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 1rem;
   border-radius: 0.375rem;
-  border: 1px solid var(--bg-default--light);
+  background-color: var(--default--light);
+  border: 1px solid var(--default);
 
-  &.alert-stripe {
+  &-primary {
+    background-color: var(--primary--light);
+    color: var(--primary--ultra);
+    border-color: var(--primary);
+  }
+
+  &-secondary {
+    background-color: var(--secondary--light);
+    color: var(--secondary--ultra);
+    border-color: var(--secondary);
+  }
+
+  &-tertiary {
+    background-color: var(--tertiary);
+    color: var(--tertiary--ultra);
+    border-color: var(--tertiary);
+  }
+
+  &-info {
+    background-color: var(--info--light);
+    color: var(--info--ultra);
+    border-color: var(--info);
+  }
+
+  &-warning {
+    background-color: var(--warning--light);
+    color: var(--warning--ultra);
+    border-color: var(--warning);
+  }
+
+  &-danger {
+    background-color: var(--danger--light);
+    color: var(--danger--ultra);
+    border-color: var(--danger);
+  }
+
+  &-success {
+    background-color: var(--success--light);
+    color: var(--success--ultra);
+    border-color: var(--ultra);
+  }
+
+  &-neutral {
+    background-color: var(--neutral--light);
+    color: var(--neutral--ultra);
+    border-color: var(--neutral);
+  }
+
+  &-black {
+    background-color: var(--default--medium);
+    color: var(--black);
+    border-color: var(--black);
+  }
+
+  &-white {
+    background-color: var(--white);
+    color: var(--neutral--ultra);
+    border-color: var(--white);
+  }
+
+  &-stripe {
     border-left-width: 10px;
-    border-radius: 0;
     border-top: none;
     border-right: none;
     border-bottom: none;
 
     &--top {
       border-top-width: 4px;
-      border-radius: 0;
       border-left: none;
       border-right: none;
       border-bottom: none;
     }
     &--bottom {
       border-bottom-width: 4px;
-      border-radius: 0;
       border-top: none;
       border-right: none;
+      border-left: none;
+    }
+    &--right {
+      border-right-width: 10px;
+      border-top: none;
+      border-bottom: none;
       border-left: none;
     }
   }

@@ -7,10 +7,10 @@
   --transparent: #00000000;
 
   //default style
-  --default: #{map-get(c.$colors, gray-100)};
+  --default: #d4d6da66;
   --default--light: #{map-get(c.$colors, gray-50)};
-  --default--medium: #d4d6da66;
-  --default--ultra: #{map-get(c.$colors, gray-600)};
+  --default--medium: #{map-get(c.$colors, gray-500)};
+  --default--ultra: #{map-get(c.$colors, gray-700)};
 
   //primary
   --primary: #{map-get(c.$colors, blue-500)};

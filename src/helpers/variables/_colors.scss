@@ -1,10 +1,14 @@
 // Inspired for tailwind colors
 
-$colors: (
+$primary-colors: (
   //standard
-  'white': #fff,
-  'black': #1a1a1a,
-  'transparent': #00000000,
+  'white': var(--white),
+  'midnight': var(--midnight),
+  'black': var(--black),
+  'transparent': var(--transparent)
+);
+
+$colors: (
   // Slate
   slate-50: #f6f7f8,
   slate-100: #d3d6db,
