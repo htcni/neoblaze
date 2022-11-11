@@ -1,6 +1,10 @@
 .container {
   max-inline-size: 1440px;
 
+  &-lg {
+    max-inline-size: 1240px;
+  }
+
   &-md {
     max-inline-size: 980px;
   }
