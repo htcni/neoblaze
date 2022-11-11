@@ -2,7 +2,7 @@
 
 .box {
   @include m.border-radius-sm;
-  border: 1px solid var(--bg-default);
+  border: 1px solid var(--default);
 
   &__header {
   }
