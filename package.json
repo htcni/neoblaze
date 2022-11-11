@@ -8,7 +8,7 @@
     "prefix:css": "postcss dist/css/neoblaze.css -o dist/css/neoblaze.css --use autoprefixer --no-map",
     "minify:css": "cleancss -o dist/css/neoblaze.min.css dist/css/neoblaze.css",
     "build": "npm-run-all prefix:css minify:css",
-    "start": "npm-run-all  watch"
+    "start": "npm-run-all build watch"
   },
   "keywords": [],
   "author": "",
