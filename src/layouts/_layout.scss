@@ -1,19 +1,313 @@
 @use '../helpers/mixins/breakpoints' as m;
 
-.layout-2-col {
+// layout
+.layout {
   display: grid;
-  grid-template-columns: repeat(2, 6fr);
+  grid-template-columns: repeat(12, 1fr);
 
   @include m.mq('sm') {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
-// Fixed
+.layout-main {
+  grid-area: main;
+}
+
+.layout-aside {
+  grid-area: aside;
+}
+
+.layout--spacious-80 {
+  grid-template-areas: ' . . main main main main main main main main . .';
+  @include m.mq('sm') {
+    grid-template: 'main' 1fr / 1fr;
+  }
+}
+
+.layout--spacious-60 {
+  grid-template-areas: ' . . . main main main main main main . . .';
+  @include m.mq('sm') {
+    grid-template: 'main' 1fr / 1fr;
+  }
+}
+
+.layout--spacious-40 {
+  grid-template-areas: ' . . . . main main main main . . . .';
+  @include m.mq('sm') {
+    grid-template: 'main' 1fr / 1fr;
+  }
+}
+
+// full
+
+.layout--full {
+  grid-template-areas: 'main main main main main main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'main' 1fr / 1fr;
+  }
+}
+
+.layout--full-50-40 {
+  grid-template-areas: 'main main main main main . . . aside aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-40-50 {
+  grid-template-areas: 'aside aside aside aside . . . main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-50-50 {
+  grid-template-areas: 'aside aside aside aside aside . . main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-60-40 {
+  grid-template-areas: 'main main main main main main . . aside aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-40-60 {
+  grid-template-areas: 'aside aside aside aside . . main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-60-60 {
+  grid-template-areas: 'aside aside aside aside aside aside main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-70-40 {
+  grid-template-areas: 'main main main main main main main . aside aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-40-70 {
+  grid-template-areas: 'aside aside aside aside . main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-70-30 {
+  grid-template-areas: 'main main main main main main main . . aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-30-70 {
+  grid-template-areas: 'aside aside aside . . main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-70-50 {
+  grid-template-areas: 'main main main main main main main aside aside aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-50-70 {
+  grid-template-areas: 'aside aside aside aside aside main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-40-80 {
+  grid-template-areas: 'aside aside aside aside main main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-80-40 {
+  grid-template-areas: 'main main main main main main main main aside aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-30-80 {
+  grid-template-areas: 'aside aside aside . main main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-80-30 {
+  grid-template-areas: 'main main main main main main main main . aside aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--full-20-80 {
+  grid-template-areas: 'aside aside . . main main main main main main main main';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--full-80-20 {
+  grid-template-areas: 'main main main main main main main main . . aside aside';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+// Spacious
+.layout--spacious {
+  grid-template-areas: '. main main main main main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'main' 1fr / 1fr;
+  }
+}
+
+.layout--spacious-50-40 {
+  grid-template-areas: '. main main main main main . aside aside aside aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-40-50 {
+  grid-template-areas: '. aside aside aside aside . main main main main main . ';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-50-50 {
+  grid-template-areas: '. aside aside aside aside aside main main main main main . ';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-60-40 {
+  grid-template-areas: '. main main main main main main aside aside aside aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-40-60 {
+  grid-template-areas: '. aside aside aside aside main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-70-20 {
+  grid-template-areas: '. main main main main main main main . aside aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-20-70 {
+  grid-template-areas: '. aside aside . main main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-70-30 {
+  grid-template-areas: '. main main main main main main main aside aside aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-30-70 {
+  grid-template-areas: '. aside aside aside main main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-80-20 {
+  grid-template-areas: '. main main main main main main main main aside aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-20-80 {
+  grid-template-areas: '. aside aside main main main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout--spacious-80-10 {
+  grid-template-areas: '. main main main main main main main main . aside .';
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+.layout--spacious-10-80 {
+  grid-template-areas: '. aside . main main main main main main main main .';
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout-autofit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.layout-autofill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.layout-2-col {
+  grid-template: 'main aside' 1fr / 6fr 6fr;
+
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
+
+// Fixed 2 col side bar
+.layout-2-col--fixed-aside-left {
+  grid-template: 'aside main' 1fr / minmax(250px, max-content) 1fr;
+
+  @include m.mq('sm') {
+    grid-template: 'aside' 'main' auto / 1fr;
+  }
+}
+
+.layout-2-col--fixed-aside-right {
+  grid-template: 'main aside' 1fr/ 1fr minmax(250px, max-content);
+  @include m.mq('sm') {
+    grid-template: 'main' 'aside' auto / 1fr;
+  }
+}
 
 .layout-3-col {
-  display: grid;
   grid-template-columns: repeat(3, 4fr);
 
   @include m.mq('md') {
@@ -27,7 +321,6 @@
 }
 
 .layout-4-col {
-  display: grid;
   grid-template-columns: repeat(4, 3fr);
 
   @include m.mq('md') {
@@ -38,201 +331,4 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.layout-main {
-  grid-area: main;
-
-  @include m.mq('sm') {
-    grid-area: unset;
-  }
-}
-
-.layout-aside {
-  grid-area: aside;
-  @include m.mq('sm') {
-    grid-area: unset;
-  }
-}
-
-.layout--spacious-80 {
-  grid-template-areas: ' . . main main main main main main main main . .';
-}
-
-.layout--spacious-60 {
-  grid-template-areas: ' . . . main main main main main main . . .';
-}
-
-.layout--spacious-40 {
-  grid-template-areas: ' . . . . main main main main . . . .';
-}
-
-// full
-
-.layout--full {
-  grid-template-areas: 'main main main main main main main main main main main main';
-}
-
-.layout--full-50-40 {
-  grid-template-areas: 'main main main main main . . . aside aside aside aside';
-}
-
-.layout--full-40-50 {
-  grid-template-areas: 'aside aside aside aside . . . main main main main main';
-}
-
-.layout--full-50-50 {
-  grid-template-areas: 'main main main main main . . aside aside aside aside aside';
-}
-
-.layout--full-60-40 {
-  grid-template-areas: 'main main main main main main . . aside aside aside aside';
-}
-
-.layout--full-40-60 {
-  grid-template-areas: 'aside aside aside aside . . main main main main main main';
-}
-
-.layout--full-60-60 {
-  grid-template-areas: 'main main main main main main aside aside aside aside aside aside';
-}
-
-.layout--full-70-40 {
-  grid-template-areas: 'main main main main main main main . aside aside aside aside';
-}
-
-.layout--full-40-70 {
-  grid-template-areas: 'aside aside aside aside . main main main main main main main';
-}
-
-.layout--full-70-30 {
-  grid-template-areas: 'main main main main main main main . . aside aside aside';
-}
-
-.layout--full-30-70 {
-  grid-template-areas: 'aside aside aside . . main main main main main main main';
-}
-
-.layout--full-70-50 {
-  grid-template-areas: 'main main main main main main main aside aside aside aside aside';
-}
-
-.layout--full-50-70 {
-  grid-template-areas: 'aside aside aside aside aside main main main main main main main';
-}
-
-.layout--full-40-80 {
-  grid-template-areas: 'aside aside aside aside main main main main main main main main';
-}
-
-.layout--full-80-40 {
-  grid-template-areas: 'main main main main main main main main aside aside aside aside';
-}
-
-.layout--full-30-80 {
-  grid-template-areas: 'aside aside aside . main main main main main main main main';
-}
-
-.layout--full-80-30 {
-  grid-template-areas: 'main main main main main main main main . aside aside aside';
-}
-
-.layout--full-20-80 {
-  grid-template-areas: 'aside aside . . main main main main main main main main';
-}
-
-.layout--full-80-20 {
-  grid-template-areas: 'main main main main main main main main . . aside aside';
-}
-
-// Spacious
-.layout--spacious {
-  grid-template-areas: '. main main main main main main main main main main .';
-}
-
-.layout--spacious-50-40 {
-  grid-template-areas: '. main main main main main . aside aside aside aside .';
-}
-
-.layout--spacious-40-50 {
-  grid-template-areas: '. aside aside aside aside . main main main main main . ';
-}
-
-.layout--spacious-50-50 {
-  grid-template-areas: '. aside aside aside aside aside main main main main main . ';
-}
-
-.layout--spacious-60-40 {
-  grid-template-areas: '. main main main main main main aside aside aside aside .';
-}
-
-.layout--spacious-40-60 {
-  grid-template-areas: '. aside aside aside aside main main main main main main .';
-}
-
-.layout--spacious-70-20 {
-  grid-template-areas: '. main main main main main main main . aside aside .';
-}
-
-.layout--spacious-20-70 {
-  grid-template-areas: '. aside aside . main main main main main main main .';
-}
-
-.layout--spacious-70-30 {
-  grid-template-areas: '. main main main main main main main aside aside aside .';
-}
-
-.layout--spacious-30-70 {
-  grid-template-areas: '. aside aside aside main main main main main main main .';
-}
-
-.layout--spacious-80-20 {
-  grid-template-areas: '. main main main main main main main main aside aside .';
-}
-
-.layout--spacious-20-80 {
-  grid-template-areas: '. aside aside main main main main main main main main .';
-}
-
-.layout--spacious-80-10 {
-  grid-template-areas: '. main main main main main main main main . aside .';
-}
-
-.layout--spacious-10-80 {
-  grid-template-areas: '. aside . main main main main main main main main .';
-}
-
-.layout {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-
-  @include m.mq('sm') {
-    grid-template-columns: 1fr;
-    grid-template-areas: none;
-  }
-}
-
-.grid-md-reset {
-  @include m.mq('md') {
-    grid-template-columns: 1fr;
-    grid-template-areas: none;
-
-    .layout-main {
-      grid-area: unset;
-    }
-
-    .layout-aside {
-      grid-area: unset;
-    }
-  }
-}
-
-.layout-autofit {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.layout-autofill {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
