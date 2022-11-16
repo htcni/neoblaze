@@ -1,6 +1,6 @@
 // base fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-$font-family: 'Roboto', sans-serif;
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1&f[]=sentient@1&f[]=switzer@1&display=swap');
+$font-family: var(--font-primary);
 $font-size: 16px;
 $heading-weight: 600;
-$line-height: 1.5;
+$line-height: 1.125;
