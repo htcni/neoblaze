@@ -5,10 +5,11 @@
   "scripts": {
     "watch": "npm-run-all --parallel watch:*",
     "watch:sass": "sass --no-source-map --watch src:dist/css/",
-    "prefix:css": "postcss dist/css/neoblaze.css -o dist/css/neoblaze.css --use autoprefixer --no-map",
-    "minify:css": "cleancss -o dist/css/neoblaze.min.css dist/css/neoblaze.css",
-    "build": "npm-run-all prefix:css minify:css",
-    "start": "npm-run-all build watch"
+    "build:sass": "sass --no-source-map src:dist/css/",
+    "build:prefix-css": "postcss dist/css/neoblaze.css -o dist/css/neoblaze.css --use autoprefixer --no-map",
+    "build:minify-css": "cleancss -o dist/css/neoblaze.min.css dist/css/neoblaze.css",
+    "build": "npm-run-all build:*",
+    "start": "npm-run-all build:sass watch"
   },
   "keywords": [],
   "author": "",
