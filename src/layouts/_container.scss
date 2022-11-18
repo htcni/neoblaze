@@ -2,14 +2,18 @@
   max-inline-size: 1440px;
 
   &-lg {
-    max-inline-size: 1240px;
+    max-inline-size: 1680px;
   }
 
   &-md {
-    max-inline-size: 980px;
+    max-inline-size: 1240px;
   }
 
   &-sm {
+    max-inline-size: 980px;
+  }
+
+  &-xs {
     max-inline-size: 780px;
   }
 }
