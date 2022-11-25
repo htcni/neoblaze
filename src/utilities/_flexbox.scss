@@ -43,8 +43,11 @@
     .flex#{$breakpoint}-justify-between {
       justify-content: space-between;
     }
-    .flex#{$breakpoint}-justify-around {
-      justify-content: space-around;
+    .flex#{$breakpoint}-justify-evenly {
+      justify-content: space-evenly;
+    }
+    .flex#{$breakpoint}-justify-stretch {
+      justify-content: stretch;
     }
 
     .flex#{$breakpoint}-items-start {
