@@ -1,17 +1,20 @@
 @use '../helpers/mixins/' as m;
+@use '../helpers/variables/border' as b;
 
 .btn {
   appearance: auto;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border: none;
   padding: 8px 16px;
-  @include m.border-radius;
+  @include m.border-radius-sm;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
   vertical-align: middle;
+  white-space: nowrap;
   background-color: var(--default--light);
   border: 1px solid var(--default);
 
@@ -308,6 +311,14 @@
         background-color: var(--neutral--light);
       }
     }
+
+    &-white {
+      background-color: var(--transparent);
+
+      &:hover {
+        background-color: var(--default--light);
+      }
+    }
   }
 
   &-text {
@@ -344,7 +355,7 @@
       background-color: var(--transparent);
 
       &:hover {
-        background-color: var(--secondary--light);
+        background-color: var(--tertiary--light);
       }
     }
 
@@ -422,13 +433,128 @@
 
     &:hover {
       text-decoration: underline;
+      background-color: var(--bg-transparent);
     }
   }
 
   &-icon {
+    display: inline-flex;
     padding: 0.313rem;
     background-color: var(--transparent);
     border: 1px solid var(--transparent);
     line-height: 1;
+    @include m.border-radius-circle;
+
+    &:hover {
+      background-color: var(--default--light);
+    }
+
+    &-primary {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--primary);
+        background-color: var(--primary--xlight);
+      }
+    }
+
+    &-secondary {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--secondary);
+        background-color: var(--secondary--xlight);
+      }
+    }
+
+    &-tertiary {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--tertiary);
+        background-color: var(--tertiary--xlight);
+      }
+    }
+
+    &-info {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--info);
+        background-color: var(--info--xlight);
+      }
+    }
+
+    &-warning {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--warning);
+        background-color: var(--warning--xlight);
+      }
+    }
+
+    &-danger {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--danger);
+        background-color: var(--danger--xlight);
+      }
+    }
+
+    &-success {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--success);
+        background-color: var(--success--xlight);
+      }
+    }
+
+    &-neutral {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--neutral);
+        background-color: var(--neutral--xlight);
+      }
+    }
+
+    &-black {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+
+    &-white {
+      @extend .btn-icon;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.icon-bg-none {
+  &:hover {
+    background-color: var(--bg-transparent);
+  }
+}
+
+.btn-group {
+  display: inline-flex;
+  vertical-align: middle;
+
+  &-item {
+    @include m.border-radius-none;
+    border-right-width: 0px;
+
+    &:last-child {
+      border-right-width: 1px;
+    }
   }
 }
