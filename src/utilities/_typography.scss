@@ -248,28 +248,28 @@
       $breakpoint: '-' + $breakpoint;
     }
 
-    align#{$breakpoint}-baseline {
+    .align#{$breakpoint}-baseline {
       vertical-align: baseline;
     }
-    align#{$breakpoint}-top {
+    .align#{$breakpoint}-top {
       vertical-align: top;
     }
-    align#{$breakpoint}-middle {
+    .align#{$breakpoint}-middle {
       vertical-align: middle;
     }
-    align#{$breakpoint}-bottom {
+    .align#{$breakpoint}-bottom {
       vertical-align: bottom;
     }
-    align#{$breakpoint}-text-top {
+    .align#{$breakpoint}-text-top {
       vertical-align: text-top;
     }
-    align#{$breakpoint}-text-bottom {
+    .align#{$breakpoint}-text-bottom {
       vertical-align: text-bottom;
     }
-    align#{$breakpoint}-sub {
+    .align#{$breakpoint}-sub {
       vertical-align: sub;
     }
-    align#{$breakpoint}-super {
+    .align#{$breakpoint}-super {
       vertical-align: sup;
     }
   }
