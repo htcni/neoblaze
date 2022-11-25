@@ -23,6 +23,12 @@
   @include m.mq('sm') {
     grid-template: 'main' 1fr / 1fr;
   }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 1fr / 1fr;
+    }
+  }
 }
 
 .layout--spacious-60 {
@@ -30,12 +36,24 @@
   @include m.mq('sm') {
     grid-template: 'main' 1fr / 1fr;
   }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 1fr / 1fr;
+    }
+  }
 }
 
 .layout--spacious-40 {
   grid-template-areas: ' . . . . main main main main . . . .';
   @include m.mq('sm') {
     grid-template: 'main' 1fr / 1fr;
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 1fr / 1fr;
+    }
   }
 }
 
@@ -46,12 +64,32 @@
   @include m.mq('sm') {
     grid-template: 'main' 1fr / 1fr;
   }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 1fr / 1fr;
+    }
+  }
 }
 
 .layout--full-50-40 {
   grid-template-areas: 'main main main main main . . . aside aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -59,6 +97,20 @@
   grid-template-areas: 'aside aside aside aside . . . main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -66,6 +118,20 @@
   grid-template-areas: 'aside aside aside aside aside . . main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -73,6 +139,20 @@
   grid-template-areas: 'main main main main main main . . aside aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -80,6 +160,20 @@
   grid-template-areas: 'aside aside aside aside . . main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -87,6 +181,20 @@
   grid-template-areas: 'aside aside aside aside aside aside main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -94,6 +202,20 @@
   grid-template-areas: 'main main main main main main main . aside aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -101,6 +223,20 @@
   grid-template-areas: 'aside aside aside aside . main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -108,6 +244,20 @@
   grid-template-areas: 'main main main main main main main . . aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -115,6 +265,20 @@
   grid-template-areas: 'aside aside aside . . main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -122,6 +286,20 @@
   grid-template-areas: 'main main main main main main main aside aside aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -129,6 +307,20 @@
   grid-template-areas: 'aside aside aside aside aside main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -136,6 +328,20 @@
   grid-template-areas: 'aside aside aside aside main main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -143,6 +349,20 @@
   grid-template-areas: 'main main main main main main main main aside aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -150,6 +370,20 @@
   grid-template-areas: 'aside aside aside . main main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -157,6 +391,20 @@
   grid-template-areas: 'main main main main main main main main . aside aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -164,6 +412,20 @@
   grid-template-areas: 'aside aside . . main main main main main main main main';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -171,6 +433,20 @@
   grid-template-areas: 'main main main main main main main main . . aside aside';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -180,12 +456,32 @@
   @include m.mq('sm') {
     grid-template: 'main' 1fr / 1fr;
   }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 1fr / 1fr;
+    }
+  }
 }
 
 .layout--spacious-50-40 {
   grid-template-areas: '. main main main main main . aside aside aside aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -193,6 +489,20 @@
   grid-template-areas: '. aside aside aside aside . main main main main main . ';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -200,6 +510,20 @@
   grid-template-areas: '. aside aside aside aside aside main main main main main . ';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -207,6 +531,20 @@
   grid-template-areas: '. main main main main main main aside aside aside aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -214,6 +552,20 @@
   grid-template-areas: '. aside aside aside aside main main main main main main .';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -221,6 +573,20 @@
   grid-template-areas: '. main main main main main main main . aside aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -228,6 +594,20 @@
   grid-template-areas: '. aside aside . main main main main main main main .';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -235,6 +615,20 @@
   grid-template-areas: '. main main main main main main main aside aside aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -242,6 +636,20 @@
   grid-template-areas: '. aside aside aside main main main main main main main .';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -249,6 +657,20 @@
   grid-template-areas: '. main main main main main main main main aside aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -256,6 +678,20 @@
   grid-template-areas: '. aside aside main main main main main main main main .';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -263,6 +699,20 @@
   grid-template-areas: '. main main main main main main main main . aside .';
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -270,6 +720,20 @@
   grid-template-areas: '. aside . main main main main main main main main .';
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -288,6 +752,20 @@
 
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -297,6 +775,20 @@
 
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'main' 'aside' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'aside' 'main' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'main' 'aside' auto / 1fr;
+      }
+    }
   }
 }
 
@@ -304,6 +796,20 @@
   grid-template: 'main aside' 1fr/ 1fr minmax(250px, max-content);
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
+
+    &.sm-reverse {
+      grid-template: 'aside' 'main' auto / 1fr;
+    }
+  }
+
+  @include m.mq('md') {
+    &.md-break {
+      grid-template: 'main' 'aside' auto / 1fr;
+
+      &-reverse {
+        grid-template: 'aside' 'main' auto / 1fr;
+      }
+    }
   }
 }
 
