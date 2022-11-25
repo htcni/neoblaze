@@ -1,0 +1,34 @@
+@use '../helpers/mixins/breakpoints' as m;
+// overflow
+@each $breakpoint, $screen-size in m.$breakpoints {
+  @include m.mq($breakpoint) {
+    @if $breakpoint != '' {
+      $breakpoint: '-' + $breakpoint;
+    }
+
+    overflow#{$breakpoint}-auto {
+      overflow: auto;
+    }
+    overflow#{$breakpoint}-hidden {
+      overflow: hidden;
+    }
+    overflow#{$breakpoint}-clip {
+      overflow: clip;
+    }
+    overflow#{$breakpoint}-visible {
+      overflow: visible;
+    }
+    overflow#{$breakpoint}-scroll {
+      overflow: scroll;
+    }
+    overflow#{$breakpoint}-x-auto {
+      overflow-x: auto;
+    }
+    overflow#{$breakpoint}-y-auto {
+      overflow-y: auto;
+    }
+    overflow#{$breakpoint}-x-hidden {
+      overflow-x: hidden;
+    }
+  }
+}
