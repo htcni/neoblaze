@@ -1,5 +1,4 @@
-@use '../helpers/variables/colors' as c;
-@use 'sass:color';
+@use '../helpers/variables/theme_colors' as t;
 :root {
   // Fonts
 
@@ -8,75 +7,11 @@
   --font-tertiary: 'Switzer', sans-serif;
 
   //COLORS
-  // standard
-  --white: #fff;
-  --midnight: #1a1a1a;
-  --black: #000;
-  --transparent: #00000000;
+  @each $color, $value in t.$base-colors {
+    #{"--" + $color}: #{$value};
+  }
 
-  //default style
-  --default: #d4d6da66;
-  --default--xlight: #f0f0f066;
-  --default--light: #{map-get(c.$colors, gray-50)};
-  --default--medium: #{map-get(c.$colors, gray-500)};
-  --default--ultra: #{map-get(c.$colors, gray-700)};
-
-  //primary
-  --primary: #{map-get(c.$colors, blue-500)};
-  --primary--xlight: #{map-get(c.$colors, blue-50)};
-  --primary--light: #{map-get(c.$colors, blue-100)};
-  --primary--medium: #{map-get(c.$colors, blue-600)};
-  --primary--ultra: #{map-get(c.$colors, blue-700)};
-  // secondary
-  --secondary: #{map-get(c.$colors, violet-500)};
-  --secondary--xlight: #{map-get(c.$colors, violet-50)};
-  --secondary--light: #{map-get(c.$colors, violet-100)};
-  --secondary--medium: #{map-get(c.$colors, violet-600)};
-  --secondary--ultra: #{map-get(c.$colors, violet-700)};
-  // tertiary
-  --tertiary: #{map-get(c.$colors, lime-500)};
-  --tertiary--xlight: #{map-get(c.$colors, lime-50)};
-  --tertiary--light: #{map-get(c.$colors, lime-100)};
-  --tertiary--medium: #{map-get(c.$colors, lime-600)};
-  --tertiary--ultra: #{map-get(c.$colors, lime-700)};
-  // info
-  --info: #{map-get(c.$colors, sky-500)};
-  --info--xlight: #{map-get(c.$colors, sky-50)};
-  --info--light: #{map-get(c.$colors, sky-100)};
-  --info--medium: #{map-get(c.$colors, sky-600)};
-  --info--ultra: #{map-get(c.$colors, sky-700)};
-  // warning
-  --warning: #{map-get(c.$colors, amber-500)};
-  --warning--xlight: #{map-get(c.$colors, amber-50)};
-  --warning--light: #{map-get(c.$colors, amber-100)};
-  --warning--medium: #{map-get(c.$colors, amber-600)};
-  --warning--ultra: #{map-get(c.$colors, amber-700)};
-  // danger
-  --danger: #{map-get(c.$colors, red-500)};
-  --danger--xlight: #{map-get(c.$colors, red-50)};
-  --danger--light: #{map-get(c.$colors, red-100)};
-  --danger--medium: #{map-get(c.$colors, red-600)};
-  --danger--ultra: #{map-get(c.$colors, red-700)};
-  // success
-  --success: #{map-get(c.$colors, green-500)};
-  --success--xlight: #{map-get(c.$colors, green-50)};
-  --success--light: #{map-get(c.$colors, green-100)};
-  --success--medium: #{map-get(c.$colors, green-600)};
-  --success--ultra: #{map-get(c.$colors, green-700)};
-  // neutral
-  --neutral: #{map-get(c.$colors, neutral-500)};
-  --neutral--xlight: #{map-get(c.$colors, neutral-50)};
-  --neutral--light: #{map-get(c.$colors, neutral-100)};
-  --neutral--medium: #{map-get(c.$colors, neutral-600)};
-  --neutral--ultra: #{map-get(c.$colors, neutral-700)};
-
-  // text colors
-  --fg-text: #{map-get(c.$colors, gray-600)};
-  --fg-text--xlight: #{map-get(c.$colors, gray-50)};
-  --fg-text--light: #{map-get(c.$colors, gray-400)};
-  --fg-text--medium: #{map-get(c.$colors, slate-600)};
-  --fg-text--ultra: var(--black);
-
-  // link
-  --link-default: #06c;
+  @each $color, $value in t.$theme-colors {
+    #{"--" + $color}: #{$value};
+  }
 }
