@@ -6,28 +6,28 @@
       $breakpoint: '-' + $breakpoint;
     }
 
-    overflow#{$breakpoint}-auto {
+    .overflow#{$breakpoint}-auto {
       overflow: auto;
     }
-    overflow#{$breakpoint}-hidden {
+    .overflow#{$breakpoint}-hidden {
       overflow: hidden;
     }
-    overflow#{$breakpoint}-clip {
+    .overflow#{$breakpoint}-clip {
       overflow: clip;
     }
-    overflow#{$breakpoint}-visible {
+    .overflow#{$breakpoint}-visible {
       overflow: visible;
     }
-    overflow#{$breakpoint}-scroll {
+    .overflow#{$breakpoint}-scroll {
       overflow: scroll;
     }
-    overflow#{$breakpoint}-x-auto {
+    .overflow#{$breakpoint}-x-auto {
       overflow-x: auto;
     }
-    overflow#{$breakpoint}-y-auto {
+    .overflow#{$breakpoint}-y-auto {
       overflow-y: auto;
     }
-    overflow#{$breakpoint}-x-hidden {
+    .overflow#{$breakpoint}-x-hidden {
       overflow-x: hidden;
     }
   }
