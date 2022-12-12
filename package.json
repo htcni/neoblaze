@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "watch": "npm-run-all --parallel watch:*",
-    "watch:sass": "sass --no-source-map --watch src:dist/css/",
-    "build:sass": "sass --no-source-map src:dist/css/",
+    "watch:sass": "sass --no-source-map --watch src/scss:dist/css/",
+    "build:sass": "sass --no-source-map src/scss:dist/css/",
     "build:prefix-css": "postcss dist/css/neoblaze.css -o dist/css/neoblaze.css --use autoprefixer --no-map",
     "build:minify-css": "cleancss -o dist/css/neoblaze.min.css dist/css/neoblaze.css",
     "build": "npm-run-all build:*",
