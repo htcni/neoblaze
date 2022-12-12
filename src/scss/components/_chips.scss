@@ -1,0 +1,54 @@
+@use '../helpers/mixins/' as m;
+@use '../helpers/variables/border' as b;
+
+.chip {
+  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+  @include m.border-radius-sm;
+  border: 1px solid var(--default);
+
+  &-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  &-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+
+  &-tertiary {
+    border-color: var(--tertiary);
+    color: var(--tertiary);
+  }
+
+  &-info {
+    border-color: var(--info);
+    color: var(--info);
+  }
+
+  &-warning {
+    border-color: var(--warning);
+    color: var(--warning);
+  }
+
+  &-success {
+    border-color: var(--success);
+    color: var(--success);
+  }
+
+  &-danger {
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  &-neutral {
+    border-color: var(--neutral);
+    color: var(--neutral);
+  }
+
+  &-black {
+    border-color: var(--black);
+    color: var(--black);
+  }
+}

@@ -46,3 +46,17 @@ $border-prefixes: 'border', 'border-t', 'border-r', 'border-b', 'border-l',
     }
   }
 }
+
+.border {
+  &-solid {
+    border-style: solid;
+  }
+
+  &-dotted {
+    border-style: dotted;
+  }
+
+  &-dashed {
+    border-style: dashed;
+  }
+}

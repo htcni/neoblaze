@@ -1,0 +1,28 @@
+.accordion {
+  display: block;
+
+  &__header {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__content {
+    transition: max-height 400ms ease-in-out;
+  }
+
+  &__action {
+  }
+}
+
+.accordion-show {
+  display: block;
+}
+
+.accordion-collapsing {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion-hide {
+  display: none;
+}

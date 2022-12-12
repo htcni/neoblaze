@@ -1,0 +1,26 @@
+@use '../helpers/mixins/' as m;
+.menu {
+  font-weight: 400;
+  &__list {
+    list-style: none;
+    &-item {
+      margin-top: 0.125rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    padding: 0.375rem 0.75rem;
+    @include m.border-radius;
+
+    &:hover {
+      background-color: var(--default--light);
+    }
+
+    &--active {
+      font-weight: 600;
+      color: var(--active-link-color);
+      background-color: var(--active-link-bgColor);
+    }
+  }
+}

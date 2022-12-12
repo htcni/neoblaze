@@ -12,6 +12,7 @@
   @include m.border-radius-sm;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
@@ -549,12 +550,27 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &-item {
+  &__item {
     @include m.border-radius-none;
     border-right-width: 0px;
 
     &:last-child {
       border-right-width: 1px;
     }
+  }
+}
+
+.btn-group--vertical {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+.btn-group__item--vertical {
+  @include m.border-radius-none;
+  border-bottom-width: 0px;
+
+  &:last-child {
+    border-bottom-width: 1px;
   }
 }

@@ -771,7 +771,7 @@
 
 // Fixed 2 col side bar
 .layout-2-col--fixed-aside-left {
-  grid-template: 'aside main' 1fr / minmax(250px, max-content) 1fr;
+  grid-template: 'aside main' 1fr / minmax(0px, max-content) 1fr;
 
   @include m.mq('sm') {
     grid-template: 'aside' 'main' auto / 1fr;
@@ -793,7 +793,7 @@
 }
 
 .layout-2-col--fixed-aside-right {
-  grid-template: 'main aside' 1fr/ 1fr minmax(250px, max-content);
+  grid-template: 'main aside' 1fr/ 1fr minmax(0px, max-content);
   @include m.mq('sm') {
     grid-template: 'main' 'aside' auto / 1fr;
 

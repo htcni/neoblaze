@@ -157,15 +157,15 @@
     }
 
     .leading#{$breakpoint}-relaxed {
-      font-weight: 1.14;
+      line-height: 1.14;
     }
 
     .leading#{$breakpoint}-spacious {
-      font-weight: 1.5;
+      line-height: 1.5;
     }
 
     .leading#{$breakpoint}-loose {
-      font-weight: 1.8;
+      line-height: 1.8;
     }
   }
 }

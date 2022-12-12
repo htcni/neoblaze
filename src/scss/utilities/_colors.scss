@@ -4,23 +4,53 @@
 @each $shade, $value in t.$base-colors {
   .bg-#{'' + $shade} {
     background-color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        background-color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
   .fg-#{'' + $shade} {
     color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
   .bd-#{'' + $shade} {
     border-color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        border-color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
 }
 
 @each $shade, $value in t.$theme-colors {
   .bg-#{'' + $shade} {
     background-color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        background-color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
   .fg-#{'' + $shade} {
     color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
   .bd-#{'' + $shade} {
     border-color: #{'var(--' + $shade + ')'};
+    &-hover {
+      &:hover {
+        border-color: #{'var(--' + $shade + ')'};
+      }
+    }
   }
 }
