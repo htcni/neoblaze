@@ -2,8 +2,9 @@
 @use '../helpers/variables/border' as b;
 
 .chip {
+  display: inline-flex;
   font-size: 14px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.5rem;
   @include m.border-radius-sm;
   border: 1px solid var(--default);
 
