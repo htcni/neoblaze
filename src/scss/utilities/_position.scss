@@ -29,15 +29,15 @@
       position: sticky;
     }
 
-    .translate-#{$breakpoint}-middle {
+    .translate#{$breakpoint}-middle {
       transform: translate(-50%, -50%);
     }
 
-    .translate-#{$breakpoint}-middle-x {
+    .translate#{$breakpoint}-middle-x {
       transform: translateX(-50%);
     }
 
-    .translate-#{$breakpoint}-middle-y {
+    .translate#{$breakpoint}-middle-y {
       transform: translateY(-50%);
     }
   }
@@ -55,6 +55,7 @@ $position-values: (
   '4': 1rem,
   '50': 50%,
   '100': 100%,
+  'unset': unset,
 );
 
 $position-prefixes: 'top', 'right', 'bottom', 'left', 'inset', 'inset-x',
@@ -109,7 +110,7 @@ $negative-position: map.remove($position-values, '0');
     @each $prefix in $negative-position-prefixes {
       @each $token, $value in $negative-position {
         .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == 'top' {
+          @if $prefix == '-top' {
             top: -$value;
           } @else if $prefix == '-right' {
             right: -$value;
