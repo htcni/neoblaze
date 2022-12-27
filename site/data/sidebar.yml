@@ -13,12 +13,6 @@
   pages:
     - title: Overview
     - title: Sass
-    - title: Options
-    - title: Color
-    - title: Color modes
-    - title: Components
-    - title: CSS variables
-    - title: Optimize
 
 - title: Layout
   pages:
@@ -47,15 +41,12 @@
 
 - title: Utilities
   pages:
-    - title: API
-    - title: Background
+    - title: Overview
     - title: Borders
     - title: Colors
     - title: Display
     - title: Flex
     - title: Float
-    - title: Interactions
-    - title: Object fit
     - title: Opacity
     - title: Overflow
     - title: Position
