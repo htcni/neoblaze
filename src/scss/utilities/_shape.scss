@@ -32,15 +32,15 @@
 		@include s.border-top-radius;
 
 		&-sm {
-			@include s.border-top-radius($radius: b.$border-sm);
+			@include s.border-top-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-top-radius($radius: b.$border-md);
+			@include s.border-top-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-top-radius($radius: b.$border-lg);
+			@include s.border-top-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
@@ -52,7 +52,7 @@
 		}
 
 		&-none {
-			@include s.border-top-radius($radius: b.$border-none);
+			@include s.border-top-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -60,27 +60,27 @@
 		@include s.border-right-radius;
 
 		&-sm {
-			@include s.border-right-radius($radius: b.$border-sm);
+			@include s.border-right-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-right-radius($radius: b.$border-md);
+			@include s.border-right-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-right-radius($radius: b.$border-lg);
+			@include s.border-right-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-right-radius($radius: b.$border-full);
+			@include s.border-right-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-right-radius($radius: b.$border-circle);
+			@include s.border-right-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-right-radius($radius: b.$border-none);
+			@include s.border-right-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -88,27 +88,27 @@
 		@include s.border-bottom-radius;
 
 		&-sm {
-			@include s.border-bottom-radius($radius: b.$border-sm);
+			@include s.border-bottom-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-bottom-radius($radius: b.$border-md);
+			@include s.border-bottom-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-bottom-radius($radius: b.$border-lg);
+			@include s.border-bottom-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-bottom-radius($radius: b.$border-full);
+			@include s.border-bottom-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-bottom-radius($radius: b.$border-circle);
+			@include s.border-bottom-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-bottom-radius($radius: b.$border-none);
+			@include s.border-bottom-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -116,27 +116,27 @@
 		@include s.border-left-radius;
 
 		&-sm {
-			@include s.border-left-radius($radius: b.$border-sm);
+			@include s.border-left-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-left-radius($radius: b.$border-md);
+			@include s.border-left-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-left-radius($radius: b.$border-lg);
+			@include s.border-left-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-left-radius($radius: b.$border-full);
+			@include s.border-left-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-left-radius($radius: b.$border-circle);
+			@include s.border-left-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-left-radius($radius: b.$border-none);
+			@include s.border-left-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -144,27 +144,27 @@
 		@include s.border-top-right-radius;
 
 		&-sm {
-			@include s.border-top-right-radius($radius: b.$border-sm);
+			@include s.border-top-right-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-top-right-radius($radius: b.$border-md);
+			@include s.border-top-right-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-top-right-radius($radius: b.$border-lg);
+			@include s.border-top-right-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-top-right-radius($radius: b.$border-full);
+			@include s.border-top-right-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-top-right-radius($radius: b.$border-circle);
+			@include s.border-top-right-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-top-right-radius($radius: b.$border-none);
+			@include s.border-top-right-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -172,27 +172,27 @@
 		@include s.border-top-left-radius;
 
 		&-sm {
-			@include s.border-top-left-radius($radius: b.$border-sm);
+			@include s.border-top-left-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-top-left-radius($radius: b.$border-md);
+			@include s.border-top-left-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-top-left-radius($radius: b.$border-lg);
+			@include s.border-top-left-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-top-left-radius($radius: b.$border-full);
+			@include s.border-top-left-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-top-left-radius($radius: b.$border-circle);
+			@include s.border-top-left-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-top-left-radius($radius: b.$border-none);
+			@include s.border-top-left-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -200,27 +200,27 @@
 		@include s.border-bottom-right-radius;
 
 		&-sm {
-			@include s.border-bottom-right-radius($radius: b.$border-sm);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-bottom-right-radius($radius: b.$border-md);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-bottom-right-radius($radius: b.$border-lg);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-bottom-right-radius($radius: b.$border-full);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-bottom-right-radius($radius: b.$border-circle);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-bottom-right-radius($radius: b.$border-none);
+			@include s.border-bottom-right-radius($radius: b.$border-radius-none);
 		}
 	}
 
@@ -228,27 +228,27 @@
 		@include s.border-bottom-left-radius;
 
 		&-sm {
-			@include s.border-bottom-left-radius($radius: b.$border-sm);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-sm);
 		}
 
 		&-md {
-			@include s.border-bottom-left-radius($radius: b.$border-md);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-md);
 		}
 
 		&-lg {
-			@include s.border-bottom-left-radius($radius: b.$border-lg);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-lg);
 		}
 
 		&-full {
-			@include s.border-bottom-left-radius($radius: b.$border-full);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-full);
 		}
 
 		&-circle {
-			@include s.border-bottom-left-radius($radius: b.$border-circle);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-circle);
 		}
 
 		&-none {
-			@include s.border-bottom-left-radius($radius: b.$border-none);
+			@include s.border-bottom-left-radius($radius: b.$border-radius-none);
 		}
 	}
 }
