@@ -1,15 +1,16 @@
 $breakpoints: (
-  '': '',
-  'sm': 58.375em,
-  'md': 77.125em,
+	'': '',
+	'md': 77.125em,
+	'sm': 58.375em,
+	'xs': 39.625em,
 );
 
 @mixin mq($breakpoint) {
-  @if $breakpoint == '' {
-    @content;
-  } @else {
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
+	@if $breakpoint == '' {
+		@content;
+	} @else {
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
 }

@@ -1,65 +1,65 @@
-@use '../variables/border' as b;
+@use "../variables/border" as b;
 
 @mixin border-radius {
-  border-radius: b.$border-default;
+	border-radius: b.$border-default;
 }
 
 @mixin border-top-radius($radius: b.$border-default) {
-  border-top-left-radius: $radius;
-  border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
 }
 
 @mixin border-right-radius($radius: b.$border-default) {
-  border-top-right-radius: $radius;
-  border-bottom-right-radius: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
 }
 
 @mixin border-bottom-radius($radius: b.$border-default) {
-  border-bottom-right-radius: $radius;
-  border-bottom-left-radius: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
 }
 
 @mixin border-left-radius($radius: b.$border-default) {
-  border-top-left-radius: $radius;
-  border-bottom-left-radius: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
 }
 
 @mixin border-top-left-radius($radius: b.$border-default) {
-  border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
 }
 
 @mixin border-top-right-radius($radius: b.$border-default) {
-  border-top-right-radius: $radius;
+	border-top-right-radius: $radius;
 }
 
 @mixin border-bottom-left-radius($radius: b.$border-default) {
-  border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
 }
 
 @mixin border-bottom-right-radius($radius: b.$border-default) {
-  border-bottom-right-radius: $radius;
+	border-bottom-right-radius: $radius;
 }
 
 @mixin border-radius-sm {
-  border-radius: b.$border-sm;
+	border-radius: b.$border-sm;
 }
 
 @mixin border-radius-md {
-  border-radius: b.$border-md;
+	border-radius: b.$border-md;
 }
 
 @mixin border-radius-lg {
-  border-radius: b.$border-lg;
+	border-radius: b.$border-lg;
 }
 
 @mixin border-radius-full {
-  border-radius: b.$border-full;
+	border-radius: b.$border-full;
 }
 
 @mixin border-radius-circle {
-  border-radius: b.$border-circle;
+	border-radius: b.$border-circle;
 }
 
 @mixin border-radius-none {
-  border-radius: b.$border-none;
+	border-radius: b.$border-none;
 }
