@@ -2,275 +2,310 @@
 
 // font family
 .font-primary {
-  font-family: var(--font-primary);
+	font-family: var(--font-primary);
 }
 
 .font-secondary {
-  font-family: var(--font-secondary);
+	font-family: var(--font-secondary);
 }
 
 .font-tertiary {
-  font-family: var(--font-tertiary);
+	font-family: var(--font-tertiary);
 }
 
 //text alignment
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .text#{$breakpoint}-left {
-      text-align: left;
-    }
+		.text#{$breakpoint}-left {
+			text-align: left;
+		}
 
-    .text#{$breakpoint}-right {
-      text-align: right;
-    }
+		.text#{$breakpoint}-right {
+			text-align: right;
+		}
 
-    .text#{$breakpoint}-center {
-      text-align: center;
-    }
+		.text#{$breakpoint}-center {
+			text-align: center;
+		}
 
-    .text#{$breakpoint}-justify {
-      text-align: justify;
-    }
+		.text#{$breakpoint}-justify {
+			text-align: justify;
+		}
 
-    .text#{$breakpoint}-start {
-      text-align: start;
-    }
+		.text#{$breakpoint}-start {
+			text-align: start;
+		}
 
-    .text#{$breakpoint}-end {
-      text-align: end;
-    }
-  }
+		.text#{$breakpoint}-end {
+			text-align: end;
+		}
+	}
 }
 
 //text decotarion
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .text#{$breakpoint}-underline {
-      text-decoration: underline;
-    }
+		.text#{$breakpoint}-underline {
+			text-decoration: underline;
 
-    .text#{$breakpoint}-overline {
-      text-decoration: overline;
-    }
+			&-hover {
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 
-    .text#{$breakpoint}-line-through {
-      text-decoration: line-through;
-    }
+		.text#{$breakpoint}-overline {
+			text-decoration: overline;
 
-    .text#{$breakpoint}-no-underline {
-      text-decoration: none;
-    }
-  }
+			&-hover {
+				&:hover {
+					text-decoration: overline;
+				}
+			}
+		}
+
+		.text#{$breakpoint}-line-through {
+			text-decoration: line-through;
+
+			&-hover {
+				&:hover {
+					text-decoration: line-through;
+				}
+			}
+		}
+
+		.text#{$breakpoint}-no-underline {
+			text-decoration: none;
+
+			&-hover {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
 //text transform
-.text-uppercase {
-  text-transform: uppercase;
-}
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
+		.text#{$breakpoint}-uppercase {
+			text-transform: uppercase;
+		}
 
-.text-lowercase {
-  text-transform: lowercase;
-}
+		.text#{$breakpoint}-lowercase {
+			text-transform: lowercase;
+		}
 
-.text-capitalize {
-  text-transform: capitalize;
-}
+		.text#{$breakpoint}-capitalize {
+			text-transform: capitalize;
+		}
 
-.text-normal-case {
-  text-transform: none;
+		.text#{$breakpoint}-normal-case {
+			text-transform: none;
+		}
+	}
 }
-
 // font-weight
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .font#{$breakpoint}-thin {
-      font-weight: 100;
-    }
+		.font#{$breakpoint}-thin {
+			font-weight: 100;
+		}
 
-    .font#{$breakpoint}-xlight {
-      font-weight: 200;
-    }
+		.font#{$breakpoint}-xlight {
+			font-weight: 200;
+		}
 
-    .font#{$breakpoint}-light {
-      font-weight: 300;
-    }
+		.font#{$breakpoint}-light {
+			font-weight: 300;
+		}
 
-    .font#{$breakpoint}-normal {
-      font-weight: 400;
-    }
+		.font#{$breakpoint}-normal {
+			font-weight: 400;
+		}
 
-    .font#{$breakpoint}-medium {
-      font-weight: 500;
-    }
+		.font#{$breakpoint}-medium {
+			font-weight: 500;
+		}
 
-    .font#{$breakpoint}-sbold {
-      font-weight: 600;
-    }
+		.font#{$breakpoint}-sbold {
+			font-weight: 600;
+		}
 
-    .font#{$breakpoint}-bold {
-      font-weight: 700;
-    }
+		.font#{$breakpoint}-bold {
+			font-weight: 700;
+		}
 
-    .font#{$breakpoint}-xbold {
-      font-weight: 800;
-    }
+		.font#{$breakpoint}-xbold {
+			font-weight: 800;
+		}
 
-    .font#{$breakpoint}-black {
-      font-weight: 900;
-    }
-  }
+		.font#{$breakpoint}-black {
+			font-weight: 900;
+		}
+	}
 }
 
 // line height
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .leading#{$breakpoint}-dense {
-      line-height: 0.8;
-    }
+		.leading#{$breakpoint}-dense {
+			line-height: 0.8;
+		}
 
-    .leading#{$breakpoint}-base {
-      line-height: 1;
-    }
+		.leading#{$breakpoint}-base {
+			line-height: 1;
+		}
 
-    .leading#{$breakpoint}-none {
-      line-height: 0;
-    }
+		.leading#{$breakpoint}-none {
+			line-height: 0;
+		}
 
-    .leading#{$breakpoint}-normal {
-      line-height: 1.125;
-    }
+		.leading#{$breakpoint}-normal {
+			line-height: 1.125;
+		}
 
-    .leading#{$breakpoint}-relaxed {
-      line-height: 1.14;
-    }
+		.leading#{$breakpoint}-relaxed {
+			line-height: 1.14;
+		}
 
-    .leading#{$breakpoint}-spacious {
-      line-height: 1.5;
-    }
+		.leading#{$breakpoint}-spacious {
+			line-height: 1.4;
+		}
 
-    .leading#{$breakpoint}-loose {
-      line-height: 1.8;
-    }
-  }
+		.leading#{$breakpoint}-loose {
+			line-height: 1.8;
+		}
+	}
 }
 
 //letter spacing
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .tracking#{$breakpoint}-tightest {
-      letter-spacing: -0.055em;
-    }
+		.tracking#{$breakpoint}-tightest {
+			letter-spacing: -0.055em;
+		}
 
-    .tracking#{$breakpoint}-tighter {
-      letter-spacing: -0.033em;
-    }
+		.tracking#{$breakpoint}-tighter {
+			letter-spacing: -0.033em;
+		}
 
-    .tracking#{$breakpoint}-tight {
-      letter-spacing: -0.011em;
-    }
+		.tracking#{$breakpoint}-tight {
+			letter-spacing: -0.011em;
+		}
 
-    .tracking#{$breakpoint}-normal {
-      letter-spacing: 0;
-    }
+		.tracking#{$breakpoint}-normal {
+			letter-spacing: 0;
+		}
 
-    .tracking#{$breakpoint}-wide {
-      letter-spacing: 0.011em;
-    }
+		.tracking#{$breakpoint}-wide {
+			letter-spacing: 0.011em;
+		}
 
-    .tracking#{$breakpoint}-wider {
-      letter-spacing: 0.033em;
-    }
-    .tracking#{$breakpoint}-widest {
-      letter-spacing: 0.055em;
-    }
-  }
+		.tracking#{$breakpoint}-wider {
+			letter-spacing: 0.033em;
+		}
+		.tracking#{$breakpoint}-widest {
+			letter-spacing: 0.055em;
+		}
+	}
 }
 
 //list style
 .list-none {
-  list-style: none;
+	list-style: none;
 }
 
 .list-disc {
-  list-style: disc;
+	list-style: disc;
+}
+
+.list-unset {
+	list-style: unset;
 }
 
 // word break & tezt wrao
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .break#{$breakpoint}-word {
-      word-break: break-word;
-      overflow-wrap: break-word;
-    }
+		.break#{$breakpoint}-word {
+			word-break: break-word;
+			overflow-wrap: break-word;
+		}
 
-    .break#{$breakpoint}-all {
-      word-break: break-all;
-    }
+		.break#{$breakpoint}-all {
+			word-break: break-all;
+		}
 
-    .text#{$breakpoint}-warp {
-      white-space: normal;
-    }
+		.text#{$breakpoint}-warp {
+			white-space: normal;
+		}
 
-    .text#{$breakpoint}-no-wrap {
-      white-space: nowrap;
-    }
-  }
+		.text#{$breakpoint}-no-wrap {
+			white-space: nowrap;
+		}
+	}
 }
 
 // vertical alignment
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != '' {
+			$breakpoint: '-' + $breakpoint;
+		}
 
-    .align#{$breakpoint}-baseline {
-      vertical-align: baseline;
-    }
-    .align#{$breakpoint}-top {
-      vertical-align: top;
-    }
-    .align#{$breakpoint}-middle {
-      vertical-align: middle;
-    }
-    .align#{$breakpoint}-bottom {
-      vertical-align: bottom;
-    }
-    .align#{$breakpoint}-text-top {
-      vertical-align: text-top;
-    }
-    .align#{$breakpoint}-text-bottom {
-      vertical-align: text-bottom;
-    }
-    .align#{$breakpoint}-sub {
-      vertical-align: sub;
-    }
-    .align#{$breakpoint}-super {
-      vertical-align: sup;
-    }
-  }
+		.align#{$breakpoint}-baseline {
+			vertical-align: baseline;
+		}
+		.align#{$breakpoint}-top {
+			vertical-align: top;
+		}
+		.align#{$breakpoint}-middle {
+			vertical-align: middle;
+		}
+		.align#{$breakpoint}-bottom {
+			vertical-align: bottom;
+		}
+		.align#{$breakpoint}-text-top {
+			vertical-align: text-top;
+		}
+		.align#{$breakpoint}-text-bottom {
+			vertical-align: text-bottom;
+		}
+		.align#{$breakpoint}-sub {
+			vertical-align: sub;
+		}
+		.align#{$breakpoint}-super {
+			vertical-align: sup;
+		}
+	}
 }

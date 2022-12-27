@@ -2,35 +2,35 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  border: 0 solid var(--transparent);
+	box-sizing: border-box;
+	border: 0 solid var(--transparent);
 }
 
 html,
 body {
-  height: 100%;
-  scroll-behavior: smooth;
+	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: f.$font-size;
-  font-family: f.$font-family;
-  line-height: f.$line-height;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-size: f.$font-size;
+	font-family: f.$font-family;
+	line-height: f.$line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img,
 video {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 a,
 span {
-  display: inline-block;
+	display: inline-block;
 }
 
 input,
@@ -38,12 +38,16 @@ button,
 textarea,
 select,
 a {
-  font-family: inherit;
-  line-height: inherit;
+	font-family: inherit;
+	line-height: inherit;
 }
 
 input {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+table {
+	border-collapse: collapse;
 }

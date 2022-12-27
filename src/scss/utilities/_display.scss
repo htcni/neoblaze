@@ -1,47 +1,47 @@
-@use '../helpers/mixins/breakpoints' as m;
+@use "../helpers/mixins/breakpoints" as m;
 
 /*Display*/
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    .d#{$breakpoint}-block {
-      display: block;
-    }
+		.d#{$breakpoint}-block {
+			display: block;
+		}
 
-    .d#{$breakpoint}-inline-block {
-      display: inline-block;
-    }
+		.d#{$breakpoint}-inline-block {
+			display: inline-block;
+		}
 
-    .d#{$breakpoint}-inline {
-      display: inline;
-    }
+		.d#{$breakpoint}-inline {
+			display: inline;
+		}
 
-    .d#{$breakpoint}-flex {
-      display: flex;
-    }
+		.d#{$breakpoint}-flex {
+			display: flex;
+		}
 
-    .d#{$breakpoint}-inline-flex {
-      display: inline-flex;
-    }
+		.d#{$breakpoint}-inline-flex {
+			display: inline-flex;
+		}
 
-    .d#{$breakpoint}-grid {
-      display: grid;
-    }
+		.d#{$breakpoint}-grid {
+			display: grid;
+		}
 
-    .d#{$breakpoint}-contents {
-      display: contents;
-    }
+		.d#{$breakpoint}-contents {
+			display: contents;
+		}
 
-    .d#{$breakpoint}-list-item {
-      display: list-item;
-    }
+		.d#{$breakpoint}-list-item {
+			display: list-item;
+		}
 
-    .d#{$breakpoint}-none {
-      display: none;
-    }
-  }
+		.d#{$breakpoint}-none {
+			display: none;
+		}
+	}
 }

@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use '../helpers/mixins/breakpoints' as m;
+@use "sass:map";
+@use "../helpers/mixins/breakpoints" as m;
 /*
 Spacing Utilities
 p - padding
@@ -13,158 +13,158 @@ y - vertical
 */
 
 $spacing: (
-  'px': 1px,
-  '0': 0,
-  '0\\.5': 0.125rem,
-  '1': 0.25rem,
-  '2': 0.5rem,
-  '3': 0.75rem,
-  '4': 1rem,
-  '5': 1.25rem,
-  '6': 1.5rem,
-  '8': 2rem,
-  '10': 2.5rem,
-  '12': 3rem,
-  '16': 4rem,
-  '20': 5rem,
-  '24': 6rem,
-  '32': 8rem,
-  '40': 10rem,
-  '48': 12rem,
-  '56': 14rem,
-  '64': 16rem,
-  '1\\/2': 50%,
+	"px": 1px,
+	"0": 0,
+	"0\\.5": 0.125rem,
+	"1": 0.25rem,
+	"2": 0.5rem,
+	"3": 0.75rem,
+	"4": 1rem,
+	"5": 1.25rem,
+	"6": 1.5rem,
+	"8": 2rem,
+	"10": 2.5rem,
+	"12": 3rem,
+	"16": 4rem,
+	"20": 5rem,
+	"24": 6rem,
+	"32": 8rem,
+	"40": 10rem,
+	"48": 12rem,
+	"56": 14rem,
+	"64": 16rem,
+	"1\\/2": 50%,
 );
 
 //padding
-$padding-prefixes: 'p', 'pt', 'pr', 'pb', 'pl', 'px', 'py';
+$padding-prefixes: "p", "pt", "pr", "pb", "pl", "px", "py";
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $prefix in $padding-prefixes {
-      @each $token, $size in $spacing {
-        .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == 'p' {
-            padding: $size;
-          } @else if $prefix == 'pt' {
-            padding-top: $size;
-          } @else if $prefix == 'pr' {
-            padding-right: $size;
-          } @else if $prefix == 'pb' {
-            padding-bottom: $size;
-          } @else if $prefix == 'pl' {
-            padding-left: $size;
-          } @else if $prefix == 'px' {
-            padding-left: $size;
-            padding-right: $size;
-          } @else if $prefix == 'py' {
-            padding-top: $size;
-            padding-bottom: $size;
-          }
-        }
-      }
-    }
-  }
+		@each $prefix in $padding-prefixes {
+			@each $token, $size in $spacing {
+				.#{$prefix}#{$breakpoint}-#{$token} {
+					@if $prefix == "p" {
+						padding: $size;
+					} @else if $prefix == "pt" {
+						padding-top: $size;
+					} @else if $prefix == "pr" {
+						padding-right: $size;
+					} @else if $prefix == "pb" {
+						padding-bottom: $size;
+					} @else if $prefix == "pl" {
+						padding-left: $size;
+					} @else if $prefix == "px" {
+						padding-left: $size;
+						padding-right: $size;
+					} @else if $prefix == "py" {
+						padding-top: $size;
+						padding-bottom: $size;
+					}
+				}
+			}
+		}
+	}
 }
 
 // margin
 
-$margin-prefixes: 'm', 'mt', 'mr', 'mb', 'ml', 'mx', 'my';
+$margin-prefixes: "m", "mt", "mr", "mb", "ml", "mx", "my";
 
-$negative-margin-prefixes: '-m', '-mt', '-mr', '-mb', '-ml', '-mx', '-my';
+$negative-margin-prefixes: "-m", "-mt", "-mr", "-mb", "-ml", "-mx", "-my";
 
 $margin-spacing: map.merge(
-  (
-    'auto': auto,
-  ),
-  $spacing
+	(
+		"auto": auto,
+	),
+	$spacing
 );
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $prefix in $margin-prefixes {
-      @each $token, $size in $margin-spacing {
-        .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == 'm' {
-            margin: $size;
-          } @else if $prefix == 'mt' {
-            margin-top: $size;
-          } @else if $prefix == 'mr' {
-            margin-right: $size;
-          } @else if $prefix == 'mb' {
-            margin-bottom: $size;
-          } @else if $prefix == 'ml' {
-            margin-left: $size;
-          } @else if $prefix == 'mx' {
-            margin-left: $size;
-            margin-right: $size;
-          } @else if $prefix == 'my' {
-            margin-top: $size;
-            margin-bottom: $size;
-          }
-        }
-      }
-    }
-    //
-  }
+		@each $prefix in $margin-prefixes {
+			@each $token, $size in $margin-spacing {
+				.#{$prefix}#{$breakpoint}-#{$token} {
+					@if $prefix == "m" {
+						margin: $size;
+					} @else if $prefix == "mt" {
+						margin-top: $size;
+					} @else if $prefix == "mr" {
+						margin-right: $size;
+					} @else if $prefix == "mb" {
+						margin-bottom: $size;
+					} @else if $prefix == "ml" {
+						margin-left: $size;
+					} @else if $prefix == "mx" {
+						margin-left: $size;
+						margin-right: $size;
+					} @else if $prefix == "my" {
+						margin-top: $size;
+						margin-bottom: $size;
+					}
+				}
+			}
+		}
+		//
+	}
 }
 
 // Negative spacing map without 0
-$negative-spacing: map.remove($spacing, '0');
+$negative-spacing: map.remove($spacing, "0");
 
 // Negative margins
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $prefix in $negative-margin-prefixes {
-      @each $token, $size in $negative-spacing {
-        .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == '-m' {
-            margin: -$size;
-          } @else if $prefix == '-mt' {
-            margin-top: -$size;
-          } @else if $prefix == '-mr' {
-            margin-right: -$size;
-          } @else if $prefix == '-mb' {
-            margin-bottom: -$size;
-          } @else if $prefix == '-ml' {
-            margin-left: -$size;
-          } @else if $prefix == '-mx' {
-            margin-left: -$size;
-            margin-right: -$size;
-          } @else if $prefix == '-my' {
-            margin-top: -$size;
-            margin-bottom: -$size;
-          }
-        }
-      }
-    }
-  }
+		@each $prefix in $negative-margin-prefixes {
+			@each $token, $size in $negative-spacing {
+				.#{$prefix}#{$breakpoint}-#{$token} {
+					@if $prefix == "-m" {
+						margin: -$size;
+					} @else if $prefix == "-mt" {
+						margin-top: -$size;
+					} @else if $prefix == "-mr" {
+						margin-right: -$size;
+					} @else if $prefix == "-mb" {
+						margin-bottom: -$size;
+					} @else if $prefix == "-ml" {
+						margin-left: -$size;
+					} @else if $prefix == "-mx" {
+						margin-left: -$size;
+						margin-right: -$size;
+					} @else if $prefix == "-my" {
+						margin-top: -$size;
+						margin-bottom: -$size;
+					}
+				}
+			}
+		}
+	}
 }
 
 // Gap for flexbox and grid
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $token, $size in $spacing {
-      .gap#{$breakpoint}-#{$token} {
-        gap: $size;
-      }
-    }
-  }
+		@each $token, $size in $spacing {
+			.gap#{$breakpoint}-#{$token} {
+				gap: $size;
+			}
+		}
+	}
 }

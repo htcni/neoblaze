@@ -1,29 +1,29 @@
-@use '../helpers/functions' as f;
+@use "../helpers/functions" as f;
 
 .avatar {
-  display: inline-block;
-  width: f.rem(24px);
-  height: f.rem(24px);
-  background-color: var(--bg-primary);
-  vertical-align: middle;
+	display: inline-block;
+	width: f.rem(24px);
+	height: f.rem(24px);
+	background-color: var(--bg-primary);
+	vertical-align: middle;
 
-  &.avatar-sm {
-    width: f.rem(18px);
-    height: f.rem(18px);
-  }
+	&.avatar-sm {
+		width: f.rem(18px);
+		height: f.rem(18px);
+	}
 
-  &.avatar-md {
-    width: f.rem(32px);
-    height: f.rem(32px);
-  }
+	&.avatar-md {
+		width: f.rem(32px);
+		height: f.rem(32px);
+	}
 
-  &.avatar-lg {
-    width: f.rem(48px);
-    height: f.rem(48px);
-  }
+	&.avatar-lg {
+		width: f.rem(48px);
+		height: f.rem(48px);
+	}
 
-  &.avatar-xl {
-    width: f.rem(64px);
-    height: f.rem(64px);
-  }
+	&.avatar-xl {
+		width: f.rem(64px);
+		height: f.rem(64px);
+	}
 }

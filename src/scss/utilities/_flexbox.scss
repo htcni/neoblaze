@@ -1,152 +1,152 @@
-@use '../helpers/mixins/breakpoints' as m;
+@use "../helpers/mixins/breakpoints" as m;
 
 /*Flexbox*/
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    .flex#{$breakpoint}-row {
-      flex-direction: row;
-    }
-    .flex#{$breakpoint}-row-reverse {
-      flex-direction: row-reverse;
-    }
-    .flex#{$breakpoint}-column {
-      flex-direction: column;
-    }
-    .flex#{$breakpoint}-column-reverse {
-      flex-direction: column-reverse;
-    }
+		.flex#{$breakpoint}-row {
+			flex-direction: row;
+		}
+		.flex#{$breakpoint}-row-reverse {
+			flex-direction: row-reverse;
+		}
+		.flex#{$breakpoint}-column {
+			flex-direction: column;
+		}
+		.flex#{$breakpoint}-column-reverse {
+			flex-direction: column-reverse;
+		}
 
-    .flex#{$breakpoint}-wrap {
-      flex-wrap: wrap;
-    }
-    .flex#{$breakpoint}-nowrap {
-      flex-wrap: nowrap;
-    }
-    .flex#{$breakpoint}-wrap-reverse {
-      flex-wrap: wrap-reverse;
-    }
+		.flex#{$breakpoint}-wrap {
+			flex-wrap: wrap;
+		}
+		.flex#{$breakpoint}-nowrap {
+			flex-wrap: nowrap;
+		}
+		.flex#{$breakpoint}-wrap-reverse {
+			flex-wrap: wrap-reverse;
+		}
 
-    .flex#{$breakpoint}-justify-start {
-      justify-content: flex-start;
-    }
-    .flex#{$breakpoint}-justify-end {
-      justify-content: flex-end;
-    }
-    .flex#{$breakpoint}-justify-center {
-      justify-content: center;
-    }
-    .flex#{$breakpoint}-justify-between {
-      justify-content: space-between;
-    }
-    .flex#{$breakpoint}-justify-evenly {
-      justify-content: space-evenly;
-    }
-    .flex#{$breakpoint}-justify-stretch {
-      justify-content: stretch;
-    }
+		.flex#{$breakpoint}-justify-start {
+			justify-content: flex-start;
+		}
+		.flex#{$breakpoint}-justify-end {
+			justify-content: flex-end;
+		}
+		.flex#{$breakpoint}-justify-center {
+			justify-content: center;
+		}
+		.flex#{$breakpoint}-justify-between {
+			justify-content: space-between;
+		}
+		.flex#{$breakpoint}-justify-evenly {
+			justify-content: space-evenly;
+		}
+		.flex#{$breakpoint}-justify-stretch {
+			justify-content: stretch;
+		}
 
-    .flex#{$breakpoint}-items-start {
-      align-items: flex-start;
-    }
-    .flex#{$breakpoint}-items-end {
-      align-items: flex-end;
-    }
-    .flex#{$breakpoint}-items-center {
-      align-items: center;
-    }
-    .flex#{$breakpoint}-items-baseline {
-      align-items: baseline;
-    }
-    .flex#{$breakpoint}-items-stretch {
-      align-items: stretch;
-    }
+		.flex#{$breakpoint}-items-start {
+			align-items: flex-start;
+		}
+		.flex#{$breakpoint}-items-end {
+			align-items: flex-end;
+		}
+		.flex#{$breakpoint}-items-center {
+			align-items: center;
+		}
+		.flex#{$breakpoint}-items-baseline {
+			align-items: baseline;
+		}
+		.flex#{$breakpoint}-items-stretch {
+			align-items: stretch;
+		}
 
-    .flex#{$breakpoint}-content-start {
-      align-content: flex-start;
-    }
-    .flex#{$breakpoint}-content-end {
-      align-content: flex-end;
-    }
-    .flex#{$breakpoint}-content-center {
-      align-content: center;
-    }
-    .flex#{$breakpoint}-content-between {
-      align-content: space-between;
-    }
-    .flex#{$breakpoint}-content-around {
-      align-content: space-around;
-    }
-    .flex#{$breakpoint}-content-stretch {
-      align-content: stretch;
-    }
+		.flex#{$breakpoint}-content-start {
+			align-content: flex-start;
+		}
+		.flex#{$breakpoint}-content-end {
+			align-content: flex-end;
+		}
+		.flex#{$breakpoint}-content-center {
+			align-content: center;
+		}
+		.flex#{$breakpoint}-content-between {
+			align-content: space-between;
+		}
+		.flex#{$breakpoint}-content-around {
+			align-content: space-around;
+		}
+		.flex#{$breakpoint}-content-stretch {
+			align-content: stretch;
+		}
 
-    // Item
-    .flex#{$breakpoint}-1 {
-      flex: 1;
-    }
-    .flex#{$breakpoint}-auto {
-      flex: auto;
-    }
-    .flex#{$breakpoint}-grow-0 {
-      flex-grow: 0;
-    }
-    .flex#{$breakpoint}-shrink-0 {
-      flex-shrink: 0;
-    }
-    .flex#{$breakpoint}-grow-1 {
-      flex-grow: 1;
-    }
-    .flex#{$breakpoint}-shrink-1 {
-      flex-shrink: 1;
-    }
+		// Item
+		.flex#{$breakpoint}-1 {
+			flex: 1;
+		}
+		.flex#{$breakpoint}-auto {
+			flex: auto;
+		}
+		.flex#{$breakpoint}-grow-0 {
+			flex-grow: 0;
+		}
+		.flex#{$breakpoint}-shrink-0 {
+			flex-shrink: 0;
+		}
+		.flex#{$breakpoint}-grow-1 {
+			flex-grow: 1;
+		}
+		.flex#{$breakpoint}-shrink-1 {
+			flex-shrink: 1;
+		}
 
-    .flex#{$breakpoint}-self-auto {
-      align-self: auto;
-    }
-    .flex#{$breakpoint}-self-start {
-      align-self: flex-start;
-    }
-    .flex#{$breakpoint}-self-end {
-      align-self: flex-end;
-    }
-    .flex#{$breakpoint}-self-center {
-      align-self: center;
-    }
-    .flex#{$breakpoint}-self-baseline {
-      align-self: baseline;
-    }
-    .flex#{$breakpoint}-self-stretch {
-      align-self: stretch;
-    }
+		.flex#{$breakpoint}-self-auto {
+			align-self: auto;
+		}
+		.flex#{$breakpoint}-self-start {
+			align-self: flex-start;
+		}
+		.flex#{$breakpoint}-self-end {
+			align-self: flex-end;
+		}
+		.flex#{$breakpoint}-self-center {
+			align-self: center;
+		}
+		.flex#{$breakpoint}-self-baseline {
+			align-self: baseline;
+		}
+		.flex#{$breakpoint}-self-stretch {
+			align-self: stretch;
+		}
 
-    .flex#{$breakpoint}-order-1 {
-      order: 1;
-    }
-    .flex#{$breakpoint}-order-2 {
-      order: 2;
-    }
-    .flex#{$breakpoint}-order-3 {
-      order: 3;
-    }
-    .flex#{$breakpoint}-order-4 {
-      order: 4;
-    }
-    .flex#{$breakpoint}-order-5 {
-      order: 5;
-    }
-    .flex#{$breakpoint}-order-first {
-      order: -999;
-    }
-    .flex#{$breakpoint}-order-last {
-      order: 999;
-    }
-    .flex#{$breakpoint}-order-none {
-      order: 0;
-    }
-  }
+		.flex#{$breakpoint}-order-1 {
+			order: 1;
+		}
+		.flex#{$breakpoint}-order-2 {
+			order: 2;
+		}
+		.flex#{$breakpoint}-order-3 {
+			order: 3;
+		}
+		.flex#{$breakpoint}-order-4 {
+			order: 4;
+		}
+		.flex#{$breakpoint}-order-5 {
+			order: 5;
+		}
+		.flex#{$breakpoint}-order-first {
+			order: -999;
+		}
+		.flex#{$breakpoint}-order-last {
+			order: 999;
+		}
+		.flex#{$breakpoint}-order-none {
+			order: 0;
+		}
+	}
 }

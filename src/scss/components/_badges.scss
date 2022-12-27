@@ -1,75 +1,75 @@
 .badge {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
-  border-radius: 2rem;
-  font-size: 0.75rem;
-  text-align: center;
-  background-color: var(--default);
+	min-width: 0.875rem;
+	min-height: 0.875rem;
+	border-radius: 2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	background-color: var(--default);
 
-  &-primary {
-    background-color: var(--primary);
-    color: var(--white);
-  }
+	&-primary {
+		background-color: var(--primary);
+		color: var(--white);
+	}
 
-  &-secondary {
-    background-color: var(--secondary);
-    color: var(--white);
-  }
+	&-secondary {
+		background-color: var(--secondary);
+		color: var(--white);
+	}
 
-  &-tertiary {
-    background-color: var(--tertiary);
-    color: var(--white);
-  }
+	&-tertiary {
+		background-color: var(--tertiary);
+		color: var(--white);
+	}
 
-  &-info {
-    background-color: var(--info);
-    color: var(--white);
-  }
+	&-info {
+		background-color: var(--info);
+		color: var(--white);
+	}
 
-  &-warning {
-    background-color: var(--warning);
-    color: var(--white);
-  }
+	&-warning {
+		background-color: var(--warning);
+		color: var(--white);
+	}
 
-  &-danger {
-    background-color: var(--danger);
-    color: var(--white);
-  }
+	&-danger {
+		background-color: var(--danger);
+		color: var(--white);
+	}
 
-  &-success {
-    background-color: var(--success);
-    color: var(--white);
-  }
+	&-success {
+		background-color: var(--success);
+		color: var(--white);
+	}
 
-  &-neutral {
-    background-color: var(--neutral);
-    color: var(--white);
-  }
+	&-neutral {
+		background-color: var(--neutral);
+		color: var(--white);
+	}
 
-  &-black {
-    background-color: var(--black);
-    color: var(--white);
-  }
+	&-black {
+		background-color: var(--black);
+		color: var(--white);
+	}
 
-  &-white {
-    background-color: var(--white);
-    color: var(--black);
-  }
+	&-white {
+		background-color: var(--white);
+		color: var(--black);
+	}
 
-  &.badge-text {
-    font-size: 0.75rem;
-    min-width: 16px;
-    min-height: 16px;
-    padding: 1px 4px;
-    line-height: 1.2;
-    color: var(--white);
-  }
+	&.badge-text {
+		font-size: 0.75rem;
+		min-width: 16px;
+		min-height: 16px;
+		padding: 1px 4px;
+		line-height: 1.2;
+		color: var(--white);
+	}
 
-  &-parent {
-    position: relative;
-  }
+	&-parent {
+		position: relative;
+	}
 
-  &__child {
-    position: absolute;
-  }
+	&__child {
+		position: absolute;
+	}
 }

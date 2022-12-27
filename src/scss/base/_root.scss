@@ -1,21 +1,21 @@
-@use '../helpers/variables/theme_colors' as t;
+@use "../helpers/variables/theme_colors" as t;
 :root {
-  // Fonts
+	// Fonts
 
-  --font-primary: 'Satoshi', sans-serif;
-  --font-secondary: 'Sentient', serif;
-  --font-tertiary: 'Switzer', sans-serif;
+	--font-primary: "Satoshi", sans-serif;
+	--font-secondary: "Sentient", serif;
+	--font-tertiary: "Switzer", sans-serif;
 
-  //COLORS
-  @each $color, $value in t.$base-colors {
-    #{"--" + $color}: #{$value};
-  }
+	//COLORS
+	@each $color, $value in t.$base-colors {
+		#{"--" + $color}: #{$value};
+	}
 
-  @each $color, $value in t.$theme-colors {
-    #{"--" + $color}: #{$value};
-  }
+	@each $color, $value in t.$theme-colors {
+		#{"--" + $color}: #{$value};
+	}
 
-  // Menu navigation
-  --active-link-color: var(--default);
-  --active-link-bgColor: var(--default--ultra);
+	// Menu navigation
+	--active-link-color: var(--default);
+	--active-link-bgColor: var(--default--ultra);
 }

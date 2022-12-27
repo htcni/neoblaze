@@ -1,26 +1,26 @@
-@use '../helpers/mixins/shadow' as s;
+@use "../helpers/mixins/shadow" as s;
 .shadow {
-  @include s.shadow;
+	@include s.shadow;
 
-  &-sm {
-    @include s.shadow-sm;
-  }
+	&-sm {
+		@include s.shadow-sm;
+	}
 
-  &-md {
-    @include s.shadow-md;
-  }
-  &-lg {
-    @include s.shadow-lg;
-  }
+	&-md {
+		@include s.shadow-md;
+	}
+	&-lg {
+		@include s.shadow-lg;
+	}
 
-  &-xl {
-    @include s.shadow-xl;
-  }
+	&-xl {
+		@include s.shadow-xl;
+	}
 
-  &-inner {
-    @include s.shadow-inner;
-  }
-  &-none {
-    @include s.shadow-none;
-  }
+	&-inner {
+		@include s.shadow-inner;
+	}
+	&-none {
+		@include s.shadow-none;
+	}
 }

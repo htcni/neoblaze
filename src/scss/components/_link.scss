@@ -1,50 +1,49 @@
 .link {
-  color: var(--link-default);
+	color: var(--link-default);
 
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 
-  &:focus-visible {
-    text-decoration: underline;
-    outline: 2px solid var(--primary);
-    outline-offset: 2px;
-  }
+	&:focus-visible {
+		text-decoration: underline;
+		outline: 2px solid var(--primary);
+		outline-offset: 2px;
+	}
 
-  &-primary {
-    color: var(--primary);
-  }
+	&-primary {
+		color: var(--primary);
+	}
 
-  &-secondary {
-    color: var(--secondary);
-  }
+	&-secondary {
+		color: var(--secondary);
+	}
 
-  &-info {
-    color: var(--info);
-  }
+	&-info {
+		color: var(--info);
+	}
 
-  &-success {
-    color: var(--success);
-  }
+	&-success {
+		color: var(--success);
+	}
 
-  &-danger {
-    color: var(--danger);
-  }
+	&-danger {
+		color: var(--danger);
+	}
 
-  &-warning {
-    color: var(--warning);
-  }
+	&-warning {
+		color: var(--warning);
+	}
 
-  &-neutral {
-    color: var(--neutral);
-  }
+	&-neutral {
+		color: var(--neutral);
+	}
 
-  &-black {
-    color: var(--black);
-  }
+	&-black {
+		color: var(--black);
+	}
 
-  &-white {
-    color: var(--white);
-  }
+	&-white {
+		color: var(--white);
+	}
 }

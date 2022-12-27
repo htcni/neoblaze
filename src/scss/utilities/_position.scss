@@ -1,134 +1,134 @@
-@use '../helpers/mixins/breakpoints' as m;
-@use 'sass:map';
+@use "../helpers/mixins/breakpoints" as m;
+@use "sass:map";
 
 /*Pos*/
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    .position#{$breakpoint}-static {
-      position: static;
-    }
+		.position#{$breakpoint}-static {
+			position: static;
+		}
 
-    .position#{$breakpoint}-relative {
-      position: relative;
-    }
+		.position#{$breakpoint}-relative {
+			position: relative;
+		}
 
-    .position#{$breakpoint}-absolute {
-      position: absolute;
-    }
+		.position#{$breakpoint}-absolute {
+			position: absolute;
+		}
 
-    .position#{$breakpoint}-fixed {
-      position: fixed;
-    }
+		.position#{$breakpoint}-fixed {
+			position: fixed;
+		}
 
-    .position#{$breakpoint}-sticky {
-      position: sticky;
-    }
+		.position#{$breakpoint}-sticky {
+			position: sticky;
+		}
 
-    .translate#{$breakpoint}-middle {
-      transform: translate(-50%, -50%);
-    }
+		.translate#{$breakpoint}-middle {
+			transform: translate(-50%, -50%);
+		}
 
-    .translate#{$breakpoint}-middle-x {
-      transform: translateX(-50%);
-    }
+		.translate#{$breakpoint}-middle-x {
+			transform: translateX(-50%);
+		}
 
-    .translate#{$breakpoint}-middle-y {
-      transform: translateY(-50%);
-    }
-  }
+		.translate#{$breakpoint}-middle-y {
+			transform: translateY(-50%);
+		}
+	}
 }
 
 // positions
 
 $position-values: (
-  'px': 1px,
-  '0': 0,
-  '0\\.5': 0.125rem,
-  '1': 0.25rem,
-  '2': 0.5rem,
-  '3': 0.75rem,
-  '4': 1rem,
-  '50': 50%,
-  '100': 100%,
-  'unset': unset,
+	"px": 1px,
+	"0": 0,
+	"0\\.5": 0.125rem,
+	"1": 0.25rem,
+	"2": 0.5rem,
+	"3": 0.75rem,
+	"4": 1rem,
+	"50": 50%,
+	"100": 100%,
+	"unset": unset,
 );
 
-$position-prefixes: 'top', 'right', 'bottom', 'left', 'inset', 'inset-x',
-  'inset-y';
+$position-prefixes: "top", "right", "bottom", "left", "inset", "inset-x",
+	"inset-y";
 
-$negative-position-prefixes: '-top', '-right', '-bottom', '-left', '-inset',
-  '-inset-x', '-inset-y';
+$negative-position-prefixes: "-top", "-right", "-bottom", "-left", "-inset",
+	"-inset-x", "-inset-y";
 
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $prefix in $position-prefixes {
-      @each $token, $value in $position-values {
-        .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == 'top' {
-            top: $value;
-          } @else if $prefix == 'right' {
-            right: $value;
-          } @else if $prefix == 'bottom' {
-            bottom: $value;
-          } @else if $prefix == 'left' {
-            left: $value;
-          } @else if $prefix == 'inset' {
-            inset: $value;
-          } @else if $prefix == 'inset-x' {
-            left: $value;
-            right: $value;
-          } @else if $prefix == 'inset-y' {
-            top: $value;
-            bottom: $value;
-          }
-        }
-      }
-    }
-    //
-  }
+		@each $prefix in $position-prefixes {
+			@each $token, $value in $position-values {
+				.#{$prefix}#{$breakpoint}-#{$token} {
+					@if $prefix == "top" {
+						top: $value;
+					} @else if $prefix == "right" {
+						right: $value;
+					} @else if $prefix == "bottom" {
+						bottom: $value;
+					} @else if $prefix == "left" {
+						left: $value;
+					} @else if $prefix == "inset" {
+						inset: $value;
+					} @else if $prefix == "inset-x" {
+						left: $value;
+						right: $value;
+					} @else if $prefix == "inset-y" {
+						top: $value;
+						bottom: $value;
+					}
+				}
+			}
+		}
+		//
+	}
 }
 
 // Negative spacing map without 0
-$negative-position: map.remove($position-values, '0');
+$negative-position: map.remove($position-values, "0");
 
 // Negative margins
 @each $breakpoint, $screen-size in m.$breakpoints {
-  @include m.mq($breakpoint) {
-    @if $breakpoint != '' {
-      $breakpoint: '-' + $breakpoint;
-    }
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
 
-    @each $prefix in $negative-position-prefixes {
-      @each $token, $value in $negative-position {
-        .#{$prefix}#{$breakpoint}-#{$token} {
-          @if $prefix == '-top' {
-            top: -$value;
-          } @else if $prefix == '-right' {
-            right: -$value;
-          } @else if $prefix == '-bottom' {
-            bottom: -$value;
-          } @else if $prefix == '-left' {
-            left: -$value;
-          } @else if $prefix == '-inset' {
-            inset: -$value;
-          } @else if $prefix == '-inset-x' {
-            left: -$value;
-            right: -$value;
-          } @else if $prefix == '-inset-y' {
-            top: -$value;
-            bottom: -$value;
-          }
-        }
-      }
-    }
-  }
+		@each $prefix in $negative-position-prefixes {
+			@each $token, $value in $negative-position {
+				.#{$prefix}#{$breakpoint}-#{$token} {
+					@if $prefix == "-top" {
+						top: -$value;
+					} @else if $prefix == "-right" {
+						right: -$value;
+					} @else if $prefix == "-bottom" {
+						bottom: -$value;
+					} @else if $prefix == "-left" {
+						left: -$value;
+					} @else if $prefix == "-inset" {
+						inset: -$value;
+					} @else if $prefix == "-inset-x" {
+						left: -$value;
+						right: -$value;
+					} @else if $prefix == "-inset-y" {
+						top: -$value;
+						bottom: -$value;
+					}
+				}
+			}
+		}
+	}
 }

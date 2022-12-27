@@ -1,101 +1,101 @@
 @use '../helpers' as m;
 
 $typography: (
-  display: (
-    default: (
-      xl: 14vw,
-      lg: 12vw,
-      md: 10vw,
-      null: 8vw,
-      sm: 6vw,
-      xs: 4vw,
-    ),
-  ),
-  heading: (
-    default: (
-      3xl: 9rem,
-      2xl: 8rem,
-      xl: 6rem,
-      lg: 4rem,
-      md: 3.5rem,
-      null: 3rem,
-      sm: 2.25rem,
-      xs: 1.5rem,
-    ),
-    md: (
-      3xl: 7rem,
-      2xl: 6rem,
-      xl: 4rem,
-      lg: 3rem,
-      md: 3rem,
-      null: 2.5rem,
-      sm: 1.75rem,
-      xs: 1.25rem,
-    ),
-    sm: (
-      3xl: 5rem,
-      2xl: 4rem,
-      xl: 3rem,
-      lg: 2.5rem,
-      md: 2rem,
-      null: 2rem,
-      sm: 1.5rem,
-      xs: 1.125,
-    ),
-  ),
-  title: (
-    default: (
-      xl: 2.25rem,
-      lg: 2rem,
-      md: 1.75rem,
-      null: 1.5rem,
-      sm: 1.25rem,
-      xs: 1rem,
-    ),
-  ),
-  body: (
-    default: (
-      xl: 1.375rem,
-      lg: 1.25rem,
-      md: 1.125rem,
-      null: 1rem,
-      sm: 0.875rem,
-      xs: 0.75rem,
-    ),
-    md: (
-      xl: 1.25rem,
-      lg: 1.125rem,
-      md: 1.063rem,
-    ),
-  ),
-  label: (
-    default: (
-      xl: 1.25rem,
-      lg: 1.125rem,
-      md: 1rem,
-      null: 0.875rem,
-      sm: 0.75rem,
-      xs: 0.625rem,
-    ),
-  ),
+	display: (
+		default: (
+			xl: 14vw,
+			lg: 12vw,
+			md: 10vw,
+			null: 8vw,
+			sm: 6vw,
+			xs: 4vw,
+		),
+	),
+	heading: (
+		default: (
+			3xl: 9rem,
+			2xl: 8rem,
+			xl: 6rem,
+			lg: 4rem,
+			md: 3.5rem,
+			null: 3rem,
+			sm: 2.25rem,
+			xs: 1.5rem,
+		),
+		md: (
+			3xl: 7rem,
+			2xl: 6rem,
+			xl: 4rem,
+			lg: 3rem,
+			md: 3rem,
+			null: 2.5rem,
+			sm: 1.75rem,
+			xs: 1.25rem,
+		),
+		sm: (
+			3xl: 5rem,
+			2xl: 4rem,
+			xl: 3rem,
+			lg: 2.5rem,
+			md: 2rem,
+			null: 2rem,
+			sm: 1.5rem,
+			xs: 1.125rem,
+		),
+	),
+	title: (
+		default: (
+			xl: 2rem,
+			lg: 1.875rem,
+			md: 1.75rem,
+			null: 1.5rem,
+			sm: 1.25rem,
+			xs: 1rem,
+		),
+	),
+	body: (
+		default: (
+			xl: 1.375rem,
+			lg: 1.25rem,
+			md: 1.125rem,
+			null: 1rem,
+			sm: 0.875rem,
+			xs: 0.75rem,
+		),
+		md: (
+			xl: 1.25rem,
+			lg: 1.125rem,
+			md: 1.063rem,
+		),
+	),
+	label: (
+		default: (
+			xl: 1.25rem,
+			lg: 1.125rem,
+			md: 1rem,
+			null: 0.875rem,
+			sm: 0.75rem,
+			xs: 0.625rem,
+		),
+	),
 );
 
 @each $name, $breakpoints in $typography {
-  @each $screen-size, $type-scale in $breakpoints {
-    @if $screen-size != default {
-      @include m.mq($screen-size) {
-        @each $size, $value in $type-scale {
-          .#{if($size, $name + '-' + $size, $name)} {
-            font-size: $value;
-          }
-        }
-      }
-    } @else {
-      @each $size, $value in $type-scale {
-        .#{if($size, $name + '-' + $size, $name)} {
-          font-size: $value;
-        }
-      }
-    }
-  }
+	@each $screen-size, $type-scale in $breakpoints {
+		@if $screen-size != default {
+			@include m.mq($screen-size) {
+				@each $size, $value in $type-scale {
+					.#{if($size, $name + '-' + $size, $name)} {
+						font-size: $value;
+					}
+				}
+			}
+		} @else {
+			@each $size, $value in $type-scale {
+				.#{if($size, $name + '-' + $size, $name)} {
+					font-size: $value;
+				}
+			}
+		}
+	}
 }

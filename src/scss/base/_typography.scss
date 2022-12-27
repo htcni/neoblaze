@@ -1,4 +1,4 @@
-@use '../helpers/variables/font' as f;
+@use "../helpers/variables/font" as f;
 
 h1,
 h2,
@@ -6,27 +6,27 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  font-size: inherit;
-  font-weight: f.$heading-weight;
+	margin: 0;
+	font-size: inherit;
+	font-weight: f.$heading-weight;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
