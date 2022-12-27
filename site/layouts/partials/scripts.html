@@ -1,0 +1,2 @@
+{{ $js := resources.Get "js/site.js" }}
+<script src="{{ $js.Permalink | relURL }}"></script>

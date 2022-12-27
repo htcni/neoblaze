@@ -1,0 +1,29 @@
+<!-- prettier-ignore -->
+{{ $type := .Get "type" }}
+{{ $alert := ""}}
+{{ $icon := "ri-edit-2-line"}}
+
+{{ if eq $type "note" }}
+	{{ $alert = "" }}
+{{ else if eq $type  "info" }}
+	{{ $alert = "alert-info" }}
+	{{ $icon = "ri-information-line"}}
+{{ else if eq $type  "tip" }}
+	{{ $alert = "alert-success" }}
+	{{ $icon = "ri-lightbulb-line"}}
+{{ else if eq $type  "warning" }}
+	{{ $alert = "alert-warning" }}
+{{ else if eq $type  "caution" }}
+	{{ $alert = "alert-danger" }}
+	{{ $icon = "ri-fire-fill"}}
+{{ end}}
+
+<div class="callout alert alert-stripe {{ $alert }}">
+	<div class="font-bold d-flex flex-items-center gap-2">
+		<span class="icon label-xl">
+			<i class="{{ $icon }}"></i>
+		</span>
+		<span class="text-uppercase">{{ $type }}</span>
+	</div>
+	{{ .Inner|markdownify }}
+</div>

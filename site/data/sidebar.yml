@@ -1,0 +1,64 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+    - title: Installation
+
+- title: Foundations
+  pages:
+    - title: Overview
+    - title: Typography
+    - title: Colors
+
+- title: Customize
+  pages:
+    - title: Overview
+    - title: Sass
+    - title: Options
+    - title: Color
+    - title: Color modes
+    - title: Components
+    - title: CSS variables
+    - title: Optimize
+
+- title: Layout
+  pages:
+    - title: Breakpoints
+    - title: Containers
+    - title: Grid
+    - title: Columns
+    - title: Gutters
+    - title: Utilities
+
+- title: Components
+  pages:
+    - title: Accordion
+    - title: Alerts
+    - title: Avatars
+    - title: Badge
+    - title: Box
+    - title: Buttons
+    - title: Button group
+    - title: Card
+    - title: Chips
+    - title: Links
+    - title: Modal
+    - title: Navigation
+    - title: Toasts
+
+- title: Utilities
+  pages:
+    - title: API
+    - title: Background
+    - title: Borders
+    - title: Colors
+    - title: Display
+    - title: Flex
+    - title: Float
+    - title: Interactions
+    - title: Object fit
+    - title: Opacity
+    - title: Overflow
+    - title: Position
+    - title: Shadows
+    - title: Sizing
+    - title: Spacing

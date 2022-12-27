@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="layout layout-2-col--fixed-aside-left">
+	<aside class="layout-aside width-16 d-flex flex-column">
+		{{ partial "docs-sidebar" . }}
+	</aside>
+	<main class="layout-main">
+		<header class="layout layout-2-col md-break p-2 gap-2 container-lg mx-auto">
+			<div class="layout-main rounded-md {{ printf "%s" $.Params.titleBG}}">
+				<div class="d-flex flex-column flex-justify-center p-12 height-full">
+					<h1 class="heading-xl font-sbold tracking-tight">{{ .Title }}</h1>
+					<h3 class="heading-xs font-normal">{{ .Params.subtitle }}</h3>
+				</div>
+			</div>
+			<div class="layout-aside rounded-md min-height-30 min-md-height-unset pb-md-1/2" style="background-image:url('https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMDItMTYuanBn.jpg');"></div>
+		</header>
+		<section class="container mx-auto layout layout-2-col--fixed-aside-right md-break-reverse p-6 p-sm-0 mt-6">
+			<div class="docs-section layout-main ml-md-0 ml-12 px-6 min-width-0 overflow-auto">
+			{{ .Content }}
+			</div>
+			<aside class="layout-aside width-16">
+				{{ partial "toc" . }}
+			</aside>
+		</section>
+	</main>
+
+{{ end }}

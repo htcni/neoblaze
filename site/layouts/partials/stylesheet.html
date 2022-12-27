@@ -1,0 +1,10 @@
+{{ $style := resources.Get "css/site.css" }}
+<link rel="stylesheet" href="{{ $style.Permalink | relURL }}" />
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+<link
+	href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+	rel="stylesheet"
+/>

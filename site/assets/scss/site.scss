@@ -1,0 +1,125 @@
+@forward '../../../src/scss/neoblaze.scss';
+
+:root {
+	--active-link-color: var(--secondary);
+	--active-link-bgColor: var(--secondary--xlight);
+	--font-primary: 'Inter', sans-serif;
+}
+
+a {
+	color: var(--link-default);
+}
+
+h2 {
+	scroll-margin-top: 4rem;
+}
+
+ol {
+	padding-left: 2rem;
+}
+
+ol > li {
+	list-style: decimal;
+}
+
+.docs-sidebar {
+	position: sticky;
+	top: 4rem;
+	max-height: calc(100vh - 4rem);
+	height: 100%;
+}
+
+#TableOfContents ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	li a {
+		display: flex;
+		padding: 0.25rem;
+		border-radius: 6px;
+		font-size: 14px;
+		color: var(--gray);
+		&:hover {
+			background-color: var(--slate--xlight);
+		}
+	}
+
+	li > ul {
+		margin-left: 0.5rem;
+	}
+}
+
+.bg-code {
+	background-color: #282a36;
+}
+
+.callout a {
+	text-decoration: underline;
+}
+
+code {
+	color: #e53935;
+	background-color: var(--slate--xlight);
+}
+
+pre code {
+	color: inherit;
+	background-color: inherit;
+}
+
+.highlight {
+	overflow: auto;
+	margin: 1rem 0;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 6px;
+	background-color: #282a36;
+}
+
+pre {
+	margin: 0;
+}
+
+pre::before {
+	display: block;
+	margin-bottom: 0.5rem;
+	content: '';
+	background-image: url('/images/dots.svg');
+	background-size: 54px 14px;
+	height: 14px;
+	width: 54px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th,
+td {
+	padding: 8px 16px;
+	border: 1px solid var(--default);
+	color: var(--gray);
+}
+
+th {
+	background-color: var(--slate--xlight);
+}
+
+thead th:first-child {
+	border-top-left-radius: 6px;
+}
+
+thead th:last-child {
+	border-top-right-radius: 6px;
+}
+
+tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 6px;
+}
+
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 6px;
+}

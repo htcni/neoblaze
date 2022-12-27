@@ -1,0 +1,43 @@
+<!-- prettier-ignore -->
+<div class="docs-sidebar">
+<nav class="menu p-4 height-full overflow-y-auto" aria-label="Docs navigation">
+	{{- $url := split .Permalink "/" -}}
+	{{- $page_slug := index $url (sub (len $url) 2) -}}
+
+	<ul class="menu__list">
+	{{- range $group := .Site.Data.sidebar -}}
+		{{- $link := $group.title -}}
+		{{- $link_slug := $link | urlize -}}
+
+		{{- if $group.pages -}}
+			{{- $link = index $group.pages 0 -}}
+			{{- $link_slug = $link.title | urlize -}}
+		{{- end -}}
+
+		{{- $group_slug := $group.title | urlize -}}
+		{{- $is_active_group := eq $.Page.Params.group $group_slug -}}
+
+		{{- if $group.pages }}
+			<li class="menu__list-item accordion" data-accordion="open">
+				<div class="font-bold label-md fg-gray--medium accordion__header px-2 py-1">
+					{{ $group.title }}
+				</div>
+				<div class="accordion__content">
+				<ul class="menu__list mb-4 ml-2">
+					{{- range $doc := $group.pages -}}
+						{{- $doc_slug := $doc.title | urlize -}}
+						{{- $is_active := and $is_active_group (eq $page_slug $doc_slug) -}}
+						{{- $href := printf "/docs/%s/%s/" $group_slug $doc_slug }}
+						<li class="menu__list-item">
+							<a href="{{ $href }}" class="menu__link label fg-gray fg-secondary-hover bg-secondary--xlight-hover {{ if $is_active }} menu__link--active{{ end }}"{{ if $is_active }} aria-current="page"{{ end }}>{{ $doc.title }}</a>
+						</li>
+					{{- end }}
+				</ul>
+				</div>
+			</li>
+		
+		{{- end }}
+	{{- end }}
+	</ul>
+</nav>
+</div>

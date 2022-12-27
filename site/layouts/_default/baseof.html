@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{partial "header" .}}
+	</head>
+	<body>
+		<div class="min-height-full">
+			{{ partial "navbar" }} {{ block "main" .}} {{ end }} {{ partial "scripts"
+			.}}
+		</div>
+	</body>
+</html>
