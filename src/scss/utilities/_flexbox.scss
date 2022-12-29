@@ -43,11 +43,11 @@
 		.flex#{$breakpoint}-justify-between {
 			justify-content: space-between;
 		}
+		.flex#{$breakpoint}-justify-around {
+			justify-content: space-around;
+		}
 		.flex#{$breakpoint}-justify-evenly {
 			justify-content: space-evenly;
-		}
-		.flex#{$breakpoint}-justify-stretch {
-			justify-content: stretch;
 		}
 
 		.flex#{$breakpoint}-items-start {
@@ -81,6 +81,9 @@
 		.flex#{$breakpoint}-content-around {
 			align-content: space-around;
 		}
+		.flex#{$breakpoint}-content-evenly {
+			align-content: space-evenly;
+		}
 		.flex#{$breakpoint}-content-stretch {
 			align-content: stretch;
 		}
@@ -91,6 +94,9 @@
 		}
 		.flex#{$breakpoint}-auto {
 			flex: auto;
+		}
+		.flex#{$breakpoint}-initial {
+			flex: initial;
 		}
 		.flex#{$breakpoint}-grow-0 {
 			flex-grow: 0;
@@ -103,6 +109,9 @@
 		}
 		.flex#{$breakpoint}-shrink-1 {
 			flex-shrink: 1;
+		}
+		.flex#{$breakpoint}-none {
+			flex: none;
 		}
 
 		.flex#{$breakpoint}-self-auto {
@@ -124,6 +133,9 @@
 			align-self: stretch;
 		}
 
+		.flex#{$breakpoint}-order-0 {
+			order: 0;
+		}
 		.flex#{$breakpoint}-order-1 {
 			order: 1;
 		}
@@ -146,7 +158,7 @@
 			order: 999;
 		}
 		.flex#{$breakpoint}-order-none {
-			order: 0;
+			order: inherit;
 		}
 	}
 }
