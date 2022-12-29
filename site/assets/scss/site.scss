@@ -1,9 +1,9 @@
-@forward '../../../src/scss/neoblaze.scss';
+@forward "../../../src/scss/neoblaze.scss";
 
 :root {
 	--active-link-color: var(--secondary);
 	--active-link-bgColor: var(--secondary--xlight);
-	--font-primary: 'Inter', sans-serif;
+	--font-primary: "Inter", sans-serif;
 }
 
 a {
@@ -84,8 +84,8 @@ pre {
 pre::before {
 	display: block;
 	margin-bottom: 0.5rem;
-	content: '';
-	background-image: url('/images/dots.svg');
+	content: "";
+	background-image: url("/images/dots.svg");
 	background-size: 54px 14px;
 	height: 14px;
 	width: 54px;
