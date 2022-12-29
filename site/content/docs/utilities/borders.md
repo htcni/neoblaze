@@ -241,7 +241,7 @@ Use `.rounded-{corner}-{size}` to apply rounded to particular corner.
 
 ##  Border color {.heading-sm .mt-6 .mb-4}
 
-For border color see [colors]({{< ref "/docs/utilities/colors" >}}) utilities
+For border color see [colors]({{< ref "/docs/utilities/colors" >}}) utilities.
 
 ##  SASS {.heading-sm .mt-6 .mb-4}
 
