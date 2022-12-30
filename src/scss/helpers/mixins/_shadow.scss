@@ -1,27 +1,27 @@
+@use "../variables/shadow" as s;
+
 @mixin shadow {
-	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+	box-shadow: s.$shadow;
 }
 
 @mixin shadow-sm {
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 6px 0px;
+	box-shadow: s.$shadow-sm;
 }
 
 @mixin shadow-md {
-	box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 16px;
+	box-shadow: s.$shadow-md;
 }
 @mixin shadow-lg {
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	box-shadow: s.$shadow-lg;
 }
+
 @mixin shadow-xl {
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+	box-shadow: s.$shadow-xl;
 }
 
 @mixin shadow-inner {
-	box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-		rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+	box-shadow: s.$shadow-inner;
 }
 @mixin shadow-none {
-	box-shadow: none;
+	box-shadow: s.$shadow-none;
 }
