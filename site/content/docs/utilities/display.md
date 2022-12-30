@@ -8,19 +8,19 @@ group: utilities
 
 ## Display {.heading-sm .mt-6 .mb-4}
 
-use display utilites to change default display of the element.  
+Use display utilites to change default display of the element.  
 
 Class | Properties
 --- | --- |
-`d-block` | display : block;
-`d-inline-block` | display : inline-block;
-`d-inline` | display : inline;
-`d-flex` | display : flex;
-`d-inline-flex` | display : inline-flex;
-`d-grid` | display : grid;
-`d-contents` | display : contents;
-`d-list-item` | display : list-item;
-`d-none` | display : none;
+`d-block` | display: block;
+`d-inline-block` | display: inline-block;
+`d-inline` | display: inline;
+`d-flex` | display: flex;
+`d-inline-flex` | display: inline-flex;
+`d-grid` | display: grid;
+`d-contents` | display: contents;
+`d-list-item` | display: list-item;
+`d-none` | display: none;
 
 
 #### Start {.title-sm .mt-6 .mb-4}
