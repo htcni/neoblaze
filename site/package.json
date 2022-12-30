@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm-run-all --parallel watch serve",
+		"start": "npm-run-all --parallel compile:sass serve watch",
 		"watch": "npm-run-all --parallel watch:*",
 		"build": "npm-run-all build:*",
 		"watch:sass": "sass --no-source-map --watch assets/scss:assets/css",

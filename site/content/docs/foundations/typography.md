@@ -88,13 +88,31 @@ Type | Default | Medium | Small
 Use `.title` for card title, section title. 
 
 {{< rawhtml >}}
-<div class="d-flex flex-column">
-	<h3 class="title-xl">XL Title</h3>
-	<h3 class="title-lg">LG Title</h3>
-	<h3 class="title-md">MD Title</h3>
-	<h3 class="title">Title</h3>
-	<h3 class="title-sm">SM Title</h3>
-	<h3 class="title-xs">XS Title</h3>
+<div class="d-flex flex-column gap-4">
+	<div class="d-flex flex-column">
+		<span><code>title-xl</code></span>
+		<h3 class="title-xl">The Need To Read</h3>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>title-lg</code></span>
+		<h3 class="title-lg">The Need To Read</h3>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>title-md</code></span>
+		<h3 class="title-md">The Need To Read</h3>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>title</code></span>
+		<h3 class="title">The Need To Read</h3>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>title-sm</code></span>
+		<h3 class="title-sm">The Need To Read</h3>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>title-xs</code></span>
+		<h3 class="title-xs">The Need To Read</h3>
+	</div>
 </div>
 {{< /rawhtml >}}
 
@@ -117,3 +135,95 @@ Type | Default
 `title`     | 1.5rem - 24px    
 `title-sm`  | 1.25rem - 20px 
 `title-xs`  | 1rem - 16px  
+
+
+## Body {.heading-sm .mt-6 .mb-4}
+
+Use `.body` for paragraphs and main text in your site.
+
+{{< rawhtml >}}
+<div class="d-flex flex-column gap-1">
+	<div class="d-flex flex-column">
+		<span><code>body-xl</code></span>
+		<p class="body-xl">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>body-lg</code></span>
+		<p class="body-lg">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>body-md</code></span>
+		<p class="body-md">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>body</code></span>
+		<p class="body">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>body-sm</code></span>
+		<p class="body-sm">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+	<div class="d-flex flex-column">
+		<span><code>body-xs</code></span>
+		<p class="body-xs">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+	</div>
+</div>
+{{< /rawhtml >}}
+
+
+{{< highlight html >}}
+<p class="body-xl">XL Body</p>
+<p class="body-lg">LG Body</p>
+<p class="body-md">MD Body</p>
+<p class="body">Body</p>
+<p class="body-sm">SM Body</p>
+<p class="body-xs">XS Body</p>
+{{< /highlight >}}
+
+
+Type | Default | Medium
+---  | --- | --- |
+`body-xl`  | 1.375rem - 22px | 1.25rem - 20px
+`body-lg`  | 1.25rem - 20px  | 1.125rem - 18px
+`body-md`  | 1.125rem - 18px | 1.063rem - 17px
+`body`     | 1rem - 16px     | -
+`body-sm`  | 0.875rem - 14px | -
+`body-xs`  | 0.75rem - 12px  | -
+
+
+
+## Label {.heading-sm .mt-6 .mb-4}
+
+Use `.label` for smaller text like in buttons, chips etc.
+
+{{< rawhtml >}}
+<div class="d-flex flex-items-center gap-4">
+	<button class="btn btn-primary label-xl">Like</button>
+	<button class="btn btn-primary label-lg">Like</button>
+	<button class="btn btn-primary label-md">Like</button>
+	<span class="label">140K</span>
+	<span class="chip chip-info label-sm">Stable</span>
+	<span class="label-xs">New</span>
+</div>
+{{< /rawhtml >}}
+
+
+{{< highlight html >}}
+<button class="btn btn-primary label-xl">Like</button>
+<button class="btn btn-primary label-lg">Like</button>
+<button class="btn btn-primary label-md">Like</button>
+<span class="label">140K</span>
+<span class="chip chip-info label-sm">Stable</span>
+<span class="label-xs">New</span>
+{{< /highlight >}}
+
+
+Type | Default
+---  | --- |
+`label-xl`  | 1.25rem - 20px
+`label-lg`  | 1.125rem - 18px 
+`label-md`  | 1rem - 16px
+`label`     | 0.875rem - 14px
+`label-sm`  | 0.75 - 12px
+`label-xs`  | 0.625rem - 10px 
+
