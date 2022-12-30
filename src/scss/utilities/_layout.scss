@@ -32,3 +32,84 @@
 		}
 	}
 }
+
+// Floats
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
+
+		.float#{$breakpoint}-left {
+			float: left;
+		}
+		.float#{$breakpoint}-right {
+			float: right;
+		}
+		.float#{$breakpoint}-none {
+			float: none;
+		}
+	}
+}
+
+// clearfix
+.clearfix {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+// vertical alignment
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
+
+		.align#{$breakpoint}-baseline {
+			vertical-align: baseline;
+		}
+		.align#{$breakpoint}-top {
+			vertical-align: top;
+		}
+		.align#{$breakpoint}-middle {
+			vertical-align: middle;
+		}
+		.align#{$breakpoint}-bottom {
+			vertical-align: bottom;
+		}
+		.align#{$breakpoint}-text-top {
+			vertical-align: text-top;
+		}
+		.align#{$breakpoint}-text-bottom {
+			vertical-align: text-bottom;
+		}
+		.align#{$breakpoint}-sub {
+			vertical-align: sub;
+		}
+		.align#{$breakpoint}-super {
+			vertical-align: sup;
+		}
+	}
+}
+
+// Visibility
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
+
+		.visible#{$breakpoint} {
+			visibility: visible;
+		}
+		.hidden#{$breakpoint} {
+			visibility: hidden;
+		}
+		.collapse#{$breakpoint} {
+			visibility: collapse;
+		}
+	}
+}

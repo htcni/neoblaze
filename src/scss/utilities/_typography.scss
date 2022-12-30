@@ -1,4 +1,4 @@
-@use '../helpers/mixins/breakpoints' as m;
+@use "../helpers/mixins/breakpoints" as m;
 
 // font family
 .font-primary {
@@ -16,8 +16,8 @@
 //text alignment
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.text#{$breakpoint}-left {
@@ -49,8 +49,8 @@
 //text decotarion
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.text#{$breakpoint}-underline {
@@ -99,8 +99,8 @@
 //text transform
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 		.text#{$breakpoint}-uppercase {
 			text-transform: uppercase;
@@ -122,8 +122,8 @@
 // font-weight
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.font#{$breakpoint}-thin {
@@ -167,8 +167,8 @@
 // line height
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.leading#{$breakpoint}-dense {
@@ -204,8 +204,8 @@
 //letter spacing
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.tracking#{$breakpoint}-tightest {
@@ -253,8 +253,8 @@
 // word break & tezt wrao
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
 		}
 
 		.break#{$breakpoint}-word {
@@ -272,40 +272,6 @@
 
 		.text#{$breakpoint}-no-wrap {
 			white-space: nowrap;
-		}
-	}
-}
-
-// vertical alignment
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != '' {
-			$breakpoint: '-' + $breakpoint;
-		}
-
-		.align#{$breakpoint}-baseline {
-			vertical-align: baseline;
-		}
-		.align#{$breakpoint}-top {
-			vertical-align: top;
-		}
-		.align#{$breakpoint}-middle {
-			vertical-align: middle;
-		}
-		.align#{$breakpoint}-bottom {
-			vertical-align: bottom;
-		}
-		.align#{$breakpoint}-text-top {
-			vertical-align: text-top;
-		}
-		.align#{$breakpoint}-text-bottom {
-			vertical-align: text-bottom;
-		}
-		.align#{$breakpoint}-sub {
-			vertical-align: sub;
-		}
-		.align#{$breakpoint}-super {
-			vertical-align: sup;
 		}
 	}
 }
