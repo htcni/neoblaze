@@ -1,10 +1,52 @@
-$shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-$shadow-sm: rgba(0, 0, 0, 0.05) 0px 1px 6px 0px;
-$shadow-md: rgba(0, 0, 0, 0.09) 0px 8px 16px;
-$shadow-lg: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-	rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-	rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-$shadow-xl: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-$shadow-inner: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-	rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-$shadow-none: none;
+@use "../variables/theme_colors" as t;
+@use "../variables/colors" as c;
+@use "sass:color";
+
+//colors
+$default-shadow-color: rgb(0, 0, 0);
+
+//shadow
+$shadow-offset: 0px 4px 12px;
+$shadow-opacity: 0.08;
+$shadow-color: color.change($default-shadow-color, $alpha: $shadow-opacity);
+
+//sm
+$shadow-sm-offset: 0px 1px 6px;
+$shadow-sm-opacity: 0.05;
+$shadow-sm-color: color.change(
+	$default-shadow-color,
+	$alpha: $shadow-sm-opacity
+);
+
+//md
+$shadow-md-offset: 0px 8px 16px;
+$shadow-md-opacity: 0.09;
+$shadow-md-color: color.change(
+	$default-shadow-color,
+	$alpha: $shadow-md-opacity
+);
+
+//lg
+$shadow-lg-offset: 0px 12px 28px;
+$shadow-lg-opacity: 0.15;
+$shadow-lg-color: color.change(
+	$default-shadow-color,
+	$alpha: $shadow-lg-opacity
+);
+
+//xl
+$shadow-xl-offset: 0px 20px 30px;
+$shadow-xl-opacity: 0.2;
+$shadow-xl-color: color.change(
+	$default-shadow-color,
+	$alpha: $shadow-xl-opacity
+);
+
+// inner
+$shadow-inner-offset: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+	0px 0px 0px 1px;
+$shadow-inner-opacity: 0.9;
+$shadow-inner-color: color.change(
+	$default-shadow-color,
+	$alpha: $shadow-inner-opacity
+);

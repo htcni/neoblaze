@@ -1,4 +1,6 @@
 @use "../helpers/mixins/shadow" as s;
+@use "../helpers/variables/shadow" as c;
+
 .shadow {
 	@include s.shadow;
 

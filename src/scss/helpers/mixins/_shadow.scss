@@ -1,27 +1,40 @@
 @use "../variables/shadow" as s;
 
 @mixin shadow {
-	box-shadow: s.$shadow;
+	--shadow-color: #{s.$shadow-color};
+	--shadow: var(--shadow-color) #{s.$shadow-offset};
+	box-shadow: var(--shadow);
 }
 
 @mixin shadow-sm {
-	box-shadow: s.$shadow-sm;
+	--shadow-color: #{s.$shadow-sm-color};
+	--shadow: var(--shadow-color) #{s.$shadow-sm-offset};
+	box-shadow: var(--shadow);
 }
 
 @mixin shadow-md {
-	box-shadow: s.$shadow-md;
+	--shadow-color: #{s.$shadow-md-color};
+	--shadow: var(--shadow-color) #{s.$shadow-md-offset};
+	box-shadow: var(--shadow);
 }
 @mixin shadow-lg {
-	box-shadow: s.$shadow-lg;
+	--shadow-color: #{s.$shadow-lg-color};
+	--shadow: var(--shadow-color) #{s.$shadow-lg-offset};
+	box-shadow: var(--shadow);
 }
 
 @mixin shadow-xl {
-	box-shadow: s.$shadow-xl;
+	--shadow-color: #{s.$shadow-xl-color};
+	--shadow: var(--shadow-color) #{s.$shadow-xl-offset};
+	box-shadow: var(--shadow);
 }
 
 @mixin shadow-inner {
-	box-shadow: s.$shadow-inner;
+	--shadow-color: #{s.$shadow-inner-color};
+	--shadow: #{s.$shadow-inner-offset} var(--shadow-color);
+	box-shadow: var(--shadow);
 }
+
 @mixin shadow-none {
-	box-shadow: s.$shadow-none;
+	box-shadow: none;
 }
