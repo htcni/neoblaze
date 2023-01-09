@@ -27,6 +27,11 @@ $sizes: (
 	"64": 64rem,
 );
 
+// line length
+$line-sm: 55ch;
+$line: 65ch;
+$line-md: 75ch;
+
 // width
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
@@ -71,64 +76,76 @@ $sizes: (
 		// min width
 
 		@each $token, $size in $sizes {
-			.min#{$breakpoint}-width-#{$token} {
+			.min-width#{$breakpoint}-#{$token} {
 				min-width: $size;
 			}
 		}
 
-		.min#{$breakpoint}-width-screen {
+		.min-width#{$breakpoint}-screen {
 			min-width: 100vw;
 		}
 
-		.min#{$breakpoint}-width-full {
+		.min-width#{$breakpoint}-full {
 			min-width: 100%;
 		}
 
-		.min#{$breakpoint}-width-min {
+		.min-width#{$breakpoint}-min {
 			min-width: min-content;
 		}
 
-		.min#{$breakpoint}-width-max {
+		.min-width#{$breakpoint}-max {
 			min-width: max-content;
 		}
 
-		.min#{$breakpoint}-width-fit {
+		.min-width#{$breakpoint}-fit {
 			min-width: fit-content;
 		}
 
-		.min#{$breakpoint}-width-unset {
+		.min-width#{$breakpoint}-unset {
 			min-width: unset;
 		}
 
 		// max width
 
 		@each $token, $size in $sizes {
-			.max#{$breakpoint}-width-#{$token} {
+			.max-width#{$breakpoint}-#{$token} {
 				max-width: $size;
 			}
 		}
-		.max#{$breakpoint}-width-none {
+		.max-width#{$breakpoint}-none {
 			max-width: none;
 		}
 
-		.max#{$breakpoint}-width-screen {
+		.max-width#{$breakpoint}-screen {
 			max-width: 100vw;
 		}
 
-		.max#{$breakpoint}-width-full {
+		.max-width#{$breakpoint}-full {
 			max-width: 100%;
 		}
 
-		.max#{$breakpoint}-width-min {
+		.max-width#{$breakpoint}-min {
 			max-width: min-content;
 		}
 
-		.max#{$breakpoint}-width-max {
+		.max-width#{$breakpoint}-max {
 			max-width: max-content;
 		}
 
-		.max#{$breakpoint}-width-fit {
+		.max-width#{$breakpoint}-fit {
 			max-width: fit-content;
+		}
+
+		.max-width#{$breakpoint}-line-sm {
+			max-width: $line-sm;
+		}
+
+		.max-width#{$breakpoint}-line {
+			max-width: $line;
+		}
+
+		.max-width#{$breakpoint}-line-md {
+			max-width: $line-md;
 		}
 	}
 }
@@ -144,10 +161,6 @@ $sizes: (
 			.height#{$breakpoint}-#{$token} {
 				height: $size;
 			}
-		}
-
-		.height#{$breakpoint}-0 {
-			height: 0px;
 		}
 
 		.height#{$breakpoint}-auto {
@@ -180,63 +193,67 @@ $sizes: (
 
 		// min height
 		@each $token, $size in $sizes {
-			.min#{$breakpoint}-height-#{$token} {
+			.min-height#{$breakpoint}-#{$token} {
 				min-height: $size;
 			}
 		}
 
-		.min#{$breakpoint}-height-screen {
-			min-height: 100vw;
+		.min-height#{$breakpoint}-screen {
+			min-height: 100vh;
 		}
 
-		.min#{$breakpoint}-height-full {
+		.min-height#{$breakpoint}-full {
 			min-height: 100%;
 		}
 
-		.min#{$breakpoint}-height-min {
+		.min-height#{$breakpoint}-min {
 			min-height: min-content;
 		}
 
-		.min#{$breakpoint}-height-max {
+		.min-height#{$breakpoint}-max {
 			min-height: max-content;
 		}
 
-		.min#{$breakpoint}-height-fit {
+		.min-height#{$breakpoint}-fit {
 			min-height: fit-content;
 		}
 
-		.min#{$breakpoint}-height-unset {
+		.min-height#{$breakpoint}-unset {
 			min-height: unset;
 		}
 
 		// max height
 		@each $token, $size in $sizes {
-			.max#{$breakpoint}-height-#{$token} {
+			.max-height#{$breakpoint}-#{$token} {
 				max-height: $size;
 			}
 		}
-		.max#{$breakpoint}-height-none {
+		.max-height#{$breakpoint}-none {
 			max-height: none;
 		}
 
-		.max#{$breakpoint}-height-screen {
-			max-height: 100vw;
+		.max-height#{$breakpoint}-screen {
+			max-height: 100vh;
 		}
 
-		.max#{$breakpoint}-height-full {
+		.max-height#{$breakpoint}-full {
 			max-height: 100%;
 		}
 
-		.max#{$breakpoint}-height-min {
+		.max-height#{$breakpoint}-min {
 			max-height: min-content;
 		}
 
-		.max#{$breakpoint}-height-max {
+		.max-height#{$breakpoint}-max {
 			max-height: max-content;
 		}
 
-		.max#{$breakpoint}-height-fit {
+		.max-height#{$breakpoint}-fit {
 			max-height: fit-content;
+		}
+
+		.max-height#{$breakpoint}-unset {
+			max-height: unset;
 		}
 	}
 }
