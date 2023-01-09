@@ -184,8 +184,8 @@ Use `.body` for paragraphs and main text in your site.
 Type | Default | Medium
 ---  | --- | --- |
 `body-xl`  | 1.375rem - 22px | 1.25rem - 20px
-`body-lg`  | 1.25rem - 20px  | 1.125rem - 18px
-`body-md`  | 1.125rem - 18px | 1.063rem - 17px
+`body-lg`  | 1.25rem - 20px  | 1.0625rem - 17px
+`body-md`  | 1.0625rem - 17px | - 
 `body`     | 1rem - 16px     | -
 `body-sm`  | 0.875rem - 14px | -
 `body-xs`  | 0.75rem - 12px  | -
