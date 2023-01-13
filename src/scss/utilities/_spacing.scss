@@ -174,11 +174,11 @@ $negative-spacing: map.remove($spacing, "0");
 			}
 
 			.gap-x#{$breakpoint}-#{$token} {
-				row-gap: $size;
+				column-gap: $size;
 			}
 
 			.gap-y#{$breakpoint}-#{$token} {
-				column-gap: $size;
+				row-gap: $size;
 			}
 		}
 	}
