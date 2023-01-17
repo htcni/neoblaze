@@ -6,6 +6,7 @@
 			$breakpoint: "-" + $breakpoint;
 		}
 
+		//overflow
 		.overflow#{$breakpoint}-auto {
 			overflow: auto;
 		}
@@ -30,16 +31,25 @@
 		.overflow#{$breakpoint}-x-hidden {
 			overflow-x: hidden;
 		}
-	}
-}
 
-// Floats
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
+		//object fit
+		.object#{$breakpoint}-contain {
+			object-fit: contain;
+		}
+		.object#{$breakpoint}-cover {
+			object-fit: cover;
+		}
+		.object#{$breakpoint}-fill {
+			object-fit: fill;
+		}
+		.object#{$breakpoint}-none {
+			object-fit: none;
+		}
+		.object#{$breakpoint}-scale-down {
+			object-fit: scale-down;
 		}
 
+		// Floats
 		.float#{$breakpoint}-left {
 			float: left;
 		}
@@ -49,25 +59,8 @@
 		.float#{$breakpoint}-none {
 			float: none;
 		}
-	}
-}
 
-// clearfix
-.clearfix {
-	&::after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-}
-
-// vertical alignment
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
+		// vertical alignment
 		.align#{$breakpoint}-baseline {
 			vertical-align: baseline;
 		}
@@ -92,16 +85,8 @@
 		.align#{$breakpoint}-super {
 			vertical-align: sup;
 		}
-	}
-}
 
-// Visibility
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
+		//visibility
 		.visible#{$breakpoint} {
 			visibility: visible;
 		}
@@ -111,5 +96,14 @@
 		.collapse#{$breakpoint} {
 			visibility: collapse;
 		}
+	}
+}
+
+// clearfix
+.clearfix {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
 	}
 }

@@ -13,13 +13,12 @@
 	font-family: var(--font-tertiary);
 }
 
-//text alignment
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
 		@if $breakpoint != "" {
 			$breakpoint: "-" + $breakpoint;
 		}
-
+		// text alignment
 		.text#{$breakpoint}-left {
 			text-align: left;
 		}
@@ -43,16 +42,137 @@
 		.text#{$breakpoint}-end {
 			text-align: end;
 		}
-	}
-}
 
-//text decotarion
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
+		// text transform
+		.text#{$breakpoint}-uppercase {
+			text-transform: uppercase;
 		}
 
+		.text#{$breakpoint}-lowercase {
+			text-transform: lowercase;
+		}
+
+		.text#{$breakpoint}-capitalize {
+			text-transform: capitalize;
+		}
+
+		.text#{$breakpoint}-normal-case {
+			text-transform: none;
+		}
+
+		// word break
+		.break#{$breakpoint}-word {
+			word-break: break-word;
+			overflow-wrap: break-word;
+		}
+
+		.break#{$breakpoint}-all {
+			word-break: break-all;
+		}
+
+		.text#{$breakpoint}-warp {
+			white-space: normal;
+		}
+
+		.text#{$breakpoint}-no-wrap {
+			white-space: nowrap;
+		}
+
+		//font weight
+		.font#{$breakpoint}-thin {
+			font-weight: 100;
+		}
+
+		.font#{$breakpoint}-xlight {
+			font-weight: 200;
+		}
+
+		.font#{$breakpoint}-light {
+			font-weight: 300;
+		}
+
+		.font#{$breakpoint}-normal {
+			font-weight: 400;
+		}
+
+		.font#{$breakpoint}-medium {
+			font-weight: 500;
+		}
+
+		.font#{$breakpoint}-sbold {
+			font-weight: 600;
+		}
+
+		.font#{$breakpoint}-bold {
+			font-weight: 700;
+		}
+
+		.font#{$breakpoint}-xbold {
+			font-weight: 800;
+		}
+
+		.font#{$breakpoint}-black {
+			font-weight: 900;
+		}
+
+		// line height
+		.leading#{$breakpoint}-dense {
+			line-height: 0.8;
+		}
+
+		.leading#{$breakpoint}-base {
+			line-height: 1;
+		}
+
+		.leading#{$breakpoint}-none {
+			line-height: 0;
+		}
+
+		.leading#{$breakpoint}-normal {
+			line-height: 1.125;
+		}
+
+		.leading#{$breakpoint}-relaxed {
+			line-height: 1.14;
+		}
+
+		.leading#{$breakpoint}-spacious {
+			line-height: 1.4;
+		}
+
+		.leading#{$breakpoint}-loose {
+			line-height: 1.8;
+		}
+
+		// letter spacing
+		.tracking#{$breakpoint}-tightest {
+			letter-spacing: -0.055em;
+		}
+
+		.tracking#{$breakpoint}-tighter {
+			letter-spacing: -0.033em;
+		}
+
+		.tracking#{$breakpoint}-tight {
+			letter-spacing: -0.011em;
+		}
+
+		.tracking#{$breakpoint}-normal {
+			letter-spacing: 0;
+		}
+
+		.tracking#{$breakpoint}-wide {
+			letter-spacing: 0.011em;
+		}
+
+		.tracking#{$breakpoint}-wider {
+			letter-spacing: 0.033em;
+		}
+		.tracking#{$breakpoint}-widest {
+			letter-spacing: 0.055em;
+		}
+
+		//text decoration
 		.text#{$breakpoint}-underline {
 			text-decoration: underline;
 
@@ -93,185 +213,18 @@
 				}
 			}
 		}
-	}
-}
 
-//text transform
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-		.text#{$breakpoint}-uppercase {
-			text-transform: uppercase;
+		//list style
+		.list#{$breakpoint}-none {
+			list-style: none;
 		}
 
-		.text#{$breakpoint}-lowercase {
-			text-transform: lowercase;
+		.list#{$breakpoint}-disc {
+			list-style: disc;
 		}
 
-		.text#{$breakpoint}-capitalize {
-			text-transform: capitalize;
-		}
-
-		.text#{$breakpoint}-normal-case {
-			text-transform: none;
-		}
-	}
-}
-// font-weight
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		.font#{$breakpoint}-thin {
-			font-weight: 100;
-		}
-
-		.font#{$breakpoint}-xlight {
-			font-weight: 200;
-		}
-
-		.font#{$breakpoint}-light {
-			font-weight: 300;
-		}
-
-		.font#{$breakpoint}-normal {
-			font-weight: 400;
-		}
-
-		.font#{$breakpoint}-medium {
-			font-weight: 500;
-		}
-
-		.font#{$breakpoint}-sbold {
-			font-weight: 600;
-		}
-
-		.font#{$breakpoint}-bold {
-			font-weight: 700;
-		}
-
-		.font#{$breakpoint}-xbold {
-			font-weight: 800;
-		}
-
-		.font#{$breakpoint}-black {
-			font-weight: 900;
-		}
-	}
-}
-
-// line height
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		.leading#{$breakpoint}-dense {
-			line-height: 0.8;
-		}
-
-		.leading#{$breakpoint}-base {
-			line-height: 1;
-		}
-
-		.leading#{$breakpoint}-none {
-			line-height: 0;
-		}
-
-		.leading#{$breakpoint}-normal {
-			line-height: 1.125;
-		}
-
-		.leading#{$breakpoint}-relaxed {
-			line-height: 1.14;
-		}
-
-		.leading#{$breakpoint}-spacious {
-			line-height: 1.4;
-		}
-
-		.leading#{$breakpoint}-loose {
-			line-height: 1.8;
-		}
-	}
-}
-
-//letter spacing
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		.tracking#{$breakpoint}-tightest {
-			letter-spacing: -0.055em;
-		}
-
-		.tracking#{$breakpoint}-tighter {
-			letter-spacing: -0.033em;
-		}
-
-		.tracking#{$breakpoint}-tight {
-			letter-spacing: -0.011em;
-		}
-
-		.tracking#{$breakpoint}-normal {
-			letter-spacing: 0;
-		}
-
-		.tracking#{$breakpoint}-wide {
-			letter-spacing: 0.011em;
-		}
-
-		.tracking#{$breakpoint}-wider {
-			letter-spacing: 0.033em;
-		}
-		.tracking#{$breakpoint}-widest {
-			letter-spacing: 0.055em;
-		}
-	}
-}
-
-//list style
-.list-none {
-	list-style: none;
-}
-
-.list-disc {
-	list-style: disc;
-}
-
-.list-unset {
-	list-style: unset;
-}
-
-// word break & tezt wrao
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		.break#{$breakpoint}-word {
-			word-break: break-word;
-			overflow-wrap: break-word;
-		}
-
-		.break#{$breakpoint}-all {
-			word-break: break-all;
-		}
-
-		.text#{$breakpoint}-warp {
-			white-space: normal;
-		}
-
-		.text#{$breakpoint}-no-wrap {
-			white-space: nowrap;
+		.list#{$breakpoint}-unset {
+			list-style: unset;
 		}
 	}
 }
