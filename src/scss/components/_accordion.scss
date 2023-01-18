@@ -1,12 +1,24 @@
+$icon-width: 24px;
+$icon-height: 24px;
+$transition-icon: transform 250ms ease-in-out;
+$transition-height: height 250ms ease-in-out;
+
+$accordion-icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z'/%3E%3C/svg%3E");
+$accordion-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z'/%3E%3C/svg%3E");
+$accordion-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M5 11h14v2H5z'/%3E%3C/svg%3E");
+
 .accordion {
-	display: block;
+	&__item {
+		display: block;
+	}
 
 	&__header {
 		cursor: pointer;
 	}
 
 	&__content {
-		transition: max-height 0.3s ease-in-out;
+		transition: $transition-height;
+		overflow: hidden;
 	}
 
 	&__action {
@@ -14,38 +26,73 @@
 	}
 }
 
-.accordion-show {
-	display: block;
-}
-
-.accordion-collapsing {
-	overflow: hidden;
-	max-height: 0;
-}
-
-.accordion-hide {
-	display: none;
+@mixin icon {
+	content: "";
+	width: $icon-width;
+	height: $icon-height;
+	background-size: $icon-width;
+	background-image: var(--accordion-icon);
+	transition: $transition-icon;
 }
 
 .accordion-icon {
-	--accordion-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/%3E%3C/svg%3E");
+	--accordion-icon: #{$accordion_icon_chevron};
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	&::after {
-		content: '';
-		width: 24px;
-		height: 24px;
-		background-size: 24px;
-		background-image: var(--accordion-icon);
-		transition: transform 0.3s ease;
+		@include icon();
 	}
 }
 
-[data-accordion='close'] .accordion-icon {
+.accordion-icon--left {
+	--accordion-icon: #{$accordion_icon_chevron};
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&::before {
+		@include icon();
+	}
+}
+
+.icon-face-right {
+	&::before,
+	&::after {
+		transform: rotate(90deg);
+	}
+}
+
+.icon-face-left {
+	&::before,
+	&::after {
+		transform: rotate(270deg);
+	}
+}
+
+[data-accordion="close"] .accordion-icon,
+[data-accordion="close"] .accordion-icon--left {
+	&::before,
 	&::after {
 		transform: rotate(180deg);
 	}
+}
+
+[data-accordion="close"] .accordion-icon.icon-type-custom {
+	--accordion-icon: #{$accordion-icon-open};
+}
+
+[data-accordion="open"] .accordion-icon.icon-type-custom {
+	--accordion-icon: #{$accordion-icon-close};
+}
+
+[data-accordion="close"] .accordion__content {
+	height: 0;
+}
+
+[data-accordion="open"] .accordion__content {
+	height: auto;
 }
