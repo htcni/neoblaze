@@ -1,0 +1,21 @@
+@use "../helpers/mixins/breakpoints" as m;
+
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
+
+		@for $cols from 1 through 11 {
+			.col#{$breakpoint}-#{$cols} {
+				flex-basis: ($cols * 0.0833333333 * 100%);
+				max-width: ($cols * 0.0833333333 * 100%);
+			}
+		}
+
+		.col#{$breakpoint}-12 {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+}
