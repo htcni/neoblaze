@@ -20,10 +20,6 @@ $accordion-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 		transition: $transition-height;
 		overflow: hidden;
 	}
-
-	&__action {
-		font-weight: 400;
-	}
 }
 
 @mixin icon {
@@ -59,33 +55,37 @@ $accordion-icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 	}
 }
 
-.icon-face-right {
-	&::before,
-	&::after {
-		transform: rotate(90deg);
-	}
-}
-
-.icon-face-left {
-	&::before,
-	&::after {
-		transform: rotate(270deg);
-	}
-}
-
 [data-accordion="close"] .accordion-icon,
-[data-accordion="close"] .accordion-icon--left {
+[data-accordion="close"] .accordion-icon--left,
+[data-accordion="open"] .icon-face-right,
+[data-accordion="open"] .icon-face-left {
 	&::before,
 	&::after {
 		transform: rotate(180deg);
 	}
 }
 
-[data-accordion="close"] .accordion-icon.icon-type-custom {
+[data-accordion="close"] .icon-face-right {
+	&::before,
+	&::after {
+		transform: rotate(90deg);
+	}
+}
+
+[data-accordion="close"] .icon-face-left {
+	&::before,
+	&::after {
+		transform: rotate(270deg);
+	}
+}
+
+[data-accordion="close"] .accordion-icon.icon-type-custom,
+[data-accordion="close"] .accordion-icon--left.icon-type-custom {
 	--accordion-icon: #{$accordion-icon-open};
 }
 
-[data-accordion="open"] .accordion-icon.icon-type-custom {
+[data-accordion="open"] .accordion-icon.icon-type-custom,
+[data-accordion="open"] .accordion-icon--left.icon-type-custom {
 	--accordion-icon: #{$accordion-icon-close};
 }
 
