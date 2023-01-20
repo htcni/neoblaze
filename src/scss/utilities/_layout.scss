@@ -31,6 +31,27 @@
 		.overflow#{$breakpoint}-x-hidden {
 			overflow-x: hidden;
 		}
+		.overflow#{$breakpoint}-y-hidden {
+			overflow-y: hidden;
+		}
+		.overflow#{$breakpoint}-x-visible {
+			overflow-x: visible;
+		}
+		.overflow#{$breakpoint}-y-visible {
+			overflow-y: visible;
+		}
+		.overflow#{$breakpoint}-x-scroll {
+			overflow-x: scroll;
+		}
+		.overflow#{$breakpoint}-y-scroll {
+			overflow-y: scroll;
+		}
+		.overflow#{$breakpoint}-x-clip {
+			overflow-x: clip;
+		}
+		.overflow#{$breakpoint}-y-clip {
+			overflow-y: clip;
+		}
 
 		//object fit
 		.object#{$breakpoint}-contain {
@@ -95,6 +116,61 @@
 		}
 		.collapse#{$breakpoint} {
 			visibility: collapse;
+		}
+
+		// border collapse
+		.border#{$breakpoint}-collapse {
+			border-collapse: collapse;
+		}
+		.border#{$breakpoint}-separate {
+			border-collapse: separate;
+		}
+
+		// table layout
+		.table#{$breakpoint}-auto {
+			table-layout: auto;
+		}
+		.table#{$breakpoint}-fixed {
+			table-layout: fixed;
+		}
+
+		// z-index
+		.z#{$breakpoint}-auto {
+			z-index: auto;
+		}
+
+		.z#{$breakpoint}-tooltip {
+			z-index: 1500;
+		}
+
+		.z#{$breakpoint}-toast {
+			z-index: 1400;
+		}
+
+		.z#{$breakpoint}-drawer {
+			z-index: 1350;
+		}
+
+		.z#{$breakpoint}-drawer-backdrop {
+			z-index: 1300;
+		}
+
+		.z#{$breakpoint}-modal {
+			z-index: 1250;
+		}
+
+		.z#{$breakpoint}-modal-backdrop {
+			z-index: 1200;
+		}
+
+		.z#{$breakpoint}-navbar {
+			z-index: 1100;
+		}
+
+		@for $index from 0 through 10 {
+			.z#{$breakpoint}-#{$index * 10} {
+				z-index: $index * 10;
+			}
 		}
 	}
 }
