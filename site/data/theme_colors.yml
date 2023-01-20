@@ -1,0 +1,242 @@
+- title: white
+  hex: '#fff'
+
+- title: midnight
+  hex: '#1a1a1a'
+
+- title: black
+  hex: '#000'
+
+- title: transparent
+  hex: '#00000000'
+
+- title: default
+  hex: '#d4d6da66'
+
+- title: default--xlight
+  hex: '#f0f0f066'
+
+- title: default--light
+  hex: '#f9fafb'
+
+- title: default--soft
+  hex: '#f3f4f6'
+
+- title: default--medium
+  hex: '#00000080'
+
+- title: default--ultra
+  hex: '#2f353d'
+
+- title: default--plus-ultra
+  hex: '#121418'
+
+- title: primary
+  hex: '#2563eb'
+
+- title: primary--xlight
+  hex: '#f4f7fe'
+
+- title: primary--light
+  hex: '#cbdafa'
+
+- title: primary--soft
+  hex: '#789ef3'
+
+- title: primary--medium
+  hex: '#1e50be'
+
+- title: primary--ultra
+  hex: '#173d92'
+
+- title: primary--plus-ultra
+  hex: '#091838'
+
+- title: secondary
+  hex: '#7c3aed'
+
+- title: secondary--xlight
+  hex: '#f8f5fe'
+
+- title: secondary--light
+  hex: '#e0d0fb'
+
+- title: secondary--soft
+  hex: '#ae85f4'
+
+- title: secondary--medium
+  hex: '#642fc0'
+
+- title: secondary--ultra
+  hex: '#4d2493'
+
+- title: secondary--plus-ultra
+  hex: '#1e0e39'
+
+- title: tertiary
+  hex: '#65a30d'
+
+- title: tertiary--xlight
+  hex: '#f7faf3'
+
+- title: tertiary--light
+  hex: '#dae9c5'
+
+- title: tertiary--soft
+  hex: '#a0c669'
+
+- title: tertiary--medium
+  hex: '#52840b'
+
+- title: tertiary--ultra
+  hex: '#3f6508'
+
+- title: tertiary--plus-ultra
+  hex: '#182703'
+
+- title: info
+  hex: '#0284c7'
+
+- title: info--xlight
+  hex: '#f2f9fc'
+
+- title: info--light
+  hex: '#c2e1f2'
+
+- title: info--soft
+  hex: '#62b3dc'
+
+- title: info--medium
+  hex: '#026ba1'
+
+- title: info--ultra
+  hex: '#01527b'
+
+- title: info--plus-ultra
+  hex: '#002030'
+
+- title: warning
+  hex: '#d97706'
+
+- title: warning--xlight
+  hex: '#fdf8f3'
+
+- title: warning--light
+  hex: '#f6dec3'
+
+- title: warning--soft
+  hex: '#e7ab65'
+
+- title: warning--medium
+  hex: '#b06005'
+
+- title: warning--ultra
+  hex: '#874a04'
+
+- title: warning--plus-ultra
+  hex: '#341d01'
+
+- title: danger
+  hex: '#dc2626'
+
+- title: danger--xlight
+  hex: '#fdf4f4'
+
+- title: danger--light
+  hex: '#f7cbcb'
+
+- title: danger--soft
+  hex: '#e97878'
+
+- title: danger--medium
+  hex: '#b21f1f'
+
+- title: danger--ultra
+  hex: '#881818'
+
+- title: danger--plus-ultra
+  hex: '#350909'
+
+- title: success
+  hex: '#16a34a'
+
+- title: success--xlight
+  hex: '#f3faf6'
+
+- title: success--light
+  hex: '#c7e9d4'
+
+- title: success--soft
+  hex: '#6fc68f'
+
+- title: success--medium
+  hex: '#12843c'
+
+- title: success--ultra
+  hex: '#0e652e'
+
+- title: success--plus-ultra
+  hex: '#052712'
+
+- title: neutral
+  hex: '#525252'
+
+- title: neutral--xlight
+  hex: '#fafafa'
+
+- title: neutral--light
+  hex: '#f5f5f5'
+
+- title: neutral--soft
+  hex: '#949494'
+
+- title: neutral--medium
+  hex: '#424242'
+
+- title: neutral--ultra
+  hex: '#333333'
+
+- title: neutral--plus-ultra
+  hex: '#141414'
+
+- title: gray
+  hex: '#4b5563'
+
+- title: gray--xlight
+  hex: '#f9fafb'
+
+- title: gray--light
+  hex: '#f3f4f6'
+
+- title: gray--soft
+  hex: '#8f969e'
+
+- title: gray--medium
+  hex: '#3d4550'
+
+- title: gray--ultra
+  hex: '#2f353d'
+
+- title: gray--plus-ultra
+  hex: '#121418'
+
+- title: slate
+  hex: '#475569'
+
+- title: slate--xlight
+  hex: '#f8fafc'
+
+- title: slate--light
+  hex: '#f1f5f9'
+
+- title: slate--soft
+  hex: '#8d96a2'
+
+- title: slate--medium
+  hex: '#3a4555'
+
+- title: slate--ultra
+  hex: '#2c3541'
+
+- title: slate--plus-ultra
+  hex: '#111419'

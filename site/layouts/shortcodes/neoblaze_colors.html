@@ -1,0 +1,20 @@
+<!-- prettier-ignore -->
+
+<div class="layout-autofit gap-y-4 gap-x-2">
+{{ range $color := sort $.Site.Data.colors }}
+	<div class="box d-flex flex-column">
+		<div class="p-2 text-center">
+		<h3 class="title-xs text-capitalize">{{ $color.title }}</h3>
+		</div>
+	{{ range $color_token, $value := $color.values }}
+		{{ $token := split $color_token "-" }}
+		{{ $val:= index $token 1 }}
+		
+	<div class="d-flex flex-justify-between p-4 label {{ if gt $val 500 }} fg-white {{end}}" 
+	style="background-color: {{$value}};">
+		<span>{{$color_token}}</span> <span>{{$value}}</span>
+	</div>
+	{{ end }}
+	</div>
+{{ end }}
+</div>

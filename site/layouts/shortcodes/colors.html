@@ -1,0 +1,25 @@
+<div
+	class="max-height-30 overflow-auto border-b bd-slate--light scroll scroll-site"
+>
+	<table class="table is-bordered">
+		<thead>
+			<tr>
+				<th>Class</th>
+				<th>Shade</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range $color := sort $.Site.Data.theme_colors }}
+			<tr>
+				<td><code>{{ $color.title }}</code></td>
+				<td>
+					<span
+						class="width-2 height-2 rounded"
+						style="background-color:{{$color.hex}}"
+					></span>
+				</td>
+			</tr>
+			{{ end }}
+		</tbody>
+	</table>
+</div>

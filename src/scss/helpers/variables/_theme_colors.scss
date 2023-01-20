@@ -2,10 +2,9 @@
 
 $base-colors: (
 	"white": #fff,
-	midnight: #1a1a1a,
+	"midnight": #1a1a1a,
 	"black": #000,
 	"transparent": #00000000,
-	link-default: #06c,
 );
 
 $theme-colors: (
@@ -15,7 +14,7 @@ $theme-colors: (
 	default--soft: map-get(c.$colors, gray-100),
 	default--medium: rgba(0, 0, 0, 0.5),
 	default--ultra: map-get(c.$colors, gray-700),
-	default--plus-ultra: map-get(c.$colors, gray-700),
+	default--plus-ultra: map-get(c.$colors, gray-900),
 	primary: map-get(c.$colors, blue-500),
 	primary--xlight: map-get(c.$colors, blue-50),
 	primary--light: map-get(c.$colors, blue-100),
