@@ -1,4 +1,5 @@
 @use "../helpers/mixins/breakpoints" as m;
+@use "../helpers/variables/typography" as t;
 
 // font family
 .font-primary {
@@ -78,6 +79,15 @@
 			white-space: nowrap;
 		}
 
+		//font style
+		.font#{$breakpoint}-italic {
+			font-style: italic;
+		}
+
+		.font#{$breakpoint}-normal {
+			font-style: normal;
+		}
+
 		//font weight
 		.font#{$breakpoint}-thin {
 			font-weight: 100;
@@ -117,59 +127,59 @@
 
 		// line height
 		.leading#{$breakpoint}-dense {
-			line-height: 0.8;
+			line-height: t.$leading-dense;
 		}
 
 		.leading#{$breakpoint}-base {
-			line-height: 1;
+			line-height: t.$leading-base;
 		}
 
 		.leading#{$breakpoint}-none {
-			line-height: 0;
+			line-height: t.$leading-none;
 		}
 
 		.leading#{$breakpoint}-normal {
-			line-height: 1.125;
+			line-height: t.$leading-normal;
 		}
 
 		.leading#{$breakpoint}-relaxed {
-			line-height: 1.14;
+			line-height: t.$leading-relaxed;
 		}
 
 		.leading#{$breakpoint}-spacious {
-			line-height: 1.4;
+			line-height: t.$leading-spacious;
 		}
 
 		.leading#{$breakpoint}-loose {
-			line-height: 1.8;
+			line-height: t.$leading-spacious;
 		}
 
 		// letter spacing
 		.tracking#{$breakpoint}-tightest {
-			letter-spacing: -0.055em;
+			letter-spacing: t.$tracking-tightest;
 		}
 
 		.tracking#{$breakpoint}-tighter {
-			letter-spacing: -0.033em;
+			letter-spacing: t.$tracking-tighter;
 		}
 
 		.tracking#{$breakpoint}-tight {
-			letter-spacing: -0.011em;
+			letter-spacing: t.$tracking-tight;
 		}
 
 		.tracking#{$breakpoint}-normal {
-			letter-spacing: 0;
+			letter-spacing: t.$tracking-normal;
 		}
 
 		.tracking#{$breakpoint}-wide {
-			letter-spacing: 0.011em;
+			letter-spacing: t.$tracking-wide;
 		}
 
 		.tracking#{$breakpoint}-wider {
-			letter-spacing: 0.033em;
+			letter-spacing: t.$tracking-wider;
 		}
 		.tracking#{$breakpoint}-widest {
-			letter-spacing: 0.055em;
+			letter-spacing: t.$tracking-widest;
 		}
 
 		//text decoration
@@ -223,8 +233,8 @@
 			list-style: disc;
 		}
 
-		.list#{$breakpoint}-unset {
-			list-style: unset;
+		.list#{$breakpoint}-decimal {
+			list-style: decimal;
 		}
 	}
 }
