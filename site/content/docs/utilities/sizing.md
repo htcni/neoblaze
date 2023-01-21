@@ -6,7 +6,7 @@ titleBg: bg-danger--xlight
 group: utilities
 ---
 
-## Size {.heading-sm .mt-6 .mb-4}
+## Size {.heading-xs .mt-6 .mb-2}
 
 {{< neoblaze_table >}}
 Size | Value 
@@ -36,7 +36,7 @@ Size | Value
 `64` | 64rem - 1024px
 {{< /neoblaze_table >}}
 
-## Width {.heading-sm .mt-6 .mb-4}
+## Width {.heading-xs .mt-6 .mb-2}
 
 Use `width-{size}` utility to set element's width.
 
@@ -60,7 +60,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box width-8">width-8</div>
 	<div class="box width-12">width-12</div>
@@ -69,9 +69,9 @@ Class | Properties
 	<div class="box width-30">width-30</div>
 </div>
 
-{{< /highlight >}}
+``` 
 
-### Min Width {.heading-xs .mt-6 .mb-4}
+### Min Width {.title-sm .mt-6 .mb-2}
 
 Use `min-width-{size}` utility to set element's minimum width.
 
@@ -94,7 +94,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box min-width-8">min-width-8</div>
 	<div class="box min-width-12">min-width-12</div>
@@ -102,10 +102,10 @@ Class | Properties
 	<div class="box min-width-24">min-width-24</div>
 	<div class="box min-width-30">width-30</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-### Max Width {.heading-xs .mt-6 .mb-4}
+### Max Width {.title-sm .mt-6 .mb-2}
 
 Use `max-width-{size}` utility to set element's maximum width.
 
@@ -132,7 +132,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box min-width-8">max-width-8</div>
 	<div class="box max-width-12">max-width-12</div>
@@ -140,10 +140,10 @@ Class | Properties
 	<div class="box max-width-24">max-width-124</div>
 	<div class="box max-width-30">max-width-30</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Height {.heading-sm .mt-6 .mb-4}
+## Height {.heading-xs .mt-6 .mb-2}
 
 Use `height-{size}` utility to set element's height.
 
@@ -165,15 +165,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box height-8">height-8</div>
 	<div class="box height-12">height-12</div>
 	<div class="box height-16">height-16</div>
 </div>
-{{< /highlight >}}
+``` 
 
-### Min height {.heading-xs .mt-6 .mb-4}
+### Min height {.title-sm .mt-6 .mb-2}
 
 Use `min-height-{size}` utility to set element's minimum height.
 
@@ -192,15 +192,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box min-height-8">min-height-8</div>
 </div>
 
-{{< /highlight >}}
+``` 
 
 
-### Max height {.heading-xs .mt-6 .mb-4}
+### Max height {.title-sm .mt-6 .mb-2}
 
 Use `max-height-{size}` utility to set element's maximum height.
 
@@ -215,14 +215,14 @@ Class | Properties
 `max-height-unset`  | max-height: unset;
 
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box max-height-8">max-height-8</div>
 </div>
 
-{{< /highlight >}}
+``` 
 
-## Resposive Sizing Utilities {.heading-sm .mt-6 .mb-4}
+## Resposive Sizing Utilities {.heading-xs .mt-6 .mb-2}
 
 Use `{width|height|min-height|max-height}-{breakpoint}-{property}` for responsive variants like `width-md-16`, `min-width-xs-16`
 
@@ -232,7 +232,44 @@ Use `{width|height|min-height|max-height}-{breakpoint}-{property}` for responsiv
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box width-30 width-sm-16">width-30</div>
 </div>
+```
+
+## SASS {.heading-xs .mt-6 .mb-2}
+
+### Extending Size Scale {.title-sm .mt-6 .mb-2}
+
+You can add your own sizing scale values by extending `$sizes` map in your own scss.
+
+``` scss
+// src/scss/utilities/_sizing.scss.scss
+
+$sizes: (
+	"0": 0px,
+	"px": 1px,
+	"0\\.125": 0.125rem,
+	"0\\.25": 0.25rem,
+	"0\\.5": 0.5rem,
+	"1": 1rem,
+	"2": 2rem,
+	"3": 3rem,
+	"4": 4rem,
+	"5": 5rem,
+	"6": 6rem,
+	"8": 8rem,
+	"10": 10rem,
+	"12": 12rem,
+	"16": 16rem,
+	"20": 20rem,
+	"24": 24rem,
+	"30": 30rem,
+	"32": 32rem,
+	"40": 40rem,
+	"48": 48rem,
+	"56": 56rem,
+	"64": 64rem,
+);
+```

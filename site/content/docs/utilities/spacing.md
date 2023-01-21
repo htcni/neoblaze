@@ -6,7 +6,7 @@ titleBg: bg-primary--xlight
 group: utilities
 ---
 
-## Spacing {.heading-sm .mt-6 .mb-4}
+## Spacing {.heading-xs .mt-6 .mb-2}
 
 {{< neoblaze_table >}}
 Size | Value 
@@ -43,7 +43,7 @@ Size | Value
 
 {{< /neoblaze_table >}}
 
-## Padding {.heading-sm .mt-6 .mb-4}
+## Padding {.heading-xs .mt-6 .mb-2}
 
 Use `p-{t|r|b|l}-{size}` to apply padding to an element.
 
@@ -70,7 +70,7 @@ Use `p-{t|r|b|l}-{size}` to apply padding to an element.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box p-4">p-2</div>
 	<div class="box pt-4">pt-4</div>
@@ -78,9 +78,9 @@ Use `p-{t|r|b|l}-{size}` to apply padding to an element.
 	<div class="box pb-4">pb-4</div>
 	<div class="box pl-4">pl-4</div>
 </div>
-{{< /highlight >}}
+``` 
 
-### Horizontal and Vertical sides {.heading-xs .mt-6 .mb-4}
+### Horizontal and Vertical sides {.title-sm .mt-6 .mb-2}
 
 Use `.p-{x|y}-{size}` to apply padding on horizontal or vertical side.
 
@@ -96,14 +96,14 @@ Use `.p-{x|y}-{size}` to apply padding on horizontal or vertical side.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box px-4">px-4</div>
 	<div class="box py-4">py-4</div>
 </div>
-{{< /highlight >}}
+``` 
 
-## Margin {.heading-sm .mt-6 .mb-4}
+## Margin {.heading-xs .mt-6 .mb-2}
 
 Use `m-{t|r|b|l}-{size}` to apply margin to an element.
 
@@ -131,7 +131,7 @@ Size | Value
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box m-4">m-2</div>
 	<div class="box mt-4">mt-4</div>
@@ -139,10 +139,10 @@ Size | Value
 	<div class="box mb-4">mb-4</div>
 	<div class="box ml-4">ml-4</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-### Horizontal and Vertical sides {.heading-xs .mt-6 .mb-4}
+### Horizontal and Vertical sides {.title-sm .mt-6 .mb-2}
 
 Use `m-{x|y}-{size}` to apply margin on horizontal or vertical side.
 
@@ -156,15 +156,15 @@ Use `m-{x|y}-{size}` to apply margin on horizontal or vertical side.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box mx-auto">mx-auto</div>
 	<div class="box mx-6">mx-6</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-### Negative Margin {.heading-xs .mt-6 .mb-4}
+### Negative Margin {.title-sm .mt-6 .mb-2}
 
 Use `-m-{t|r|b|l|x|y}-{size}` to apply negative margin.
 
@@ -176,13 +176,13 @@ Use `-m-{t|r|b|l|x|y}-{size}` to apply negative margin.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box -ml-8">-ml-8</div>
 </div>
-{{< /highlight >}}
+``` 
 
-## Gap {.heading-sm .mt-6 .mb-4}
+## Gap {.heading-xs .mt-6 .mb-2}
 
 Use `gap-{size}` to control gutter between flexbox and grid.
 
@@ -195,16 +195,16 @@ Use `gap-{size}` to control gutter between flexbox and grid.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex gap-4">
 	<div class="box">gap-4</div>
 	<div class="box">gap-4</div>
 	<div class="box">gap-4</div>
 	<div class="box">gap-4</div>
 </div>
-{{< /highlight >}}
+``` 
 
-### Row and Column gap {.heading-xs .mt-6 .mb-4}
+### Row and Column gap {.title-sm .mt-6 .mb-2}
 
 Use `gap-{x|y}-{size}` to set grid row and column gap.
 
@@ -217,17 +217,17 @@ Use `gap-{x|y}-{size}` to set grid row and column gap.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-grid grid-cols-2 gap-x-4 gap-y-8">
 	<div class="box">1</div>
 	<div class="box">2</div>
 	<div class="box">3</div>
 	<div class="box">4</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Resposive Spacing Utilities {.heading-sm .mt-6 .mb-4}
+## Resposive Spacing Utilities {.heading-xs .mt-6 .mb-2}
 
 Use `{p|m}-{t|r|b|l|x|y}-{breakpoint}-{property}` for responsive variants of padding and margin like `m-md-4`, `px-md-4`.
 Use `gap-{x|y}-{breakpoint}-{property}` for responsive variants of gap like `gap-md-4`, `gap-x-md-4`.
@@ -240,8 +240,50 @@ Use `gap-{x|y}-{breakpoint}-{property}` for responsive variants of gap like `gap
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="p-8 p-sm-4 box mx-auto">p-sm-4</div>
 </div>
-{{< /highlight >}}
+``` 
+
+
+## SASS {.heading-xs .mt-6 .mb-2}
+
+### Extending Spacing Scale {.title-sm .mt-6 .mb-2}
+
+You can add your own spacing scale values by extending `$spacing` map in your own scss.
+
+``` scss
+// src/scss/utilities/_spacing.scss.scss
+
+$spacing: (
+	"px": 1px,
+	"0": 0,
+	"0\\.5": 0.125rem,
+	"1": 0.25rem,
+	"2": 0.5rem,
+	"3": 0.75rem,
+	"4": 1rem,
+	"5": 1.25rem,
+	"6": 1.5rem,
+	"7": 1.75rem,
+	"8": 2rem,
+	"9": 2.25rem,
+	"10": 2.5rem,
+	"12": 3rem,
+	"16": 4rem,
+	"20": 5rem,
+	"24": 6rem,
+	"28": 7rem,
+	"32": 8rem,
+	"36": 9rem,
+	"40": 10rem,
+	"44": 11rem,
+	"48": 12rem,
+	"52": 13rem,
+	"56": 14rem,
+	"60": 15rem,
+	"64": 16rem,
+	"1\\/2": 50%,
+);
+```

@@ -6,7 +6,7 @@ titleBg: bg-secondary--xlight
 group: utilities
 ---
 
-## Position {.heading-sm .mt-6 .mb-4}
+## Position {.heading-xs .mt-6 .mb-2}
 
 Use `position-{property}` utitlies to position element in the document.
 
@@ -26,13 +26,13 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="position-relative bg-secondary--xlight p-4 height-10">
 	<span class="position-absolute top-0 right-0">position-absolute</span>
 </div>
-{{< /highlight >}}
+``` 
 
-## Placement {.heading-sm .mt-6 .mb-4}
+## Placement {.heading-xs .mt-6 .mb-2}
 
 Use the `{top|right|bottom|left|inset|inset-x|inset-y}-{size}` utilities to position the element.
 
@@ -58,16 +58,16 @@ Scale | Value
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="position-relative bg-secondary--xlight p-4 height-10">
 	<span class="position-absolute top-0 left-0">1</span>
 	<span class="position-absolute top-0 right-0">2</span>
 	<span class="position-absolute bottom-0 left-0">3</span>
 	<span class="position-absolute bottom-0 right-0">4</span>
 </div>
-{{< /highlight >}}
+``` 
 
-###  Negative Value {.heading-xs .mt-6 .mb-4}
+###  Negative Value {.title-sm .mt-6 .mb-2}
 
 Add a dash `-{top|right|bottom|left|inset}-{size}` to use negative value.
 
@@ -77,13 +77,13 @@ Add a dash `-{top|right|bottom|left|inset}-{size}` to use negative value.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="position-relative bg-secondary--xlight p-4 width-6 height-6">
 	<span class="position-absolute -top-4 -right-4"></span>
 </div>
-{{< /highlight >}}
+``` 
 
-###  Translate {.heading-xs .mt-6 .mb-4}
+###  Translate {.title-sm .mt-6 .mb-2}
 
 Use `translate` to center elements.
 
@@ -100,14 +100,14 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="position-relative bg-secondary--xlight p-4 width-6 height-6">
 	<span class="position-absolute translate-middle top-50 left-50"></span>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Resposive Position Utilities {.heading-sm .mt-6 .mb-4}
+## Resposive Position Utilities {.heading-xs .mt-6 .mb-2}
 
 Use `position-{breakpoint}-{property}` for responsive position utility like `position-sm-relative`.
 \
@@ -121,8 +121,31 @@ Use `top-{breakpoint}-{property}` for responsive variants like `top-md-1`, `top-
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="position-relative bg-secondary--xlight p-4 width-6 height-68">
 	<span class="position-absolute translate-middle top-50 left-50 top-md-0 left-md-0"></span>
 </div>
-{{< /highlight >}}
+``` 
+
+## SASS {.heading-xs .mt-6 .mb-2}
+
+### Extending Position  Scale{.title-sm .mt-6 .mb-2}
+
+You can add your own position scale values by extending `$position-values` map in your own scss.
+
+``` scss
+// src/scss/utilities/_position.scss.scss
+
+$position-values: (
+	"px": 1px,
+	"0": 0,
+	"0\\.5": 0.125rem,
+	"1": 0.25rem,
+	"2": 0.5rem,
+	"3": 0.75rem,
+	"4": 1rem,
+	"50": 50%,
+	"100": 100%,
+	"unset": unset,
+);
+```
