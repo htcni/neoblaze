@@ -1,5 +1,77 @@
+@use "../helpers/mixins/breakpoints" as m;
+
 .img-full {
 	width: 100%;
 	block-size: auto;
 	object-fit: cover;
+}
+
+// background properties
+
+@each $breakpoint, $screen-size in m.$breakpoints {
+	@include m.mq($breakpoint) {
+		@if $breakpoint != "" {
+			$breakpoint: "-" + $breakpoint;
+		}
+
+		//position
+		.bg#{$breakpoint}-bottom {
+			background-position: bottom;
+		}
+		.bg#{$breakpoint}-center {
+			background-position: center;
+		}
+		.bg#{$breakpoint}-left {
+			background-position: left;
+		}
+		.bg#{$breakpoint}-left-bottom {
+			background-position: left bottom;
+		}
+		.bg#{$breakpoint}-left-top {
+			background-position: left top;
+		}
+		.bg-right {
+			background-position: right;
+		}
+		.bg#{$breakpoint}-right-bottom {
+			background-position: right bottom;
+		}
+		.bg#{$breakpoint}-right-top {
+			background-position: right top;
+		}
+		.bg#{$breakpoint}-top {
+			background-position: top;
+		}
+
+		//repeat
+		.bg#{$breakpoint}-repeat {
+			background-repeat: repeat;
+		}
+		.bg#{$breakpoint}-no-repeat {
+			background-repeat: no-repeat;
+		}
+		.bg#{$breakpoint}-repeat-x {
+			background-repeat: repeat-x;
+		}
+		.bg#{$breakpoint}-repeat-y {
+			background-repeat: repeat-y;
+		}
+		.bg#{$breakpoint}-repeat-round {
+			background-repeat: round;
+		}
+		.bg#{$breakpoint}-repeat-space {
+			background-repeat: space;
+		}
+
+		//size
+		.bg-auto {
+			background-size: auto;
+		}
+		.bg-cover {
+			background-size: cover;
+		}
+		.bg-contain {
+			background-size: contain;
+		}
+	}
 }
