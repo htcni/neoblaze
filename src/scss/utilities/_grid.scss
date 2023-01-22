@@ -1,15 +1,32 @@
 @use "../helpers/mixins/breakpoints" as m;
 
 /*Grid*/
-// Columns
-// span
 @each $breakpoint, $screen-size in m.$breakpoints {
 	@include m.mq($breakpoint) {
 		@if $breakpoint != "" {
 			$breakpoint: "-" + $breakpoint;
 		}
 
-		// cols default
+		@for $rows from 1 through 6 {
+			.grid#{$breakpoint}-rows-#{$rows} {
+				grid-template-rows: repeat(#{$rows}, minmax(0, 1fr));
+			}
+		}
+
+		.grid#{$breakpoint}-rows-none {
+			grid-template-rows: none;
+		}
+
+		@for $cols from 1 through 12 {
+			.grid#{$breakpoint}-cols-#{$cols} {
+				grid-template-columns: repeat(#{$cols}, minmax(0, 1fr));
+			}
+		}
+		.grid#{$breakpoint}-cols-none {
+			grid-template-columns: none;
+		}
+
+		//Col span
 		.col#{$breakpoint}-auto {
 			grid-column: auto;
 		}
@@ -19,66 +36,34 @@
 		}
 
 		@for $col from 1 through 12 {
-			// span
 			.col#{$breakpoint}-span-#{$col} {
 				grid-column: span + " " + #{$col} / span + " " + #{$col};
 			}
 		}
-	}
-}
 
-// col start
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		//auto
+		//col start
 		.col#{$breakpoint}-start-auto {
 			grid-column-start: auto;
 		}
 
 		@for $col from 1 through 13 {
-			// col start
 			.col#{$breakpoint}-start-#{$col} {
 				grid-column-start: #{$col};
 			}
 		}
-	}
-}
 
-// col-end
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		//auto
+		//col end
 		.col#{$breakpoint}-end-auto {
 			grid-column-end: auto;
 		}
 
 		@for $col from 1 through 13 {
-			// col end
 			.col#{$breakpoint}-end-#{$col} {
 				grid-column-end: #{$col};
 			}
 		}
-	}
-}
 
-// ____________________Rows______________________________
-// row span
-
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		// cols default
+		//row span
 		.row#{$breakpoint}-auto {
 			grid-row: auto;
 		}
@@ -87,53 +72,49 @@
 			grid-row: 1/-1;
 		}
 
-		@for $col from 1 through 6 {
-			// span
-			.row#{$breakpoint}-span-#{$col} {
-				grid-row: span + " " + #{$col} / span + " " + #{$col};
+		@for $row from 1 through 6 {
+			.row#{$breakpoint}-span-#{$row} {
+				grid-row: span + " " + #{$row} / span + " " + #{$row};
 			}
 		}
-	}
-}
 
-// col start
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		//auto
+		//row start
 		.row#{$breakpoint}-start-auto {
 			grid-row-start: auto;
 		}
 
 		@for $col from 1 through 7 {
-			// col start
 			.row#{$breakpoint}-start-#{$col} {
 				grid-row-start: #{$col};
 			}
 		}
-	}
-}
 
-// col-end
-@each $breakpoint, $screen-size in m.$breakpoints {
-	@include m.mq($breakpoint) {
-		@if $breakpoint != "" {
-			$breakpoint: "-" + $breakpoint;
-		}
-
-		//auto
+		//row -end
 		.row#{$breakpoint}-end-auto {
 			grid-row-end: auto;
 		}
 
 		@for $col from 1 through 7 {
-			// col end
 			.row#{$breakpoint}-end-#{$col} {
 				grid-row-end: #{$col};
 			}
+		}
+
+		// Auto flow
+		.grid#{$breakpoint}-flow-row {
+			grid-auto-flow: row;
+		}
+		.grid#{$breakpoint}-flow-col {
+			grid-auto-flow: column;
+		}
+		.grid#{$breakpoint}-flow-dense {
+			grid-auto-flow: dense;
+		}
+		.grid#{$breakpoint}-flow-row-dense {
+			grid-auto-flow: row dense;
+		}
+		.grid#{$breakpoint}-flow-col-dense {
+			grid-auto-flow: column dense;
 		}
 	}
 }
@@ -167,6 +148,10 @@
 			place-self: end;
 		}
 
+		.place#{$breakpoint}-self-baseline {
+			place-self: baseline;
+		}
+
 		.place#{$breakpoint}-self-start-center {
 			place-self: start center;
 		}
@@ -192,20 +177,63 @@
 		}
 
 		// auto flows
-		grid#{$breakpoint}-flow-row {
+		.grid#{$breakpoint}-flow-row {
 			grid-auto-flow: row;
 		}
-		grid#{$breakpoint}-flow-col {
+		.grid#{$breakpoint}-flow-col {
 			grid-auto-flow: column;
 		}
-		grid#{$breakpoint}-flow-dense {
+		.grid#{$breakpoint}-flow-dense {
 			grid-auto-flow: dense;
 		}
-		grid#{$breakpoint}-flow-row-dense {
+		.grid#{$breakpoint}-flow-row-dense {
 			grid-auto-flow: row dense;
 		}
-		grid#{$breakpoint}-flow-col-dense {
+		.grid#{$breakpoint}-flow-col-dense {
 			grid-auto-flow: column dense;
+		}
+
+		// place items
+		.place#{$breakpoint}-items-start {
+			place-items: start;
+		}
+		.place#{$breakpoint}-items-end {
+			place-items: end;
+		}
+		.place#{$breakpoint}-items-center {
+			place-items: center;
+		}
+		.place#{$breakpoint}-items-baseline {
+			place-items: baseline;
+		}
+		.place#{$breakpoint}-items-stretch {
+			place-items: stretch;
+		}
+
+		//place content
+		.place#{$breakpoint}-content-center {
+			place-content: center;
+		}
+		.place#{$breakpoint}-content-start {
+			place-content: start;
+		}
+		.place#{$breakpoint}-content-end {
+			place-content: end;
+		}
+		.place#{$breakpoint}-content-between {
+			place-content: space-between;
+		}
+		.place#{$breakpoint}-content-around {
+			place-content: space-around;
+		}
+		.place#{$breakpoint}-content-evenly {
+			place-content: space-evenly;
+		}
+		.place#{$breakpoint}-content-baseline {
+			place-content: baseline;
+		}
+		.place#{$breakpoint}-content-stretch {
+			place-content: stretch;
 		}
 	}
 }
