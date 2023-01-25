@@ -737,12 +737,12 @@
 	}
 }
 
-.layout-autofit {
+.layout-auto-fit {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.layout-autofill {
+.layout-auto-fill {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
@@ -818,6 +818,10 @@
 
 	@include m.mq("md") {
 		grid-template-columns: repeat(2, 6fr);
+		&.md-break {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	@include m.mq("sm") {
@@ -831,6 +835,11 @@
 
 	@include m.mq("md") {
 		grid-template-columns: repeat(2, 6fr);
+
+		&.md-break {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	@include m.mq("sm") {
