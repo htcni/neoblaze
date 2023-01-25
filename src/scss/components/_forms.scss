@@ -1,0 +1,333 @@
+.form {
+	&-input {
+		border-radius: 4px;
+		padding: 0.5rem 1rem;
+		width: 100%;
+		font-size: 1rem;
+		border: 1px solid var(--default);
+		box-shadow: var(--input-shadow);
+		font-family: inherit;
+		line-height: inherit;
+		&:focus {
+			box-shadow: var(--input-focus-shadow);
+		}
+		&--primary {
+			box-shadow: var(--primary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--primary) 0px 0px 0px 1px;
+			}
+		}
+		&--secondary {
+			box-shadow: var(--secondary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--secondary) 0px 0px 0px 1px;
+			}
+		}
+		&--tertiary {
+			box-shadow: var(--tertiary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--tertiary) 0px 0px 0px 1px;
+			}
+		}
+		&--info {
+			box-shadow: var(--info) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--info) 0px 0px 0px 1px;
+			}
+		}
+		&--warning {
+			box-shadow: var(--warning) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--warning) 0px 0px 0px 1px;
+			}
+		}
+		&--danger {
+			box-shadow: var(--danger) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--danger) 0px 0px 0px 1px;
+			}
+		}
+		&--success {
+			box-shadow: var(--success) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--success) 0px 0px 0px 1px;
+			}
+		}
+		&--neutral {
+			box-shadow: var(--neutral) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--neutral) 0px 0px 0px 1px;
+			}
+		}
+		&--black {
+			box-shadow: var(--black) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--black) 0px 0px 0px 1px;
+			}
+		}
+		&--white {
+			box-shadow: var(--white) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--white) 0px 0px 0px 1px;
+			}
+		}
+	}
+
+	// Checkboxes
+	&-checkbox {
+		appearance: none;
+		margin: 0;
+		padding: 0;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 0.25em;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		border: 1px solid var(--default--medium);
+		transition: background-color 250ms ease;
+
+		&:checked {
+			background-color: var(--primary);
+			&[type="checkbox"] {
+				border: 1px solid var(--transparent);
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+			}
+		}
+
+		&:focus {
+			box-shadow: 0px 0px 0px 1px #3a97d45c;
+		}
+
+		&--primary {
+			&:checked {
+				background-color: var(--primary);
+			}
+		}
+		&--secondary {
+			&:checked {
+				background-color: var(--secondary);
+			}
+		}
+		&--tertiary {
+			&:checked {
+				background-color: var(--tertiary);
+			}
+		}
+		&--info {
+			&:checked {
+				background-color: var(--info);
+			}
+		}
+		&--warning {
+			&:checked {
+				background-color: var(--warning);
+			}
+		}
+		&--danger {
+			&:checked {
+				background-color: var(--danger);
+			}
+		}
+		&--success {
+			&:checked {
+				background-color: var(--success);
+			}
+		}
+		&--neutral {
+			&:checked {
+				background-color: var(--neutral);
+			}
+		}
+		&--black {
+			&:checked {
+				background-color: var(--black);
+			}
+		}
+		&--white {
+			&:checked {
+				background-color: var(--white);
+			}
+		}
+	}
+
+	// Checkboxes
+	&-radio {
+		appearance: none;
+		margin: 0;
+		padding: 0;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		vertical-align: text-top;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		border: 1px solid var(--default--medium);
+		transition: background-color 250ms ease;
+
+		&:checked {
+			background-color: var(--primary);
+			&[type="radio"] {
+				border: 1px solid var(--transparent);
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+			}
+		}
+
+		&:focus {
+			box-shadow: 0px 0px 0px 1px #3a97d45c;
+		}
+
+		&--primary {
+			&:checked {
+				background-color: var(--primary);
+			}
+		}
+		&--secondary {
+			&:checked {
+				background-color: var(--secondary);
+			}
+		}
+		&--tertiary {
+			&:checked {
+				background-color: var(--tertiary);
+			}
+		}
+		&--info {
+			&:checked {
+				background-color: var(--info);
+			}
+		}
+		&--warning {
+			&:checked {
+				background-color: var(--warning);
+			}
+		}
+		&--danger {
+			&:checked {
+				background-color: var(--danger);
+			}
+		}
+		&--success {
+			&:checked {
+				background-color: var(--success);
+			}
+		}
+		&--neutral {
+			&:checked {
+				background-color: var(--neutral);
+			}
+		}
+		&--black {
+			&:checked {
+				background-color: var(--black);
+			}
+		}
+		&--white {
+			&:checked {
+				background-color: var(--white);
+			}
+		}
+	}
+
+	// select
+	&-select {
+		border: 1px solid var(--default);
+		max-width: 100%;
+		font-size: 1rem;
+		box-shadow: var(--input-shadow);
+		padding: 0.5rem 0.75rem;
+		border-radius: 4px;
+
+		padding-right: 28px;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: right 4px center;
+		background-size: 24px;
+		appearance: none;
+
+		&:focus {
+			outline: none;
+			box-shadow: var(--input-focus-shadow);
+		}
+	}
+
+	// text area
+	&-textarea {
+		border-radius: 4px;
+		padding: 0.5rem 1rem;
+		width: 100%;
+		font-size: 1rem;
+		min-height: 200px;
+		border: 1px solid var(--default);
+		box-shadow: var(--input-shadow);
+		font-family: inherit;
+		line-height: inherit;
+		&:focus {
+			outline: none;
+			box-shadow: var(--input-focus-shadow);
+		}
+		&--primary {
+			box-shadow: var(--primary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--primary) 0px 0px 0px 1px;
+			}
+		}
+		&--secondary {
+			box-shadow: var(--secondary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--secondary) 0px 0px 0px 1px;
+			}
+		}
+		&--tertiary {
+			box-shadow: var(--tertiary) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--tertiary) 0px 0px 0px 1px;
+			}
+		}
+		&--info {
+			box-shadow: var(--info) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--info) 0px 0px 0px 1px;
+			}
+		}
+		&--warning {
+			box-shadow: var(--warning) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--warning) 0px 0px 0px 1px;
+			}
+		}
+		&--danger {
+			box-shadow: var(--danger) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--danger) 0px 0px 0px 1px;
+			}
+		}
+		&--success {
+			box-shadow: var(--success) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--success) 0px 0px 0px 1px;
+			}
+		}
+		&--neutral {
+			box-shadow: var(--neutral) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--neutral) 0px 0px 0px 1px;
+			}
+		}
+		&--black {
+			box-shadow: var(--black) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--black) 0px 0px 0px 1px;
+			}
+		}
+		&--white {
+			box-shadow: var(--white) 0px 0px 0px 1px;
+			&:focus {
+				box-shadow: var(--white) 0px 0px 0px 1px;
+			}
+		}
+	}
+}
