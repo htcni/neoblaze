@@ -1,4 +1,4 @@
-- title: Getting started
+- title: Getting Started
   pages:
     - title: Introduction
     - title: Installation
@@ -8,20 +8,13 @@
     - title: Overview
     - title: Typography
     - title: Colors
-
-- title: Customize
-  pages:
-    - title: Overview
-    - title: Sass
+    - title: Principles
 
 - title: Layout
   pages:
     - title: Breakpoints
-    - title: Containers
-    - title: Grid
-    - title: Columns
-    - title: Gutters
-    - title: Utilities
+    - title: Container
+    - title: Layout
 
 - title: Components
   pages:
@@ -34,10 +27,9 @@
     - title: Button group
     - title: Card
     - title: Chips
+    - title: Form
     - title: Links
-    - title: Modal
     - title: Navigation
-    - title: Toasts
 
 - title: Utilities
   pages:
@@ -46,8 +38,12 @@
     - title: Colors
     - title: Display
     - title: Flexbox
+    - title: Flexbox Grid
+    - title: Grid
+    - title: Image
     - title: Layout
     - title: Position
     - title: Shadows
     - title: Sizing
     - title: Spacing
+    - title: Typography
