@@ -1,6 +1,6 @@
 {
 	"name": "neoblaze",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "",
 	"scripts": {
 		"watch": "npm-run-all --parallel watch:*",
@@ -9,7 +9,8 @@
 		"build:prefix-css": "postcss dist/css/neoblaze.css -o dist/css/neoblaze.css --use autoprefixer --no-map",
 		"build:minify-css": "cleancss -o dist/css/neoblaze.min.css dist/css/neoblaze.css",
 		"build": "npm-run-all build:*",
-		"start": "npm-run-all build:sass watch"
+		"start": "npm-run-all build:sass watch",
+		"format": "prettier --write ."
 	},
 	"keywords": [],
 	"author": "",
@@ -18,7 +19,9 @@
 		"autoprefixer": "^10.4.13",
 		"clean-css-cli": "^5.6.1",
 		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.21",
 		"postcss-cli": "^10.0.0",
+		"prettier": "^2.8.3",
 		"sass": "^1.55.0"
 	}
 }
