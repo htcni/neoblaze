@@ -1,4 +1,4 @@
-@use '../helpers/variables/font' as f;
+@use "../helpers/variables/font" as f;
 *,
 *::after,
 *::before {
@@ -42,12 +42,14 @@ a {
 	line-height: inherit;
 }
 
-input {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
-
 table {
 	border-collapse: collapse;
+}
+
+input {
+	outline: none;
+}
+
+label {
+	display: inline-block;
 }

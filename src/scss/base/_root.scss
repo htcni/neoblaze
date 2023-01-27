@@ -2,9 +2,9 @@
 :root {
 	// Fonts
 
-	--font-primary: "Satoshi", sans-serif;
-	--font-secondary: "Sentient", serif;
-	--font-tertiary: "Switzer", sans-serif;
+	--font-primary: "Inter", sans-serif;
+	--font-secondary: system-ui, "Segoe UI";
+	--font-tertiary: "Fira Code", monospace;
 
 	//COLORS
 	@each $color, $value in t.$base-colors {
@@ -15,7 +15,14 @@
 		#{"--" + $color}: #{$value};
 	}
 
+	//link
+	--link-default: #06c;
+
 	// Menu navigation
 	--active-link-color: var(--default);
 	--active-link-bgColor: var(--default--ultra);
+
+	// form input
+	--input-shadow: rgba(71, 71, 71, 0.16) 0px 0px 0px 1px;
+	--input-focus-shadow: var(--primary) 0px 0px 0px 1px;
 }
