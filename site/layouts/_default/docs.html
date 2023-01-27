@@ -4,21 +4,31 @@
 		{{ partial "docs-sidebar" . }}
 	</aside>
 	<main class="layout-main">
-		<section class="container mx-auto layout layout-2-col--fixed-aside-right md-break-reverse gap-6 p-6 p-sm-0 mt-6 scroll-thin">
-			<div class="docs-section layout-main ml-md-0 ml-12 px-6 min-width-0 overflow-auto">
+		<section
+			class="container mx-auto layout layout-2-col--fixed-aside-right md-break-reverse gap-6 p-6 p-sm-0 mt-6 scroll-thin">
+			<div
+				class="docs-section layout-main ml-md-0 ml-12 px-6 min-width-0 overflow-auto">
 				<div class="d-flex flex-column flex-justify-center">
 					<div class="d-flex flex-justify-between">
 						<h1 class="heading font-bold tracking-tight">{{ .Title }}</h1>
 						<div class="d-flex flex-items-center gap-2">
 							{{if .Params.source}}
-							<a class="btn btn-text-primary" href="{{ .Params.source }}" target="_blank" rel="noopener">
+							<a
+								class="btn btn-text-primary"
+								href="{{ .Params.source }}"
+								target="_blank"
+								rel="noopener">
 								<span class="icon mr-1 label-md">
 									<i class="ri-github-fill"></i>
 								</span>
 								Source
 							</a>
 							{{end}}
-							<a class="btn btn-text-primary" href="{{ .Site.Params.repo }}/blob/main/site/content/{{ .Page.File.Path | replaceRE `\\` "/" }}" target="_blank" rel="noopener">
+							<a
+								class="btn btn-text-primary"
+								href="{{ .Site.Params.repo }}/blob/main/site/content/{{ .Page.File.Path | replaceRE `\\` '/' }}"
+								target="_blank"
+								rel="noopener">
 								<span class="icon mr-1 label-md">
 									<i class="ri-edit-line"></i>
 								</span>
@@ -30,11 +40,9 @@
 				</div>
 				{{ .Content }}
 			</div>
-			<aside class="layout-aside width-20">
-				{{ partial "toc" . }}
-			</aside>
+			<aside class="layout-aside width-20">{{ partial "toc" . }}</aside>
 		</section>
-</div>
 	</main>
+</div>
 
 {{ end }}

@@ -1,4 +1,4 @@
-@use '../helpers/mixins/' as m;
+@use "../helpers/mixins/" as m;
 
 .card {
 	@include m.border-radius;

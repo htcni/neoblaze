@@ -1,9 +1,9 @@
-const purgecss = require("@fullhuman/postcss-purgecss");
+const purgecss = require('@fullhuman/postcss-purgecss');
 module.exports = {
 	plugins: [
-		require("autoprefixer"),
+		require('autoprefixer'),
 		purgecss({
-			content: ["./layouts/**/*.html"],
+			content: ['./layouts/**/*.html'],
 		}),
 	],
 };
