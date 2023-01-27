@@ -1,5 +1,5 @@
 <!-- prettier-ignore -->
-<div class="docs-sidebar">
+<div class="docs-sidebar scroll-thin">
 <nav class="menu p-4 height-full overflow-y-auto" aria-label="Docs navigation">
 	{{- $url := split .Permalink "/" -}}
 	{{- $page_slug := index $url (sub (len $url) 2) -}}
@@ -19,11 +19,11 @@
 
 		{{- if $group.pages }}
 			<li class="menu__list-item accordion" data-accordion="open">
-				<div class="font-bold label-md fg-gray--medium accordion__header px-2 py-1">
+				<div class="font-bold label-md fg-gray--medium accordion__header accordion-icon px-2 py-1">
 					{{ $group.title }}
 				</div>
 				<div class="accordion__content">
-				<ul class="menu__list mb-4 ml-2">
+				<ul class="menu__list mb-2 ml-2">
 					{{- range $doc := $group.pages -}}
 						{{- $doc_slug := $doc.title | urlize -}}
 						{{- $is_active := and $is_active_group (eq $page_slug $doc_slug) -}}
