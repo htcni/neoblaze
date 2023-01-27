@@ -2,7 +2,7 @@
 layout: docs
 title: Navigation
 subtitle: Navigation allows user to organize information.
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_navigation.scss
 group: components
 ---
 

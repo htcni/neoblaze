@@ -2,7 +2,7 @@
 layout: docs
 title: Layout
 subtitle: Grid based layout for quickly building 2 column layouts.
-titleBg: bg-danger--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/layouts/_layout.scss
 group: layout
 ---
 

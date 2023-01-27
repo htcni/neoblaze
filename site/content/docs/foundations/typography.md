@@ -2,11 +2,11 @@
 layout: docs
 title: Typography
 subtitle: Use typography to make text beautiful.
-titleBg: bg-primary--xlight
+source: https://github.com/htcni/neoblaze/blob/dev/src/scss/typography/_index.scss
 group: getting-started
 ---
 
-## Typography Tokens {.heading-sm .mt-6 .mb-4}
+## Typography Tokens {.heading-xs .mt-6 .mb-2}
 
 There are five different type of tokens use to define different text size on screen.
 
@@ -16,7 +16,7 @@ There are five different type of tokens use to define different text size on scr
 4. Body
 5. Label
 
-## Display {.heading-sm .mt-6 .mb-4}
+## Display {.heading-xs .mt-6 .mb-2}
 
 Use for large heading on a large screen.
 
@@ -27,9 +27,9 @@ Use for large heading on a large screen.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <h3 class="display-sm">Magical CSS</h3>
-{{< /highlight >}}
+``` 
 
 
 Type | Scale 
@@ -41,7 +41,7 @@ Type | Scale
 `display-sm` | 6vw
 `display-xs` | 4vw
 
-## Heading {.heading-sm .mt-6 .mb-4}
+## Heading {.heading-xs .mt-6 .mb-2}
 
 Default `h1` to `h6` has no style. Use different `heading` classes.
 
@@ -59,7 +59,7 @@ Default `h1` to `h6` has no style. Use different `heading` classes.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <h3 class="heading-3xl">3XL Heading</h3>
 <h3 class="heading-2xl">2XL Heading</h3>
 <h3 class="heading-xl">XL Heading</h3>
@@ -68,7 +68,7 @@ Default `h1` to `h6` has no style. Use different `heading` classes.
 <h3 class="heading">Heading</h3>
 <h3 class="heading-sm">SM Heading</h3>
 <h3 class="heading-xs">XS Heading</h3>
-{{< /highlight >}}
+``` 
 
 
 Type | Default | Medium | Small
@@ -83,7 +83,7 @@ Type | Default | Medium | Small
 `heading-xs`  | 1.5rem - 24px  | 1.25rem - 20px | 1.125rem - 18px
 
 
-## Title {.heading-sm .mt-6 .mb-4}
+## Title {.heading-xs .mt-6 .mb-2}
 
 Use `.title` for card title, section title. 
 
@@ -117,14 +117,14 @@ Use `.title` for card title, section title.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <h3 class="title-xl">XL Title</h3>
 <h3 class="title-lg">LG Title</h3>
 <h3 class="title-md">MD Title</h3>
 <h3 class="title">Title</h3>
 <h3 class="title-sm">SM Title</h3>
 <h3 class="title-xs">XS Title</h3>
-{{< /highlight >}}
+``` 
 
 
 Type | Default 
@@ -137,7 +137,7 @@ Type | Default
 `title-xs`  | 1rem - 16px  
 
 
-## Body {.heading-sm .mt-6 .mb-4}
+## Body {.heading-xs .mt-6 .mb-2}
 
 Use `.body` for paragraphs and main text in your site.
 
@@ -171,14 +171,14 @@ Use `.body` for paragraphs and main text in your site.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <p class="body-xl">XL Body</p>
 <p class="body-lg">LG Body</p>
 <p class="body-md">MD Body</p>
 <p class="body">Body</p>
 <p class="body-sm">SM Body</p>
 <p class="body-xs">XS Body</p>
-{{< /highlight >}}
+``` 
 
 
 Type | Default | Medium
@@ -192,7 +192,7 @@ Type | Default | Medium
 
 
 
-## Label {.heading-sm .mt-6 .mb-4}
+## Label {.heading-xs .mt-6 .mb-2}
 
 Use `.label` for smaller text like in buttons, chips etc.
 
@@ -208,14 +208,14 @@ Use `.label` for smaller text like in buttons, chips etc.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-primary label-xl">Like</button>
 <button class="btn btn-primary label-lg">Like</button>
 <button class="btn btn-primary label-md">Like</button>
 <span class="label">140K</span>
 <span class="chip chip-info label-sm">Stable</span>
 <span class="label-xs">New</span>
-{{< /highlight >}}
+``` 
 
 
 Type | Default

@@ -26,26 +26,26 @@ It is recommended to use npm to install neoblaze.
 
 Intialize `package.json` in your project.
 
-{{< highlight js >}}
+```  js
 npm init -y
-{{< /highlight >}}
+``` 
 
 ### Step 2 {.title-sm .mt-6 .mb-2 .fg-secondary}
 
 Install neoblaze.
 
-{{< highlight js >}}
+```  js
 npm install -D neoblaze
-{{< /highlight >}}
+``` 
 
 
 ### Step 3 {.title-sm .mt-6 .mb-2 .fg-secondary}
 
 Install all dependencies.
 
-{{< highlight js >}}
+```  js
 npm install -D sass postcss autoprefixer @fullhuman/postcss-purgecss npm-run-all clean-css-cli
-{{< /highlight >}}
+``` 
 
 You will need all these tools for optimized production build.
 
@@ -59,7 +59,7 @@ You will need all these tools for optimized production build.
 
 Import neoblaze in your main scss file.
 
-{{< highlight scss >}}
+``` scss
 project/
 ├── scss/
 │   ├── main.scss
@@ -69,23 +69,23 @@ project/
 
 @forward 'node_modules/neoblaze/src/scss/neoblaze.scss';
 
-{{< /highlight >}}
+``` 
 
 You can also individually import modules that you need.
 
-{{< highlight scss >}}
+```  scss
 //scss/main.scss
 
 @forward 'node_modules/neoblaze/src/scss/layouts';
 @forward 'node_modules/neoblaze/src/scss/utilities/grid';
-{{< /highlight >}}
+``` 
 
 
-### Step 6 {.title-sm .mt-6 .mb-2 .fg-secondary}
+### Step 5 {.title-sm .mt-6 .mb-2 .fg-secondary}
 
 Configure npm scripts in `package.json`.
 
-{{< highlight json >}}
+``` json
 //package.json
 
 	"scripts": {
@@ -98,13 +98,13 @@ Configure npm scripts in `package.json`.
     "css:minify": "cleancss -o css/main.css css/main.css",
 		"build:css": "npm-run-all compile:sass css:postcss css:minify"
 	},
-{{< /highlight >}}
+``` 
 
-### Step 7 {.title-sm .mt-6 .mb-2 .fg-secondary}
+### Step 6 {.title-sm .mt-6 .mb-2 .fg-secondary}
 
 Configure `postcss.config.js`
 
-{{< highlight js >}}
+```  js
 //postcss.config.js
 
 const purgecss = require("@fullhuman/postcss-purgecss");
@@ -117,20 +117,20 @@ module.exports = {
 	],
 };
 
-{{< /highlight >}}
+``` 
 
 
 ### Step 7 {.title-sm .mt-6 .mb-2 .fg-secondary}
 
 Run npm start
 
-{{< highlight js >}}
+```  js
 npm start
-{{< /highlight >}}
+``` 
 
 ### Step 8 {.title-sm .mt-6 .mb-2 .fg-secondary}
 Build for production.
 
-{{< highlight js >}}
+```  js
 npm run build
-{{< /highlight >}}
+``` 

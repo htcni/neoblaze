@@ -2,11 +2,11 @@
 layout: docs
 title: Flexbox
 subtitle: Utilities for controlling flexbox.
-titleBg: bg-danger--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_flexbox.scss
 group: utilities
 ---
 
-## Flex Container {.heading-sm .mt-6 .mb-4}
+## Flex Container {.heading-xs .mt-6 .mb-2}
 
 Use `.d-flex` display utility to create flexbox container.
 
@@ -28,15 +28,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Inline Flex {.title-sm .mt-6 .mb-4}
+#### Inline Flex {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-inline-flex">
@@ -44,13 +44,13 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-inline-flex">
 	<div class="box bg-secondary--xlight p-5">Inline flex container</div>
 </div>
-{{< /highlight >}}
+``` 
 
-## Flex Direction {.heading-sm .mt-6 .mb-4}
+## Flex Direction {.heading-xs .mt-6 .mb-2}
 
 Use these classes to change the direction of flex items in the container.
 
@@ -61,7 +61,7 @@ Class | Properties
 `flex-column`         | flex-direction: column;
 `flex-column-reverse` | flex-direction: column-reverse;
 
-#### Row {.title-sm .mt-6 .mb-4}
+#### Row {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-row mt-8">
@@ -71,15 +71,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-row">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Row Reverse {.title-sm .mt-6 .mb-4}
+#### Row Reverse {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-row-reverse mt-8">
@@ -89,15 +89,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex  flex-row-reverse">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Column {.title-sm .mt-6 .mb-4}
+#### Column {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-column mt-8">
@@ -107,16 +107,16 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex  flex-column">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### Column Reverse {.title-sm .mt-6 .mb-4}
+#### Column Reverse {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-column-reverse mt-8">
@@ -126,15 +126,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex  flex-column-reverse">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-## Flex Wrap {.heading-sm .mt-6 .mb-4}
+## Flex Wrap {.heading-xs .mt-6 .mb-2}
 
 Use wrap utility classes to control if items wrap in single or multiple line.
 
@@ -144,7 +144,7 @@ Class | Properties
 `flex-wrap-reverse`    | flex-wrap: wrap-reverse; 
 `flex-nowrap`          | flex-wrap: nowrap;
 
-#### No Wrap {.title-sm .mt-6 .mb-4}
+#### No Wrap {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-nowrap box overflow-auto">
@@ -158,7 +158,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-nowrap">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -168,10 +168,10 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### Wrap {.title-sm .mt-6 .mb-4}
+#### Wrap {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap box">
@@ -185,7 +185,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -195,9 +195,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Wrap Reverse {.title-sm .mt-6 .mb-4}
+#### Wrap Reverse {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap-reverse box">
@@ -211,7 +211,7 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap-reverse">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -221,10 +221,10 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Justify Content {.heading-sm .mt-6 .mb-4}
+## Justify Content {.heading-xs .mt-6 .mb-2}
 
 Use these classes to align flex and grid items along the main axis of container.
 
@@ -237,7 +237,7 @@ Class | Properties
 `flex-justify-around` | justify-content: space-around;
 `flex-justify-evenly` | justify-content: spaxe-evenly;
 
-#### Start {.title-sm .mt-6 .mb-4}
+#### Start {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-start box">
@@ -248,16 +248,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-start">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### End {.title-sm .mt-6 .mb-4}
+#### End {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-end box">
@@ -268,15 +268,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-end">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Center {.title-sm .mt-6 .mb-4}
+#### Center {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-center box">
@@ -287,15 +287,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-center">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Space Between {.title-sm .mt-6 .mb-4}
+#### Space Between {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-between box">
@@ -306,15 +306,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-between">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Space Around {.title-sm .mt-6 .mb-4}
+#### Space Around {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-around box">
@@ -325,15 +325,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-around">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Space Evenly {.title-sm .mt-6 .mb-4}
+#### Space Evenly {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-justify-evenly box">
@@ -344,16 +344,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-justify-evenly">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Align Items {.heading-sm .mt-6 .mb-4}
+## Align Items {.heading-xs .mt-6 .mb-2}
 
 Use these classes to align flex and grid items along the cross axis of container.
 
@@ -365,7 +365,7 @@ Class | Properties
 `flex-items-baseline`| align-items: baseline;
 `flex-items-stretch` | align-items: stretch;
 
-#### Start {.title-sm .mt-6 .mb-4}
+#### Start {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-items-start box min-height-10">
@@ -376,16 +376,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-start">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### End {.title-sm .mt-6 .mb-4}
+#### End {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-items-end min-height-10 box">
@@ -396,15 +396,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-end">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Center {.title-sm .mt-6 .mb-4}
+#### Center {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-items-center box min-height-10">
@@ -415,15 +415,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-center">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Baseline {.title-sm .mt-6 .mb-4}
+#### Baseline {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-items-baseline box">
@@ -434,15 +434,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-baseline">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Stretch {.title-sm .mt-6 .mb-4}
+#### Stretch {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-item-stretch min-height-10 box">
@@ -453,16 +453,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-item-stretch">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Align Content {.heading-sm .mt-6 .mb-4}
+## Align Content {.heading-xs .mt-6 .mb-2}
 
 Use these classes to align rows in multirow flex and grid items.
 
@@ -480,7 +480,7 @@ Class | Properties
 `flex-content-evenly`  | align-content: space-evenly;
 `flex-content-stretch` | align-content: stretch;
 
-#### Start {.title-sm .mt-6 .mb-4}
+#### Start {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-start box min-height-16">
@@ -495,7 +495,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-start">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -505,10 +505,10 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### End {.title-sm .mt-6 .mb-4}
+#### End {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-end box min-height-16">
@@ -523,7 +523,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-end">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -533,9 +533,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Center {.title-sm .mt-6 .mb-4}
+#### Center {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-center box min-height-16">
@@ -550,7 +550,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-center">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -560,9 +560,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div
-{{< /highlight >}}
+``` 
 
-#### Space Between {.title-sm .mt-6 .mb-4}
+#### Space Between {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-between box min-height-16">
@@ -577,7 +577,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-between">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -587,9 +587,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div
-{{< /highlight >}}
+``` 
 
-#### Space Around {.title-sm .mt-6 .mb-4}
+#### Space Around {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-around box min-height-16">
@@ -604,7 +604,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-around">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -614,9 +614,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div
-{{< /highlight >}}
+``` 
 
-#### Space Evenly {.title-sm .mt-6 .mb-4}
+#### Space Evenly {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-evenly box min-height-16">
@@ -631,7 +631,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-evenly">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -641,9 +641,9 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div
-{{< /highlight >}}
+``` 
 
-#### Stretch {.title-sm .mt-6 .mb-4}
+#### Stretch {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-wrap flex-content-stretch box min-height-16">
@@ -658,7 +658,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-wrap flex-content-stretch">
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 1</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 2</div>
@@ -668,10 +668,10 @@ Class | Properties
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 6</div>
 	<div class="box bg-secondary--xlight width-20 p-5"> Flex item 7</div>
 </div
-{{< /highlight >}}
+``` 
 
 
-## Align Self {.heading-sm .mt-6 .mb-4}
+## Align Self {.heading-xs .mt-6 .mb-2}
 
 Use these classes to align individual flex and grid items along the cross axis of container.
 
@@ -684,7 +684,7 @@ Class | Properties
 `flex-self-baseline`| align-self: baseline;
 `flex-self-stretch` | align-self: stretch;
 
-#### Auto {.title-sm .mt-6 .mb-4}
+#### Auto {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex box min-height-10">
@@ -695,16 +695,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-start">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### Start {.title-sm .mt-6 .mb-4}
+#### Start {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex box min-height-10">
@@ -715,16 +715,16 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-start">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self-start box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### End {.title-sm .mt-6 .mb-4}
+#### End {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex min-height-10 box">
@@ -735,15 +735,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self-end box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Center {.title-sm .mt-6 .mb-4}
+#### Center {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex min-height-10 box">
@@ -754,15 +754,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self-center box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Baseline {.title-sm .mt-6 .mb-4}
+#### Baseline {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex min-height-10 box">
@@ -773,15 +773,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self-baseline box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Stretch {.title-sm .mt-6 .mb-4}
+#### Stretch {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex min-height-10 box">
@@ -792,15 +792,15 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-self-stretch box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-## Flex Items {.heading-sm .mt-6 .mb-4}
+## Flex Items {.heading-xs .mt-6 .mb-2}
 
 Use these classes to grow or shrink flex children.
 
@@ -815,7 +815,7 @@ Class | Properties
 `flex-shrink-0` | flex-shrink: 0;
 `flex-none`     | flex: none;
 
-#### Auto {.title-sm .mt-6 .mb-4}
+#### Auto {.title-sm .mt-6 .mb-2}
 
 Use `flex-auto` to allow a flex item to grow and shrink, taking initial size into account.
 
@@ -828,15 +828,15 @@ Use `flex-auto` to allow a flex item to grow and shrink, taking initial size int
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-auto box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Initial {.title-sm .mt-6 .mb-4}
+#### Initial {.title-sm .mt-6 .mb-2}
 
 Use `flex-inital` to allow a flex item to shrink but not grow, taking initial size into account.
 
@@ -849,16 +849,16 @@ Use `flex-inital` to allow a flex item to shrink but not grow, taking initial si
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-initial box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-#### Flex 1  {.title-sm .mt-6 .mb-4}
+#### Flex 1  {.title-sm .mt-6 .mb-2}
 
 Use `flex-1` to allow a flex item to shrink and grow as needed, taking up all the needed space.
 
@@ -871,15 +871,15 @@ Use `flex-1` to allow a flex item to shrink and grow as needed, taking up all th
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-1 box bg-secondary--light p-5"> Flex item 2</div>
 	<div class="flex-1 box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Flex Grow  {.title-sm .mt-6 .mb-4}
+#### Flex Grow  {.title-sm .mt-6 .mb-2}
 
 Use `flex-grow-1` to allow a flex item to grow taking up all the space.
 
@@ -892,15 +892,15 @@ Use `flex-grow-1` to allow a flex item to grow taking up all the space.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-grow-1 box bg-secondary--light p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Flex Grow 0 {.title-sm .mt-6 .mb-4}
+#### Flex Grow 0 {.title-sm .mt-6 .mb-2}
 
 Use `flex-grow-0` to prevent flex item from growing.
 
@@ -913,15 +913,15 @@ Use `flex-grow-0` to prevent flex item from growing.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-grow-0 box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Flex Shrink  {.title-sm .mt-6 .mb-4}
+#### Flex Shrink  {.title-sm .mt-6 .mb-2}
 
 Use `flex-shrink-1` to allow a flex item to shrink when needed.
 
@@ -934,15 +934,15 @@ Use `flex-shrink-1` to allow a flex item to shrink when needed.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-shrink-1 box bg-secondary--light p-5 width-20"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Flex Shrink 0 {.title-sm .mt-6 .mb-4}
+#### Flex Shrink 0 {.title-sm .mt-6 .mb-2}
 
 Use `flex-shrink-0` to prevent flex item from shrinking.
 
@@ -955,15 +955,15 @@ Use `flex-shrink-0` to prevent flex item from shrinking.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-shrink-0 box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
-#### Flex None {.title-sm .mt-6 .mb-4}
+#### Flex None {.title-sm .mt-6 .mb-2}
 
 Use `flex-none` to prevent flex item from shrinking and growing.
 
@@ -976,16 +976,16 @@ Use `flex-none` to prevent flex item from shrinking and growing.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-1 box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-none width-20 box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Order {.heading-sm .mt-6 .mb-4}
+## Order {.heading-xs .mt-6 .mb-2}
 
 Use these classes change the visual order of flex items.
 
@@ -1011,21 +1011,21 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="flex-order-3 box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="flex-order-1 box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="flex-order-2 box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Gap {.heading-sm .mt-6 .mb-4}
+## Gap {.heading-xs .mt-6 .mb-2}
 
 For gap see [spacing]({{< ref "/docs/utilities/spacing" >}}) utilities.
 
 
-## Resposive Flexbox Utilities {.heading-sm .mt-6 .mb-4}
+## Resposive Flexbox Utilities {.heading-xs .mt-6 .mb-2}
 
 Use `d-{breakpoint}-{property}` for [display]({{< ref "/docs/utilities/spacing" >}}).
 \
@@ -1041,9 +1041,10 @@ Use `flex-{breakpoint}-{property}` for responsive variants like `flex-md-column`
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-sm-column">
 	<div class="box bg-secondary--xlight p-5">Flex item 1</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 2</div>
 	<div class="box bg-secondary--xlight p-5"> Flex item 3</div>
 </div>
+```

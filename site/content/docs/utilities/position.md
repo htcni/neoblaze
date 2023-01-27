@@ -2,7 +2,7 @@
 layout: docs
 title: Position
 subtitle: Utilities for controlling element's position.
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_position.scss
 group: utilities
 ---
 

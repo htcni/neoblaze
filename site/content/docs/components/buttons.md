@@ -2,11 +2,11 @@
 layout: docs
 title: Buttons
 subtitle: Buttons helps users to take some action.
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_alert.scss
 group: components
 ---
 
-## All buttons {.heading-sm .mt-6 .mb-4}
+## All buttons {.heading-xs .mt-6 .mb-2}
 
 There are five types of buttons.
 
@@ -24,7 +24,7 @@ There are five types of buttons.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-primary">Solid</button>
 <button class="btn btn-outline-success">Outline</button>
 <button class="btn btn-text-secondary">Text</button>
@@ -34,10 +34,10 @@ There are five types of buttons.
 		<i class="ph-bell"></i>
 	</span>
 </button>
-{{< /highlight >}}
+``` 
 
 
-## Solid buttons {.heading-sm .mt-6 .mb-4}
+## Solid buttons {.heading-xs .mt-6 .mb-2}
 
 Solid button emphasize primary actions with solid and high contrast background.
 
@@ -57,7 +57,7 @@ Solid button emphasize primary actions with solid and high contrast background.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn">Wake up</button>
 <button class="btn btn-primary">Subscribe</button>
 <button class="btn btn-secondary">Login</button>
@@ -69,10 +69,10 @@ Solid button emphasize primary actions with solid and high contrast background.
 <button class="btn btn-neutral">Tommorow</button>
 <button class="btn btn-black">Ding</button>
 <button class="btn btn-white">Dong</button>
-{{< /highlight >}}
+``` 
 
 
-### Inverted Solid buttons {.heading-xs .mt-6 .mb-4}
+### Inverted Solid buttons {.title-sm .mt-6 .mb-2}
 
 Solid button also have inverted style.
 
@@ -91,7 +91,7 @@ Solid button also have inverted style.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-primary--inverted">Subscribe</button>
 <button class="btn btn-secondary--inverted">Login</button>
 <button class="btn btn-tertiary--inverted">Be Nice</button>
@@ -102,10 +102,10 @@ Solid button also have inverted style.
 <button class="btn btn-neutral--inverted">Tommorow</button>
 <button class="btn btn-black--inverted">Ding</button>
 <button class="btn btn-white--inverted">Dong</button>
-{{< /highlight >}}
+``` 
 
 
-## Outline buttons {.heading-sm .mt-6 .mb-4}
+## Outline buttons {.heading-xs .mt-6 .mb-2}
 
 Outline button are used to emphasize medium prominent action.
 
@@ -125,7 +125,7 @@ Outline button are used to emphasize medium prominent action.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-outline">Wake up</button>
 <button class="btn btn-outline-primary">Subscribe</button>
 <button class="btn btn-outline-secondary">Login</button>
@@ -137,10 +137,10 @@ Outline button are used to emphasize medium prominent action.
 <button class="btn btn-outline-neutral">Tommorow</button>
 <button class="btn btn-outline-black">Ding</button>
 <button class="btn btn-outline-white">Dong</button>
-{{< /highlight >}}
+``` 
 
 
-## Text buttons {.heading-sm .mt-6 .mb-4}
+## Text buttons {.heading-xs .mt-6 .mb-2}
 
 Outline button are used for less prominent action.
 
@@ -160,7 +160,7 @@ Outline button are used for less prominent action.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-text">Wake up</button>
 <button class="btn btn-text-primary">Subscribe</button>
 <button class="btn btn-text-secondary">Login</button>
@@ -172,10 +172,10 @@ Outline button are used for less prominent action.
 <button class="btn btn-text-neutral">Tommorow</button>
 <button class="btn btn-text-black">Ding</button>
 <button class="btn btn-text-white">Dong</button>
-{{< /highlight >}}
+``` 
 
 
-## With Icons {.heading-sm .mt-6 .mb-4}
+## With Icons {.heading-xs .mt-6 .mb-2}
 
 Buttons can appear with icons and labels.
 
@@ -203,7 +203,7 @@ Buttons can appear with icons and labels.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-black">
 	<span class="icon mr-1 label-md">
 		<i class="ri-github-fill"></i>
@@ -224,10 +224,10 @@ Buttons can appear with icons and labels.
 	</span>
 	<span>Save</span>
 </button>
-{{< /highlight >}}
+``` 
 
 
-## Icon buttons {.heading-sm .mt-6 .mb-4}
+## Icon buttons {.heading-xs .mt-6 .mb-2}
 
 Icon buttons can be used for a specific action. You can use `btn-icon-primary` and other classes to apply theme colors.  
 You can use `icon-bg-none` to remove the background on hover.
@@ -261,7 +261,7 @@ You can use `icon-bg-none` to remove the background on hover.
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-icon" aria-label="sun icon">
 	<span class="icon label-lg">
 		<i class="ri-sun-line"></i>
@@ -285,10 +285,10 @@ You can use `icon-bg-none` to remove the background on hover.
 		<i class="ri-youtube-fill"></i>
 	</span>
 </button>
-{{< /highlight >}}
+``` 
 
 
-## Link buttons {.heading-sm .mt-6 .mb-4}
+## Link buttons {.heading-xs .mt-6 .mb-2}
 
 Use link buttons for trigger onpage javacript.
 
@@ -300,18 +300,18 @@ Use link buttons for trigger onpage javacript.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-link">More</button>
 <button class="btn btn-link fg-primary">Add</button>
 <button class="btn btn-link fg-secondary">Create</button>
-{{< /highlight >}}
+``` 
 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With the help of utilities different variations of buttons can be created.
 
-### Elevation {.heading-xs .mt-6 .mb-4}
+### Elevation {.title-sm .mt-6 .mb-2}
 
 Add elevation with [shadow]({{< ref "/docs/utilities/shadows" >}}) utilities. 
 
@@ -323,12 +323,12 @@ Add elevation with [shadow]({{< ref "/docs/utilities/shadows" >}}) utilities.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-outline-primary shadow">Subscribe</button>
 <button class="btn btn-black--inverted px-8 shadow-md">Pay Now</button>
-{{< /highlight >}}
+``` 
 
-### Size {.heading-xs .mt-6 .mb-4}
+### Size {.title-sm .mt-6 .mb-2}
 
 Adjust the size of buttons with [spacing]({{< ref "/docs/utilities/spacing" >}}) and font utilities.
 
@@ -339,12 +339,12 @@ Adjust the size of buttons with [spacing]({{< ref "/docs/utilities/spacing" >}})
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-primary px-6 py-3 label-lg">Getting started</button>
 <button class="btn btn-black px-8">Pay Now</button>
-{{< /highlight >}}
+``` 
 
-### Shape {.heading-xs .mt-6 .mb-4}
+### Shape {.title-sm .mt-6 .mb-2}
 
 Adjust border radius and other border properties with [border]({{< ref "/docs/utilities/borders" >}}) utilities.
 
@@ -357,8 +357,8 @@ Adjust border radius and other border properties with [border]({{< ref "/docs/ut
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <button class="btn btn-primary px-6 rounded-full">Sign Up</button>
 <button class="btn btn-black px-8 rounded-none">Pay Now</button>
-{{< /highlight >}}
+``` 
 

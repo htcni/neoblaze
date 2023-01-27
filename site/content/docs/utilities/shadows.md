@@ -2,7 +2,7 @@
 layout: docs
 title: Shadows
 subtitle: Utilities for controlling box shadow.
-titleBg: bg-danger--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_shadow.scss
 group: utilities
 ---
 

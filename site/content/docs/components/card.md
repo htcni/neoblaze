@@ -2,13 +2,11 @@
 layout: docs
 title: Card
 subtitle: Card are used as container to display information in a compact manner.
-titleBg: bg-success--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_card.scss
 group: components
 ---
 
-## Basic Card {.heading-sm .mt-6 .mb-4}
-
-Card has multiple component.
+## Basic Card {.heading-xs .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div class="d-flex flex-items-center gap-4">
@@ -20,7 +18,7 @@ Card has multiple component.
 		<div class="card__image">
 			<img src="/images/background.png" alt="background"/>
 		</div>
-		<div class="card__content p-4">
+		<div class="card__content px-2">
 			<p class="mt-2">Welcome to Rick and Morty adventures. 
 			It's just Rick and Morty forever, a hundred year Rick and Morty.
 			</p>
@@ -32,7 +30,7 @@ Card has multiple component.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex flex-items-center gap-4">
 	<div class="card d-flex flex-column max-width-20">
 		<div class="card__header p-4">
@@ -53,9 +51,9 @@ Card has multiple component.
 	</div>
 </div>
 </div>  
-{{< /highlight >}}
+``` 
 
-## Anatomy of a Card {.heading-sm .mt-6 .mb-4}
+## Anatomy of a Card {.heading-xs .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div>
@@ -79,11 +77,11 @@ A card is composed of five components.
 \
 Individually all these classes don't apply an styles except `.card__image`.
 All the classes above provide a structure to a card and all the cards in the universe follow this style.
-A card header may contain a title and other information. This applicable to all other card classes.
+A card header may contain a title and other information. This is applicable to all other card classes.
 You can either override or use utility classes to style theses classes. 
 
 
-### Card Container {.heading-xs .mt-6 .mb-4}
+### Card Container {.title-sm .mt-6 .mb-2}
 
 Card container wraps the entire card.
 Add `.card` to a div to make it a container.
@@ -95,13 +93,13 @@ Add `.card` to a div to make it a container.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <div class="card width-16 p-4">
 	I am a card.
 </div>
-{{< /highlight >}}
+``` 
 
-### Card Header {.heading-xs .mt-6 .mb-4}
+### Card Header {.title-sm .mt-6 .mb-2}
 Card header can have title or subtitle and other information.
 Add `.card__header` for 
 
@@ -114,16 +112,16 @@ Add `.card__header` for
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="card width-16 p-4">
 	<div class="card__header">
 		<h3 class="title-sm">Activity</h3>
 		<h4 class="title-xs fg-gray">No new activity</h4>
 	</div>
 </div>
-{{< /highlight >}}
+``` 
 
-### Card Image {.heading-xs .mt-6 .mb-4}
+### Card Image {.title-sm .mt-6 .mb-2}
 Card image uses object fit cover property with 100% width.
 Add `.card__image` to div that wraps image tag. 
 
@@ -138,7 +136,7 @@ Add `.card__image` to div that wraps image tag.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="card width-20">
 	<div class="card__image">
 		<img class="rounded-t" src="/images/background.png" alt="background" />
@@ -147,10 +145,10 @@ Add `.card__image` to div that wraps image tag.
 		<h3 class="title-xs">Destination</h3>	
 	</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-### Card Content {.heading-xs .mt-6 .mb-4}
+### Card Content {.title-sm .mt-6 .mb-2}
 Add `.card__content` to wrap the content.
 
 {{< rawhtml >}}
@@ -167,7 +165,7 @@ Add `.card__content` to wrap the content.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="card width-20">
 	<div class="card__image">
 		<img class="rounded-t" src="/images/background.png" alt="background" />
@@ -179,9 +177,9 @@ Add `.card__content` to wrap the content.
 		<p>Discover unique destination every week.</p>
 	</div>
 </div>
-{{< /highlight >}}
+``` 
 
-### Card Action {.heading-xs .mt-6 .mb-4}
+### Card Action {.title-sm .mt-6 .mb-2}
 Actions can be added to the cards.
 Add `.card__action` to wrap the actions..
 
@@ -202,7 +200,7 @@ Add `.card__action` to wrap the actions..
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="card width-20">
 	<div class="card__image">
 		<img class="rounded-t" src="/images/background.png" alt="background" />
@@ -217,14 +215,14 @@ Add `.card__action` to wrap the actions..
 		<button class="btn btn-outline-primary">Dicover Now</button>
 	</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With the help of utilities different variations of card can be created.
 
-### Horizontal Card {.heading-xs .mt-6 .mb-4}
+### Horizontal Card {.title-sm .mt-6 .mb-2}
 
 
 {{< rawhtml >}}
@@ -246,7 +244,7 @@ With the help of utilities different variations of card can be created.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="card d-flex max-width-32">
 	<div class="card__image width-8">
 		<img class="rounded-l" src="/images/background.png" alt="background" />
@@ -263,4 +261,4 @@ With the help of utilities different variations of card can be created.
 		</div>
 	</div>
 </div>
-{{< /highlight >}}
+``` 

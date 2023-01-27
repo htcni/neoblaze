@@ -2,17 +2,17 @@
 layout: docs
 title: Alerts
 subtitle: Alerts are used to quickly grab user attention.
-titleBg: bg-warning--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_alert.scss
 group: components
 ---
 
-## Default {.heading-sm .mt-6 .mb-4}
+## Default {.heading-xs .mt-6 .mb-2}
 
 Alert by default is just a rounded box.
 
-{{< highlight html >}}
+``` html
 <div class="alert">This is a alert</div>
-{{< /highlight >}}
+``` 
 
 {{< rawhtml >}}
 <div class="alert">This is a alert</div>
@@ -28,15 +28,15 @@ Alert can have multiple paragraph nested inside it.
 {{< /rawhtml >}}
 
 
-## Colors {.heading-sm .mt-6 .mb-4}
+## Colors {.heading-xs .mt-6 .mb-2}
 
 Add `.alert-danger` ,`.alert-success` and other classes to emphasize the message.
 
-{{< highlight html >}}
+``` html
 <div class="alert alert-danger label font-medium">This is a danger alert.</div>
 <div class="alert alert-warning label font-medium">This is a warning alert.</div>
 <div class="alert alert-success label font-medium">This is a success alert.</div>
-{{< /highlight >}}
+``` 
 
 {{< rawhtml >}}
 <div class="alert alert-danger label font-medium">This is a danger alert.</div>
@@ -52,16 +52,16 @@ Add `.alert-danger` ,`.alert-success` and other classes to emphasize the message
 {{< /rawhtml >}}
 
 
-## Stripe {.heading-sm .mt-6 .mb-4}
+## Stripe {.heading-xs .mt-6 .mb-2}
 
 Stripe alerts can be used as banners. By default stripe is on the left side.
 
 Use `alert-stripe--top`, `alert-stripe--right` and  `alert-stripe--bottom` for different sides.
 
-{{< highlight html >}}
+``` html
 <div class="alert alert-stripe alert-danger label font-medium">New update</div>
 <div class="alert alert-stripe--top alert-warning label font-medium">Deprication Notice</div>
-{{< /highlight >}}
+``` 
 
 
 {{< rawhtml >}}
@@ -72,12 +72,12 @@ Use `alert-stripe--top`, `alert-stripe--right` and  `alert-stripe--bottom` for d
 {{< /rawhtml >}}
 
 
-## With Icons {.heading-sm .mt-6 .mb-4}
+## With Icons {.heading-xs .mt-6 .mb-2}
 
 You can also create alerts with icons. You may need to add extra utility classes. 
 
 
-{{< highlight html >}}
+``` html
 <div class="alert alert-stripe alert-success label font-medium">
 	<div class="font-bold d-flex flex-items-center gap-2">
 		<span class="icon label-xl">
@@ -88,7 +88,7 @@ You can also create alerts with icons. You may need to add extra utility classes
 	<p>90% of Rick and Morty fanboys think they're Rick.</p>
 	<p>... when in reality they're Jerry.</p>
 </div>
-{{< /highlight >}}
+``` 
 
 
 {{< rawhtml >}}
@@ -107,11 +107,11 @@ You can also create alerts with icons. You may need to add extra utility classes
 {{< /rawhtml >}}
 
 
-## With Actions {.heading-sm .mt-6 .mb-4}
+## With Actions {.heading-xs .mt-6 .mb-2}
 
 Alert can have action buttons.
 
-{{< highlight html >}}
+``` html
 <div class="alert alert-stripe alert-info label font-medium d-flex flex-items-center">
 	<span>I am a writer. My hobbies include not writing.</span>
 	<button type="button" aria-label="close" class="btn btn-icon fg-info--ultra ml-auto">
@@ -127,7 +127,7 @@ Alert can have action buttons.
 		Start Transmission
 	</button>
 </div>
-{{< /highlight >}}
+``` 
 
 
 {{< rawhtml >}}
@@ -149,15 +149,15 @@ Alert can have action buttons.
 {{< /rawhtml >}}
 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With help of utilites multiple variations of alert can be made.
 
-{{< highlight html >}}
+``` html
 <div class="alert alert-danger rounded-none label font-medium">Alert without rounded borders</div>
 <div class="alert alert-success border-0 label font-medium">Alert without border</div>
 <div class="alert alert-info bg-transparent label font-medium">Alert with no money</div>
-{{< /highlight >}}
+``` 
 
 
 {{< rawhtml >}}

@@ -1,12 +1,12 @@
 ---
 layout: docs
 title: Avatars
-subtitle: Avatars are used show represent user's profile image.
-titleBg: bg-primary--xlight
+subtitle: Avatars are used to represent user's profile image.
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_avatars.scss
 group: components
 ---
 
-## Avatar {.heading-sm .mt-6 .mb-4}
+## Avatar {.heading-xs .mt-6 .mb-2}
 
 Add `.avatar` class to any image.
 
@@ -16,16 +16,16 @@ Add `.avatar` class to any image.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <img class="avatar" src="/images/profile.png" alt="profile"/>
-{{< /highlight >}}
+``` 
 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With the help of utilities different variations of a chips can be created.
 
-### Size {.heading-xs .mt-6 .mb-4}
+### Size {.title-sm .mt-6 .mb-2}
 
 Use `.avatar-sm`, `.avatar-md`,  `.avatar-lg` and `.avatar-xl` for different sizes.
 
@@ -39,15 +39,15 @@ Use `.avatar-sm`, `.avatar-md`,  `.avatar-lg` and `.avatar-xl` for different siz
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <img class="avatar avatar-sm" src="/images/profile.png" alt="profile"/>
 <img class="avatar" src="/images/profile.png" alt="profile"/>
 <img class="avatar avatar-md" src="/images/profile.png" alt="profile"/>
 <img class="avatar avatar-lg" src="/images/profile.png" alt="profile"/>
 <img class="avatar avatar-xl" src="/images/profile.png" alt="profile"/>
-{{< /highlight >}}
+``` 
 
-### Shape {.heading-xs .mt-6 .mb-4}
+### Shape {.title-sm .mt-6 .mb-2}
 
 Adjust border radius and other border properties with [border]({{< ref "/docs/utilities/borders" >}}) utilities.
 
@@ -59,9 +59,9 @@ Adjust border radius and other border properties with [border]({{< ref "/docs/ut
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <img class="avatar avatar-lg rounded-sm" src="/images/profile.png" alt="profile"/>
 <img class="avatar avatar-lg rounded-full" src="/images/profile.png" alt="profile"/>
 <img class="avatar avatar-lg rounded-full border-2 bd-secondary" src="/images/profile.png" alt="profile"/>
 
-{{< /highlight >}}
+``` 

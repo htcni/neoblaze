@@ -2,11 +2,11 @@
 layout: docs
 title: Display
 subtitle: Utilities for controlling display
-titleBg: bg-tertiary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_display.scss
 group: utilities
 ---
 
-## Display {.heading-sm .mt-6 .mb-4}
+## Display {.heading-xs .mt-6 .mb-2}
 
 Use display utilites to change default display of the element.  
 
@@ -23,7 +23,7 @@ Class | Properties
 `d-none` | display: none;
 
 
-#### Start {.title-sm .mt-6 .mb-4}
+#### Start {.title-sm .mt-6 .mb-2}
 
 {{< rawhtml >}}
 
@@ -38,7 +38,7 @@ Class | Properties
 
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-inline box bg-secondary--xlight">d-inline</div>
 <div class="d-inline-block box bg-secondary--xlight">d-inline-block</div>
 <div class="d-block box bg-secondary--xlight">d-block</div>
@@ -47,13 +47,13 @@ Class | Properties
     <div class="box bg-secondary--xlight"> Flex item 2</div>
     <div class="box bg-secondary--xlight"> Flex item 3</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Responsive display utility  {.heading-sm .mt-6 .mb-4}
+## Responsive display utility  {.heading-xs .mt-6 .mb-2}
 
 
-Display utility can be applied for all available [breakpoints]({{< ref "/docs/layouts/breakpoints" >}}) .
+Display utility can be applied for all available [breakpoints]({{< ref "/docs/layout/breakpoints" >}}) .
 The classes can be used in format  `d-{breakpoint}-{value}`
 
 For reponsive design , apply multiple clases to element accordingly for different breakpoints .
@@ -77,13 +77,13 @@ Class |
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 
 <div class=" d-block d-xs-none ">d-block d-xs-none</div>
 <div class=" d-md-block d-inline-block ">d-md-block d-inline-block</div>
 <div class=" d-inline-block d-md-flex ">d-inline-block d-md-flex</div>
 
-{{< /highlight >}}
+``` 
 
 
 

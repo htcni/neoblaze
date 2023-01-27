@@ -2,11 +2,11 @@
 layout: docs
 title: Chips
 subtitle: Chips helps in filter and label information.
-titleBg: bg-tertiary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_chips.scss
 group: components
 ---
 
-## Chips {.heading-sm .mt-6 .mb-4}
+## Chips {.heading-xs .mt-6 .mb-2}
 
 Use chips as tag or as filter.
 
@@ -21,21 +21,21 @@ Use chips as tag or as filter.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="chip">New
 	<i class="ri-close-line"></i>
 </span>
 <span class="chip chip-info">Stable</span>
 <span class="chip chip-success">Release</span>
 <span class="chip chip-danger">Depricated</span>
-{{< /highlight >}}
+``` 
 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With the help of utilities different variations of a chips can be created.
 
-### Filled {.heading-xs .mt-6 .mb-4}
+### Filled {.title-sm .mt-6 .mb-2}
 
 Adjust color with [color]({{< ref "/docs/utilities/colors" >}}) utilities. 
 
@@ -49,15 +49,15 @@ Adjust color with [color]({{< ref "/docs/utilities/colors" >}}) utilities.
 	</div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="chip bg-black fg-white">New
 	<i class="ri-close-line"></i>
 </span>
 <span class="chip bg-success--light fg-success--ultra">Stable</span>
 <span class="chip bg-danger fg-white">Depricated</span>
-{{< /highlight >}}
+``` 
 
-### Shape {.heading-xs .mt-6 .mb-4}
+### Shape {.title-sm .mt-6 .mb-2}
 
 Adjust border radius and other border properties with [border]({{< ref "/docs/utilities/borders" >}}) utilities.
 
@@ -71,16 +71,16 @@ Adjust border radius and other border properties with [border]({{< ref "/docs/ut
 	</div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 	<span class="chip bg-black fg-white">New
 		<i class="ri-close-line"></i>
 	</span>
 	<span class="chip bg-success fg-white">Stable</span>
 	<span class="chip bg-danger fg-white">Depricated</span>
-{{< /highlight >}}
+``` 
 
 
-### Size {.heading-xs .mt-6 .mb-4}
+### Size {.title-sm .mt-6 .mb-2}
 
 Adjust the size of buttons with [spacing]({{< ref "/docs/utilities/spacing" >}}) and font utilities.
 
@@ -93,9 +93,9 @@ Adjust the size of buttons with [spacing]({{< ref "/docs/utilities/spacing" >}})
 	</div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 	<span class="chip bg-black fg-white rounded-full label-sm">New
 		<i class="ri-close-line"></i>
 	</span>
 	<span class="chip bg-success fg-white rounded label-lg px-4">Stable</span>
-{{< /highlight >}}
+``` 

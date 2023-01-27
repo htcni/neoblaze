@@ -2,7 +2,7 @@
 layout: docs
 title: Spacing
 subtitle: Utilities for controlling element margin and padding.
-titleBg: bg-primary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_spacing.scss
 group: utilities
 ---
 

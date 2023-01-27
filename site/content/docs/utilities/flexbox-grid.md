@@ -2,11 +2,11 @@
 layout: docs
 title: Flexbox Grid
 subtitle: Utility for building flex layout.
-titleBg: bg-danger--xlight
-group: layout
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_flexbox_grid.scss
+group: utilities
 ---
 
-## Flexbox Grid {.heading-sm .mt-6 .mb-4}
+## Flexbox Grid {.heading-xs .mt-6 .mb-2}
 
 Flexbox grid has 12 percentage base column for creating responsive designs using the CSS flexbox module. 
 Use `d-flex` display utility to make a row and `col-{size}` for columns.
@@ -40,7 +40,7 @@ Use `d-flex` display utility to make a row and `col-{size}` for columns.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex gap-2">
 	<div class="col-1 p-2">col-1</div>
 	<div class="col-11 p-2">col-11</div>
@@ -53,9 +53,9 @@ Use `d-flex` display utility to make a row and `col-{size}` for columns.
 	<div class="col-3 p-2">col-3</div>
 	<div class="col-9 p-2">col-9</div>
 </div>	
-{{< /highlight >}}
+``` 
 
-## Gutters {.heading-sm .mt-6 .mb-4}
+## Gutters {.heading-xs .mt-6 .mb-2}
 
 For gutters use  [gap]({{< ref "/docs/utilities/spacing.md#gap" >}}) utilities.
 
@@ -66,15 +66,15 @@ For gutters use  [gap]({{< ref "/docs/utilities/spacing.md#gap" >}}) utilities.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex gap-4">
 	<div class="col-6 p-2">col-6</div>
 	<div class="col-6 p-2">col-6</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Responsive Columns  {.heading-sm .mt-6 .mb-4}
+## Responsive Columns  {.heading-xs .mt-6 .mb-2}
 
 Use `col-{breakpoint}-{property}` for responsive variants like col-md-4, col-sm-12.
 
@@ -86,15 +86,15 @@ Use `col-{breakpoint}-{property}` for responsive variants like col-md-4, col-sm-
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <div class="d-flex gap-4">
 	<div class="col-8 col-md-6">col-8 col-md-6</div>
 	<div class="col-4 col-md-6 p-2">col-4 col-md-6</div>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Stack Columns {.heading-sm .mt-6 .mb-4}
+## Stack Columns {.heading-xs .mt-6 .mb-2}
 
 Use flex utilities along with responsive columns to stack columns at specific breakpoint.
 `flex-{breakpoint}-column` to change flex direction.
@@ -106,10 +106,10 @@ Use flex utilities along with responsive columns to stack columns at specific br
 </div>
 {{< /rawhtml >}}
 
+``` html
 
-{{< highlight html >}}
 <div class="d-flex flex-sm-column gap-4">
 	<div class="col-8 col-md-6 col-sm-12 p-2">col-8 col-md-6 col-sm-12</div>
 	<div class="col-4 col-md-6 col-sm-12 p-2">col-8 col-md-6 col-sm-12</div>
 </div>
-{{< /highlight >}}
+``` 

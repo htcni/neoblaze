@@ -2,7 +2,7 @@
 layout: docs
 title: Image
 subtitle: Utilities for controlling image and backround properties.
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_image.scss
 group: utilities
 ---
 

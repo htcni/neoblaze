@@ -2,11 +2,11 @@
 layout: docs
 title: Box
 subtitle: Box is a abstract generic wrapper component.
-titleBg: bg-warning--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_box.scss
 group: components
 ---
 
-## Basic Box {.heading-sm .mt-6 .mb-4}
+## Basic Box {.heading-xs .mt-6 .mb-2}
 
 Box is just container with a border.
 
@@ -16,14 +16,14 @@ Box is just container with a border.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="box">
 	<span>I am a box full of mysteries.</span>
 </div> 
-{{< /highlight >}}
+``` 
 
 
-## Customize {.heading-sm .mt-6 .mb-4}
+## Customize {.heading-xs .mt-6 .mb-2}
 
 With help of different utilities like [spacing]({{< ref "/docs/utilities/spacing" >}}), [border]({{< ref "/docs/utilities/borders" >}}) etc we can make different components and layout. 
 
@@ -51,7 +51,7 @@ With help of different utilities like [spacing]({{< ref "/docs/utilities/spacing
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="box bg-danger--light p-4">
 	<span class="fg-danger--ultra">Alert box</span>
 </div>
@@ -72,11 +72,11 @@ With help of different utilities like [spacing]({{< ref "/docs/utilities/spacing
 		<button class="btn">Action</button>
 	</div>
 	</div>
-{{< /highlight >}}
+``` 
 
 
 
-## Anatomy of a Box {.heading-sm .mt-6 .mb-4}
+## Anatomy of a Box {.heading-xs .mt-6 .mb-2}
 
 {{< rawhtml >}}
 <div>

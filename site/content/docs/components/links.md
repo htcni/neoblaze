@@ -2,11 +2,11 @@
 layout: docs
 title: Links
 subtitle: Links can be used to customize anchor tags.
-titleBg: bg-primary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_link.scss
 group: components
 ---
 
-## Default {.heading-sm .mt-6 .mb-4}
+## Default {.heading-xs .mt-6 .mb-2}
 
 Anchor tag by default has no styles. Use `.link` to apply the style.
 
@@ -17,14 +17,14 @@ Anchor tag by default has no styles. Use `.link` to apply the style.
   </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <a href="#">Link</a>
 <a class="link" href="#">Click here</a>
 <a class="link text-underline" href="#">Buy Now</a>
 
-{{< /highlight >}}
+``` 
 
-## Colors {.heading-sm .mt-6 .mb-4}
+## Colors {.heading-xs .mt-6 .mb-2}
 Use `.link-primary` and other semantic color classes.
 
 {{< rawhtml >}}
@@ -38,20 +38,20 @@ Use `.link-primary` and other semantic color classes.
   </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <a class="link" href="#">Default</a>
 <a class="link link-primary" href="#">Primary link</a>
 <a class="link link-secondary" href="#">Secondary link</a>
 <a class="link link-success" href="#">Success link</a>
 <a class="link link-warning" href="#">Warning link</a>
 <a class="link link-danger" href="#">Danger link</a>
-{{< /highlight >}}
+``` 
 
-## Variations {.heading-sm .mt-6 .mb-4}
+## Variations {.heading-xs .mt-6 .mb-2}
 
 With the help of utilities different variations of card can be created.
 
-### Underline {.heading-xs .mt-6 .mb-4}
+### Underline {.title-sm .mt-6 .mb-2}
 
 Add or remove underline with the help of [typography]({{< ref "/docs/utilities/typography" >}}) utilities.
 
@@ -62,7 +62,7 @@ Add or remove underline with the help of [typography]({{< ref "/docs/utilities/t
   </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <a class="link text-underline" href="#">Underline</a>
 <a class="link link-danger text-no-underline-hover" href="#">No underline on hover</a>
-{{< /highlight >}}
+``` 

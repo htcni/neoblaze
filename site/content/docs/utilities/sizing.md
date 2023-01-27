@@ -2,7 +2,7 @@
 layout: docs
 title: Sizing
 subtitle: Utilities for controlling element height and width.
-titleBg: bg-danger--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_sizing.scss
 group: utilities
 ---
 

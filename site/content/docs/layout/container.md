@@ -2,11 +2,11 @@
 layout: docs
 title: Container
 subtitle: Container are used to center the content.
-titleBg: bg-warning--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/layouts/_container.scss
 group: layout
 ---
 
-## Container {.heading-sm .mt-6 .mb-4}
+## Container {.heading-xs .mt-6 .mb-2}
 
 Container are used to fix `max-width` of layout and center the content horizontally.
 
@@ -27,12 +27,12 @@ Use `container-{size}` to define a container like `container`, `container-md`.
 		<span class="fg-white">container</span>
 	</div>
 	<div class="container-xs mx-auto bg-secondary height-4 mt-4 d-flex flex-items-center flex-justify-center">
-		<span class="fg-white">container-sm</span>
+		<span class="fg-white">container-xs</span>
 	</div>
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="container mx-auto">
 <div class="container-xs mx-auto">
-{{< /highlight >}}
+``` 

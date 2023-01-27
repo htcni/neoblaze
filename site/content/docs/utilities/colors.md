@@ -2,7 +2,7 @@
 layout: docs
 title: Colors
 subtitle: Utilities for controlling colors. 
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_colors.scss
 group: utilities
 ---
 
@@ -26,14 +26,14 @@ Use `fg-{color}` for applying text color.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="fg-gray">fg-gray</div>
 	<div class="fg-primary">fg-primary</div>
 	<div class="fg-secondary">fg-secondary</div>
 	<div class="fg-danger">fg-danger</div>
 </div>
-{{< /highlight >}}
+``` 
 
 ## Background Color {.heading-xs .mt-6 .mb-2}
 
@@ -48,14 +48,14 @@ Use `bg-{color}` for applying background color.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="bg-primary"></div>
 	<div class="bg-primary--light"></div>
 	<div class="bg-secondary"></div>
 	<div class="bg-danger--soft"></div>
 </div>
-{{< /highlight >}}
+``` 
 
 ## Border Color {.heading-xs .mt-6 .mb-2}
 
@@ -70,14 +70,14 @@ Use `bd-{color}` for applying background color.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="border bd-secondary"></div>
 	<div class="border bd-primary"></div>
 	<div class="border bd-danger"></div>
 	<div class="border bd-success"></div>>
 </div>
-{{< /highlight >}}
+``` 
 
 
 ## Shadow Color {.heading-xs .mt-6 .mb-2}
@@ -106,14 +106,34 @@ Use `shadow-{color}` for applying shadow color.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <div class="d-flex">
 	<div class="shadow-sm shadow-secondary"></div>
 	<div class="shadow-primary--light bg-primary--light"></div>
 	<div class="shadow-success--ultra bg-success--ultra"></div>
 	<div class="shadow-danger bg-danger"></div>
 </div>
-{{< /highlight >}}
+``` 
+
+## Hover Color {.heading-xs .mt-6 .mb-2}
+
+Use `{fg|bg|bd}-{color}-hover` for color utility on hover.
+
+{{< rawhtml >}}
+<div class="d-flex gap-2">
+	<div class="fg-slate fg-secondary-hover flex-items-center">Neoblaze</div>
+	<div class="rounded-sm width-6 height-6 bg-secondary--light bg-secondary-hover"></div>
+	<div class="rounded-sm width-6 height-6 border bd-default bd-danger-hover"></div>
+</div>
+{{< /rawhtml >}}
+
+``` html
+<div class="d-flex">
+	<div class="fg-slate fg-secondary-hover">Neoblaze</div>
+	<div class="rounded-sm width-6 height-6 bg-secondary--light bg-secondary-hover"></div>
+	<div class="rounded-sm width-6 height-6 border bd-default bd-danger-hover"></div>
+</div>
+``` 
 
 
 ## Customize {.heading-xs .mt-6 .mb-2}
@@ -126,7 +146,7 @@ You can set your own theme colors with following variables.
 Overriding css variable automatically change all color utility except shadow colors.
 {{< /callout >}}
 
-{{< highlight scss >}}
+```  scss
 	--white: #fff;
   --midnight: #1a1a1a;
   --black: #000;
@@ -208,7 +228,7 @@ Overriding css variable automatically change all color utility except shadow col
   --slate--medium: #3a4555;
   --slate--ultra: #2c3541;
   --slate--plus-ultra: #111419;
-{{< /highlight >}}
+``` 
 
 
 ### Extending Colors {.title-sm .mt-6 .mb-2}
@@ -216,7 +236,7 @@ Overriding css variable automatically change all color utility except shadow col
 To incorporate your own brand color, you can extend the` theme-colors` map in your scss file. This will automatically generate all necessary color utility classes, which you can then use to access the added color.
 Eg. `bg-{your-brand-color}` etc.
 
-{{< highlight scss >}}
+```  scss
 // src/scss/helpers/variables/_theme_colors.scss
 
 $base-colors: (
@@ -236,4 +256,4 @@ $theme-colors: (
 	...............
 );
 
-{{< /highlight >}}
+``` 

@@ -6,15 +6,15 @@ titleBg: bg-success--xlight
 group: getting-started
 ---
 
-## Overview {.heading-sm .mt-6 .mb-4}
+## Overview {.heading-xs .mt-6 .mb-2}
 
 Neoblaze helps you quickly design web layouts. It helps build beautiful product faster with prebuilt components and can be extended with utilities.
 
 It's responsive, customizable and it's cool.
 
-## Quick start {.heading-sm .mt-6 .mb-4}
+## Quick start {.heading-xs .mt-6 .mb-2}
 
-### CDN {.heading-xs .mt-6 .mb-4}
+### CDN {.title-sm .mt-6 .mb-2}
 
 {{< callout type="tip" >}}
 For detailed installation see [installation guide]({{< ref "/docs/getting-started/installation" >}})
@@ -23,21 +23,21 @@ For detailed installation see [installation guide]({{< ref "/docs/getting-starte
 You can get started quickly by including cdn link.
 
 
-{{< highlight html >}}
-<link href="{{ $.Site.Params.css }}" rel="stylesheet" crossorigin="anonymous">
-{{< /highlight >}}
+``` html
+<link href='{{< param "cdn.css" >}}' rel="stylesheet" crossorigin="anonymous">
+``` 
 
-### Starter template {.heading-xs .mt-6 .mb-4}
+### Starter template {.title-sm .mt-6 .mb-2}
 Use starter template for quick setup.
 
-{{< highlight html >}}
+``` html
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Neoblaze</title>
-		<link rel="stylesheet" href={{ $.Site.Params.description }}>
+		<link rel="stylesheet" href="">
 	</head>
 	<body>
 	<section class="section">
@@ -47,4 +47,4 @@ Use starter template for quick setup.
 	</section>
 	</body>
 </html>
-{{< /highlight >}}
+``` 

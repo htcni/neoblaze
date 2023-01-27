@@ -2,11 +2,11 @@
 layout: docs
 title: Button Group
 subtitle: Group series of buttons.
-titleBg: bg-primary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_button.scss
 group: components
 ---
 
-## Button Group {.heading-sm .mt-6 .mb-4}
+## Button Group {.heading-xs .mt-6 .mb-2}
 
 Use `btn-group` and `btn-group__item` to group buttons together.
 
@@ -25,7 +25,7 @@ Use `btn-group` and `btn-group__item` to group buttons together.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="btn-group" role="group">
 	<button class="btn-group__item btn label rounded-l">Left</button>
 	<button class="btn-group__item btn label">Middle</button>
@@ -37,10 +37,10 @@ Use `btn-group` and `btn-group__item` to group buttons together.
 	<button class="btn-group__item btn btn-outline-danger label">Maybe</button>
 	<button class="btn-group__item btn btn-outline-tertiary label rounded-r">No</button>
 </div>
-{{< /highlight >}}
+``` 
 
 
-## Vertical Button Group {.heading-sm .mt-6 .mb-4}
+## Vertical Button Group {.heading-xs .mt-6 .mb-2}
 
 Use `btn-group--vertical` and `btn-group__item--vertical` to group buttons together vertically.
 
@@ -59,7 +59,7 @@ Use `btn-group--vertical` and `btn-group__item--vertical` to group buttons toget
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="btn-group--vertical" role="group">
 	<button class="btn-group__item--vertical btn label rounded-t">Figma</button>
 	<button class="btn-group__item--vertical btn label">Adobe</button>
@@ -72,4 +72,4 @@ Use `btn-group--vertical` and `btn-group__item--vertical` to group buttons toget
 	<button class="btn-group__item--vertical btn btn-tertiary--inverted label rounded-b">No</button>
 </div>
 
-{{< /highlight >}}
+``` 

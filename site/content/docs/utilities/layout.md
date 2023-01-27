@@ -2,7 +2,7 @@
 layout: docs
 title: Layout
 subtitle: Utilities for controlling layout.
-titleBg: bg-danger--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_layout.scss
 group: utilities
 ---
 
@@ -75,12 +75,12 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="box">
 	<span class="align-top width-4 height-4 bg-secondary">hi</span>
 	<span class="align-bottom width-6 height-6 bg-secondary">hi</span>
 </div>
-{{< /highlight >}}
+``` 
 
 
 ## Visibility {.heading-xs .mt-6 .mb-2}
@@ -113,12 +113,12 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="p-4">
 	<img class="float-left" src="/images/profile.png" alt="profile"/>
 	<p>Floating</p>
 </div>
-{{< /highlight >}}
+``` 
 
 ### Clearfix {.title-sm .mt-6 .mb-2}
 
@@ -188,10 +188,10 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <div class="flex">
 	<div class="z-30">z-30</div>
 	<div class="z-20">z-20</div>
 	<div class="z-10">z-10</div>
 </div>
-{{< /highlight >}}
+``` 

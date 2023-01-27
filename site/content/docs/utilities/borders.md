@@ -2,11 +2,11 @@
 layout: docs
 title: Borders
 subtitle: Utilities for controlling borders.
-titleBg: bg-tertiary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_border.scss
 group: utilities
 ---
 
-## Border {.heading-sm .mt-6 .mb-4}
+## Border {.heading-xs .mt-6 .mb-2}
 
 Use border utilities to apply border and border radius. `.border` apply border width to the element.
 
@@ -19,14 +19,14 @@ Use border utilities to apply border and border radius. `.border` apply border w
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="border bd-default"></span>
 <span class="border bd-black"></span>
 <span class="border bd-primary"></span>
 <span class="border bd-secondary"></span>
-{{< /highlight >}}
+``` 
 
-## Border width {.heading-sm .mt-6 .mb-4}
+## Border width {.heading-xs .mt-6 .mb-2}
 
 Use border utilities to apply border and border radius.
 
@@ -62,15 +62,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="border bd-secondary"></span>
 <span class="border-2 bd-secondary"></span>
 <span class="border-4 bd-secondary"></span>
 <span class="border-6 bd-secondary"></span>
-{{< /highlight >}}
+``` 
 
 
-### Individual sides {.heading-xs .mt-6 .mb-4}
+### Individual sides {.title-sm .mt-6 .mb-2}
 
 Borders can be applied to individual sides.
 Use `.border-{side}-{width}` to apply border to particular side.
@@ -97,15 +97,15 @@ Use `.border-{side}-{width}` to apply border to particular side.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <span class="border-t-4 bd-secondary"></span>
 <span class="border-r-4 bd-secondary"></span>
 <span class="border-b-4 bd-secondary"></span>
 <span class="border-l-4 bd-secondary"></span>
-{{< /highlight >}}
+``` 
 
 
-### Horizontal and Vertical sides {.heading-xs .mt-6 .mb-4}
+### Horizontal and Vertical sides {.title-sm .mt-6 .mb-2}
 
 Use `.border-{x|y}-{width}` to apply border on horizontal or vertical side.
 
@@ -123,13 +123,13 @@ Use `.border-{x|y}-{width}` to apply border on horizontal or vertical side.
 {{< /rawhtml >}}
 
 
-{{< highlight html >}}
+``` html
 <span class="border-x-4 bd-secondary"></span>
 <span class="border-y-4 bd-secondary"></span>
-{{< /highlight >}}
+``` 
 
 
-##  Border radius {.heading-sm .mt-6 .mb-4}
+##  Border radius {.heading-xs .mt-6 .mb-2}
 
 Use `.rounded` to add border-radius.
 
@@ -165,15 +165,15 @@ Class | Properties
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="rounded"></span>
 <span class="rounded-md"></span>
 <span class="rounded-lg"></span>
 <span class="rounded-full"></span>
-{{< /highlight >}}
+``` 
 
 
-###  Rounding Individual side {.heading-xs .mt-6 .mb-4}
+###  Rounding Individual side {.title-sm .mt-6 .mb-2}
 
 Use `.rounded-{side}-{size}` to apply rounded to particular side.
 
@@ -198,15 +198,15 @@ Use `.rounded-{side}-{size}` to apply rounded to particular side.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="rounded-t-md"></span>
 <span class="rounded-r-md"></span>
 <span class="rounded-b-md"></span>
 <span class="rounded-l-md"></span>
-{{< /highlight >}}
+``` 
 
 
-###  Rounding Individual corner {.heading-xs .mt-6 .mb-4}
+###  Rounding Individual corner {.title-sm .mt-6 .mb-2}
 
 Use `.rounded-{corner}-{size}` to apply rounded to particular corner.
 
@@ -231,25 +231,25 @@ Use `.rounded-{corner}-{size}` to apply rounded to particular corner.
 </div>
 {{< /rawhtml >}}
 
-{{< highlight html >}}
+``` html
 <span class="rounded-tl-md"></span>
 <span class="rounded-tr-md"></span>
 <span class="rounded-bl-md"></span>
 <span class="rounded-br-md"></span>
-{{< /highlight >}}
+``` 
 
 
-##  Border color {.heading-sm .mt-6 .mb-4}
+##  Border color {.heading-xs .mt-6 .mb-2}
 
 For border color see [colors]({{< ref "/docs/utilities/colors" >}}) utilities.
 
-##  SASS {.heading-sm .mt-6 .mb-4}
+##  SASS {.heading-xs .mt-6 .mb-2}
 
 Override the sass variables and maps in your scss file.
 
-###  Border width {.heading-xs .mt-6 .mb-4}
+###  Border width {.title-sm .mt-6 .mb-2}
 
-{{< highlight scss >}}
+```  scss
 	$border-width: (
 	"0": 0,
 	null: 1px,
@@ -260,11 +260,11 @@ Override the sass variables and maps in your scss file.
 	"10": 0.625rem,
 );
 
-{{< /highlight >}}
+``` 
 
-###  Border radius {.heading-xs .mt-6 .mb-4}
+###  Border radius {.title-sm .mt-6 .mb-2}
 
-{{< highlight scss >}}
+```  scss
 	$border-radius-default: 6px;
 	$border-radius-sm: 4px;
 	$border-radius-md: 12px;
@@ -272,4 +272,4 @@ Override the sass variables and maps in your scss file.
 	$border-radius-full: 999rem;
 	$border-radius-circle: 50%;
 	$border-radius-none: 0;
-{{< /highlight >}}
+``` 

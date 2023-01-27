@@ -2,7 +2,7 @@
 layout: docs
 title: Grid
 subtitle: Utilities for controlling grid.
-titleBg: bg-tertiary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_grid.scss
 group: utilities
 ---
 {{< callout type="info" >}}

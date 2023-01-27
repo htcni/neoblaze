@@ -2,7 +2,7 @@
 layout: docs
 title: Form
 subtitle: Define basic form controls.
-titleBg: bg-primary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_form.scss
 group: components
 ---
 
