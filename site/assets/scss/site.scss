@@ -1,13 +1,23 @@
 @forward "../../../src/scss/neoblaze.scss";
 
 :root {
-	--active-link-color: var(--secondary);
-	--active-link-bgColor: var(--secondary--xlight);
-	--font-primary: "Inter", sans-serif;
+	--scroll-size: 8px;
+	--scroll-radius: 10px;
+	--scroll-track-color: #f1f1f1;
+	--scroll-thumb-color: silver;
+	--scroll-thumb-hover-color: #a7a7a7;
 }
 
 a {
 	color: var(--link-default);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--slate--ultra);
+	letter-spacing: -0.033em;
 }
 
 h2 {
@@ -61,11 +71,13 @@ ol > li {
 code {
 	color: var(--secondary--ultra);
 	background-color: var(--slate--xlight);
+	font-family: var(--font-tertiary);
 }
 
 pre code {
 	color: inherit;
 	background-color: inherit;
+	font-family: var(--font-tertiary);
 }
 
 .highlight {
@@ -92,7 +104,7 @@ pre::before {
 }
 
 table {
-	border-collapse: separate;
+	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 }
@@ -100,26 +112,51 @@ table {
 th,
 td {
 	padding: 8px 16px;
-	border: 1px solid var(--default);
-	color: var(--gray);
+}
+
+td {
+	color: var(--secondary--medium);
+	border-top: 1px solid var(--slate--light);
+	font-family: var(--font-tertiary);
+	font-weight: 500;
+	font-size: 14px;
 }
 
 th {
-	background-color: var(--slate--xlight);
+	text-align: left;
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	color: var(--slate--ultra);
+	border-bottom: 1px solid var(--default);
 }
 
-thead th:first-child {
-	border-top-left-radius: 6px;
+tbody tr:last-child td {
+	border-bottom: 1px solid var(--default);
 }
 
-thead th:last-child {
-	border-top-right-radius: 6px;
+.scroll-thin {
+	scrollbar-color: var(--scroll-thumb-color, grey) var(--scroll-track-color);
+	scrollbar-width: thin;
+}
+.scroll-thin ::-webkit-scrollbar {
+	width: var(--scroll-size, 10px);
+	height: var(--scroll-size, 10px);
+}
+.scroll-thin ::-webkit-scrollbar-track {
+	background-color: var(--scroll-track-color);
+	border-radius: var(--scroll-radius);
+}
+.scroll-thin ::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb-color);
+	border-radius: var(--scroll-radius);
 }
 
-tbody tr:last-child td:first-child {
-	border-bottom-left-radius: 6px;
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+	background: var(--scroll-thumb-hover-color);
 }
 
-tbody tr:last-child td:last-child {
-	border-bottom-right-radius: 6px;
+.menu__link--active {
+	color: var(--secondary);
+	background-color: var(--secondary--xlight);
 }
