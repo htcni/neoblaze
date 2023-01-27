@@ -1,5 +1,5 @@
 /assets/css
-/public/
+/_site/
 # Hugo files
 /resources/
 /.hugo_build.lock

@@ -4,6 +4,8 @@ title: My New Hugo Site
 
 metaDataFormat: 'yaml'
 
+publishDir: '_site'
+
 params:
   current_version: 0.1.0
   repo: 'https://github.com/htcni/neoblaze'
