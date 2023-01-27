@@ -1,1 +1,4 @@
 *.md
+dist
+site/_site
+site/assets/css
