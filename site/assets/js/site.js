@@ -1,70 +1,31 @@
 const accordions = document.querySelectorAll('[data-accordion]');
 
-const showAccordion = (accordionContent) => {
-	if (accordionContent.classList.contains('accordion-hide')) {
-		accordionContent.classList.remove('accordion-hide');
-	}
-	accordionContent.classList.add('accordion-show');
-};
-
-const collapsingAccordion = (accordionContent) => {
-	if (accordionContent.classList.contains('accordion-show')) {
-		accordionContent.classList.remove('accordion-show');
-	}
-
-	accordionContent.classList.add('accordion-collapsing');
-};
-
-const hideAccordion = (accordionContent) => {
-	if (accordionContent.classList.contains('accordion-show')) {
-		accordionContent.classList.remove('accordion-show');
-	}
-	accordionContent.classList.add('accordion-hide');
-};
-
 accordions.forEach((accordion) => {
 	let accordionContent = accordion.querySelector('.accordion__content');
 	let accordionState = accordion.getAttribute('data-accordion');
 
-	accordionState === 'open'
-		? showAccordion(accordionContent)
-		: hideAccordion(accordionContent);
+	if (accordionState === 'open') {
+		accordionContent.style.height = accordionContent.scrollHeight + 'px';
+	}
+
+	if (accordionState === 'close') {
+		accordionContent.style.height = '0px';
+	}
 
 	const accordionHeader = accordion.querySelector('.accordion__header');
-	accordionHeader.addEventListener('click', () => {
-		accordionContent = accordion.querySelector('.accordion__content');
 
+	accordionHeader.addEventListener('click', () => {
 		accordionState = accordion.getAttribute('data-accordion');
-		setAccordionState(accordion, accordionContent, accordionState);
+		if (accordionState === 'open') {
+			accordionContent.style.height = 0 + 'px';
+			accordion.setAttribute('data-accordion', 'close');
+			accordion.setAttribute('aria-expanded', 'false');
+			accordionContent.setAttribute('aria-hidden', 'true');
+		} else if (accordionState === 'close') {
+			accordion.setAttribute('data-accordion', 'open');
+			accordion.setAttribute('aria-expanded', 'true');
+			accordionContent.setAttribute('aria-hidden', 'false');
+			accordionContent.style.height = accordionContent.scrollHeight + 'px';
+		}
 	});
 });
-
-const setAccordionState = (accordion, accordionContent, accordionState) => {
-	if (accordionState === 'open') {
-		accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-		collapsingAccordion(accordionContent);
-		accordion.setAttribute('data-accordion', 'close');
-		setTimeout(() => {
-			accordionContent.removeAttribute('style');
-		}, 0);
-
-		accordionContent.addEventListener('transitionend', () => {
-			accordionContent.classList.remove('accordion-collapsing');
-			hideAccordion(accordionContent);
-		});
-	} else if (accordionState === 'close') {
-		accordionContent.classList.remove('accordion-hide');
-		collapsingAccordion(accordionContent);
-		accordion.setAttribute('data-accordion', 'open');
-
-		setTimeout(() => {
-			accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-		}, 0);
-
-		accordionContent.addEventListener('transitionend', () => {
-			accordionContent.classList.remove('accordion-collapsing');
-			accordionContent.removeAttribute('style');
-			showAccordion(accordionContent);
-		});
-	}
-};
