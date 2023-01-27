@@ -28,9 +28,9 @@ $sizes: (
 );
 
 // line length
-$line-sm: 55ch;
-$line: 65ch;
-$line-md: 75ch;
+$measure-narrow: 55ch;
+$measure: 65ch;
+$measure-wide: 75ch;
 
 // width
 @each $breakpoint, $screen-size in m.$breakpoints {
@@ -136,16 +136,16 @@ $line-md: 75ch;
 			max-width: fit-content;
 		}
 
-		.max-width#{$breakpoint}-line-sm {
-			max-width: $line-sm;
+		.measure#{$breakpoint}-narrow {
+			max-width: $measure-narrow;
 		}
 
-		.max-width#{$breakpoint}-line {
-			max-width: $line;
+		.measure#{$breakpoint} {
+			max-width: $measure;
 		}
 
-		.max-width#{$breakpoint}-line-md {
-			max-width: $line-md;
+		.measure#{$breakpoint}-wide {
+			max-width: $measure-wide;
 		}
 	}
 }

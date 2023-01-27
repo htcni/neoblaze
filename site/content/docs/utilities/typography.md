@@ -2,7 +2,7 @@
 layout: docs
 title: Typography
 subtitle: Utilities for controlling text.
-titleBg: bg-secondary--xlight
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/utilities/_typography.scss
 group: utilities
 ---
 
@@ -125,6 +125,26 @@ Class | Properties
 <p class="leading-loose">In the science fiction books...</p>
 ``` 
 
+## Line Length {.heading-xs .mt-6 .mb-2}
+
+Use `measure-{property}` to set the line length.
+For responsive variant use `measure-{breakpoint}` like `measure-sm-wide`.
+
+Class | Properties 
+--- | --- |  
+`measure-narrow`   | max-width: 55ch;
+`measure`          | max-width: 65ch; 
+`measure-wide`     | max-width: 75ch; 
+
+{{< rawhtml >}}
+<div class="mt-8 box p-4">
+	<p class="label-md measure-narrow">In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious "tapes" would load it into one's brain like a program being loaded into a computer. Paul G</p>
+</div>
+{{< /rawhtml >}}
+
+``` html
+<p class="measure-narrow">In the science fiction books...</p>
+``` 
 
 ## Text Alignment {.heading-xs .mt-6 .mb-2}
 
@@ -216,7 +236,19 @@ Class | Properties
 ``` html
 <p class="text-underline">Awesome CSS</p>
 ``` 
+### Text Decoration Hover {.title-sm .mt-6 .mb-2}
 
+Use `text-{property}-hover` to apply it in hover state.
+
+{{< rawhtml >}}
+<div class="mt-8">
+	<p class="label-md text-underline-hover">Awesome CSS</p>
+</div>
+{{< /rawhtml >}}
+
+``` html
+<p class="text-underline-hover">Awesome CSS</p>
+``` 
 
 ## List Style {.heading-xs .mt-6 .mb-2}
 
