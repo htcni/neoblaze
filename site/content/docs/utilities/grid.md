@@ -305,7 +305,7 @@ For responsive variant use `grid-{breakpoint}-flow-{n}` like `grid-sm-flow-row`.
 
 Class | Properties 
 --- | --- |  
-g`rid-flow-row`	      | grid-auto-flow: row;
+`grid-flow-row`	      | grid-auto-flow: row;
 `grid-flow-col`	      | grid-auto-flow: column;
 `grid-flow-dense`	    | grid-auto-flow: dense;
 `grid-flow-row-dense`	| grid-auto-flow: row dense;
@@ -354,12 +354,12 @@ Class | Properties
 `place-self-center`    |	place-self: center;
 `place-self-baseline`	 |  place-self: baseline;
 `place-self-stretch`   |	place-self: stretch;
-`.place-self-start-center` | place-self: start center;
-`.place-self-start-end`    | place-self: start end;
-`.place-self-center-start` | place-self: center start;
-`.place-self-center-end` | place-self: center end;
-`.place-self-end-start`    | place-self: end start;
-`.place-self-end-center`   | place-self: end center;
+`place-self-start-center` | place-self: start center;
+`place-self-start-end`    | place-self: start end;
+`place-self-center-start` | place-self: center start;
+`place-self-center-end` | place-self: center end;
+`place-self-end-start`    | place-self: end start;
+`place-self-end-center`   | place-self: end center;
 
 {{< rawhtml >}}
 <div class="box d-grid height-10 mt-8">
