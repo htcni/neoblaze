@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div class="min-height-full">
-			{{ partial "navbar" }} {{ block "main" .}} {{ end }} {{ partial "scripts"
+			{{ partial "navbar" .}} {{ block "main" .}} {{ end }} {{ partial "scripts"
 			.}}
 		</div>
 	</body>

@@ -1,4 +1,30 @@
 <nav
-	class="box d-flex flex-items-center py-2 px-4 shadow position-sticky top-0 z-navbar bg-white">
-	<a href="/">Neoblaze</a>
+	class="py-3 px-4 shadow-sm border-b bd-gray--light position-sticky top-0 z-navbar bg-white">
+	<div
+		class="container-md mx-auto d-flex flex-items-center flex-justify-between">
+		<a href="/" class="px-2">
+			<img src="/images/neoblaze_logo.svg" alt="Neoblaze logo" width="24" />
+		</a>
+		<ul class="menu__list d-flex flex-items-center font-medium">
+			<li class="menu__list-item">
+				<a
+					class="menu__link label fg-secondary-hover"
+					href="/docs/getting-started/introduction/"
+					>Docs</a
+				>
+			</li>
+			<li class="menu__list-item">
+				<a class="menu__link label fg-secondary-hover">Showcase</a>
+			</li>
+			<li class="menu__list-item">
+				<a
+					class="menu__link label fg-secondary-hover"
+					href="{{ .Site.Params.repo }}">
+					<span class="icon label-xl">
+						<i class="ri-github-fill"></i>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 </nav>
