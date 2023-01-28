@@ -2,9 +2,11 @@
 :root {
 	// Fonts
 
-	--font-primary: "Inter", sans-serif;
+	--font-primary: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”,
+		“Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+		sans-serif;
 	--font-secondary: system-ui, "Segoe UI";
-	--font-tertiary: "Fira Code", monospace;
+	--font-tertiary: monospace;
 
 	//COLORS
 	@each $color, $value in t.$base-colors {
