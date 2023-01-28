@@ -1,6 +1,6 @@
 baseURL: 'http://example.org/'
 languageCode: en-us
-title: My New Hugo Site
+title: Neoblaze · Build beautiful interfaces with blazing speed.
 
 metaDataFormat: 'yaml'
 
@@ -9,7 +9,8 @@ build:
   writeStats: true
 
 params:
-  current_version: 0.1.0
+  current_version: '0.1.0'
+
   repo: 'https://github.com/htcni/neoblaze'
   cdn:
     css: 'https://somecdn.css'
