@@ -14,11 +14,16 @@ It's responsive, customizable and it's cool.
 
 ## Quick start {.heading-xs .mt-6 .mb-2}
 
-### CDN {.title-sm .mt-6 .mb-2}
+### NPM {.title-sm .mt-6 .mb-2}
 
-{{< callout type="tip" >}}
-For detailed installation see [installation guide]({{< ref "/docs/getting-started/installation" >}})
-{{< /callout >}}
+Install the Neoblaze CSS npm package  by running `npm install neoblaze`.
+
+```shell
+npm install neoblaze
+``` 
+
+
+### CDN {.title-sm .mt-6 .mb-2}
 
 You can get started quickly by including cdn link.
 
@@ -41,7 +46,7 @@ Use starter template for quick setup.
 	</head>
 	<body>
 	<section class="section">
-		<div class="container">
+		<div class="container mx-auto">
 			<h1 class="heading">Hakuna Matata!</h1>
 		</div>
 	</section>
