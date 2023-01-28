@@ -5,6 +5,8 @@ title: My New Hugo Site
 metaDataFormat: 'yaml'
 
 publishDir: '_site'
+build:
+  writeStats: true
 
 params:
   current_version: 0.1.0
