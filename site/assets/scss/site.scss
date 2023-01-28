@@ -1,11 +1,15 @@
 @forward "../../../src/scss/neoblaze.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
 	--scroll-size: 8px;
 	--scroll-radius: 10px;
 	--scroll-track-color: #f1f1f1;
 	--scroll-thumb-color: silver;
 	--scroll-thumb-hover-color: #a7a7a7;
+	--font-primary: "Inter", sans-serif;
+	--font-tertiary: "Fira Code", monospace;
 }
 
 a {

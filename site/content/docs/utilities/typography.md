@@ -12,9 +12,9 @@ Neoblaze is shipped with three fonts.
 
 Class | Properties 
 --- | --- |  
-`font-primary`   | font-family: "Inter", sans-serif;
+`font-primary`   | font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,sans-serif;
 `font-secondary` | font-family: system-ui, "Segoe UI";; 
-`font-tertiary`  | font-family: "Fira Code", monospace;
+`font-tertiary`  | font-family: monospace;
 
 {{< rawhtml >}}
 <div class="mt-8">
