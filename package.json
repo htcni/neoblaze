@@ -1,6 +1,6 @@
 {
 	"name": "neoblaze",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "",
 	"scripts": {
 		"watch": "npm-run-all --parallel watch:*",
