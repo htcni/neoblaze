@@ -16,7 +16,7 @@
 
 ## Documentation
 
-The documentation resides in the [site/docs](docs) directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on Vercel <https://neoblaze.vercel.app/>. 
+The documentation resides in the [site](site) directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on Vercel <https://neoblaze.vercel.app/>. 
 
 ## Install
 You can install `neoblaze` with this command:
