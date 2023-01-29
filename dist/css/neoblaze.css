@@ -1,8 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500");
 :root {
-  --font-primary: "Inter", sans-serif;
+  --font-primary: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”,
+  	“Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+  	sans-serif;
   --font-secondary: system-ui, "Segoe UI";
-  --font-tertiary: "Fira Code", monospace;
+  --font-tertiary: monospace;
   --white: #fff;
   --midnight: #1a1a1a;
   --black: #000;

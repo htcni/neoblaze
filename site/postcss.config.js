@@ -12,7 +12,9 @@ module.exports = {
 					...(els.ids || []),
 				];
 			},
-			safelist: [],
+			safelist: {
+				deep: [/data-.*/],
+			},
 		}),
 	],
 };
