@@ -1,6 +1,6 @@
 <p align="center">
-	<a>
-  	<img width="200px" alt="" src="./site/static/images/neoblaze_logo.svg">
+	<a href="https://neoblaze.vercel.app/">
+		<img width="200px" alt="" src="./site/static/images/neoblaze_logo.svg">
 	</a>
 </p>
 
@@ -9,9 +9,9 @@
 <p align="center">Neoblaze helps you build responsive sites with blazing speed.</p>
 
 <p align="center">
-  <a aria-label="last commit" href="https://github.com/htcni/neoblaze/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/htcni/neoblaze">
-  </a>
+	<a aria-label="last commit" href="https://github.com/htcni/neoblaze/commits/main">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/htcni/neoblaze">
+	</a>
 </p>
 
 ## Documentation
