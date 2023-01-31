@@ -1,30 +1,47 @@
 <nav
-	class="py-3 px-4 shadow-sm border-b bd-gray--light position-sticky top-0 z-navbar bg-white">
+	class="shadow-sm border-b bd-gray--light position-sticky top-0 z-drawer bg-white">
 	<div
-		class="container-md mx-auto d-flex flex-items-center flex-justify-between">
+		class="py-3 px-4 container-md mx-auto d-flex flex-items-center flex-justify-between">
 		<a href="/" class="px-2">
 			<img src="/images/neoblaze_logo.svg" alt="Neoblaze logo" width="24" />
 		</a>
 		<ul class="menu__list d-flex flex-items-center font-medium">
 			<li class="menu__list-item">
 				<a
-					class="menu__link label fg-secondary-hover"
+					class="menu__link fg-black label fg-secondary-hover"
 					href="/docs/getting-started/introduction/"
 					>Docs</a
 				>
 			</li>
 			<li class="menu__list-item">
-				<a class="menu__link label fg-secondary-hover">Showcase</a>
+				<a class="menu__link fg-black label fg-secondary-hover">Showcase</a>
 			</li>
 			<li class="menu__list-item">
 				<a
-					class="menu__link label fg-secondary-hover"
+					class="menu__link btn btn-icon label fg-secondary-hover"
 					href="{{ .Site.Params.repo }}">
 					<span class="icon label-xl">
 						<i class="ri-github-fill"></i>
 					</span>
 				</a>
 			</li>
+			<li class="menu__list-item">
+				<a
+					class="menu__link btn btn-icon label"
+					href="{{ .Site.Params.twitter }}">
+					<span class="icon label-xl fg-primary">
+						<i class="ri-twitter-fill"></i>
+					</span>
+				</a>
+			</li>
 		</ul>
 	</div>
+
+	{{ if eq .Section "docs" }}
+	<div
+		class="d-none d-sm-flex py-3 px-4 border-t bd-default flex-items-center gap-4">
+		<button class="btn btn-secondary" data-js-target="menu-btn">Menu</button>
+		{{ partial "breadcrumbs" . }}
+	</div>
+	{{end}}
 </nav>

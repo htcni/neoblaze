@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="layout layout-2-col--fixed-aside-left">
-	<aside class="layout-aside width-20 d-flex flex-column">
+	<aside
+		class="layout-aside d-flex flex-column bg-white scroll-thin z-sm-drawer height-full position-sm-fixed site-nav" data-js-target="doc-sidebar">
 		{{ partial "docs-sidebar" . }}
 	</aside>
 	<main class="layout-main">
@@ -9,7 +10,7 @@
 			<div
 				class="docs-section layout-main ml-md-0 ml-12 px-6 min-width-0 overflow-auto">
 				<div class="d-flex flex-column flex-justify-center">
-					<div class="d-flex flex-justify-between">
+					<div class="d-flex flex-justify-between flex-wrap">
 						<h1 class="heading font-bold tracking-tight">{{ .Title }}</h1>
 						<div class="d-flex flex-items-center gap-2">
 							{{if .Params.source}}
@@ -26,7 +27,7 @@
 							{{end}}
 							<a
 								class="btn btn-text-primary"
-								href="{{ .Site.Params.repo }}/blob/main/site/content/{{ .Page.File.Path | replaceRE `\\` '/' }}"
+								href="{{ .Site.Params.repo }}/blob/main/site/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
 								target="_blank"
 								rel="noopener">
 								<span class="icon mr-1 label-md">
@@ -44,5 +45,6 @@
 		</section>
 	</main>
 </div>
+<div id="backdrop" class="backdrop z-drawer-backdrop" data-js-target="backdrop"></div>
 
 {{ end }}

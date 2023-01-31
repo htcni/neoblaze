@@ -29,3 +29,36 @@ accordions.forEach((accordion) => {
 		}
 	});
 });
+
+const menuBtn = document.querySelector('[data-js-target="menu-btn"]');
+const backdrop = document.querySelector('[data-js-target="backdrop"]');
+const docSidebar = document.querySelector('[data-js-target="doc-sidebar"]');
+const body = document.querySelector('body');
+
+if (menuBtn) {
+	menuBtn.addEventListener('click', () => {
+		let isOpen;
+		isOpen = !isOpen;
+		if (isOpen) {
+			backdrop.classList.toggle('backdrop-show');
+			docSidebar.classList.toggle('nav-visible');
+			body.classList.toggle('overflow-hidden');
+		}
+	});
+}
+
+if (backdrop) {
+	backdrop.addEventListener('click', () => {
+		backdrop.classList.remove('backdrop-show');
+		docSidebar.classList.remove('nav-visible');
+		body.classList.remove('overflow-hidden');
+	});
+}
+
+window.addEventListener('resize', () => {
+	if (window.innerWidth > 934) {
+		backdrop.classList.remove('backdrop-show');
+		docSidebar.classList.remove('nav-visible');
+		body.classList.remove('overflow-hidden');
+	}
+});
