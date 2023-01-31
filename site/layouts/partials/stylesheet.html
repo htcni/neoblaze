@@ -1,5 +1,7 @@
-{{ $style := resources.Get "css/site.css" }}
+{{ $style := resources.Get "css/site.css" }} {{ $docs := resources.Get
+"css/docs.css" }}
 <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" />
+<link rel="stylesheet" href="{{ $docs.Permalink | relURL }}" />
 <link
 	href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
 	rel="stylesheet" />
