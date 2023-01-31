@@ -11,7 +11,7 @@ group: utilities
 Use `.shadow` to apply box shadow to an element.
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-8 mt-8">
+<div class="d-flex flex-items-center gap-8 mt-8 flex-wrap">
 	<div class="d-flex flex-column flex-items-center gap-2">
 		<code>shadow-sm</code>
 		<span class="rounded width-6 height-6 shadow-sm"></span>
@@ -60,7 +60,7 @@ Use `.shadow` to apply box shadow to an element.
 Use `.shadow-{color}` to apply box shadow color to an element.
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-8 mt-8">
+<div class="d-flex flex-items-center gap-8 mt-8 flex-wrap">
 	<div class="d-flex flex-column flex-items-center gap-2">
 		<code>shadow-sm</code>
 		<span class="rounded width-6 height-6 shadow-sm shadow-secondary bg-secondary"></span>

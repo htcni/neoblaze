@@ -11,7 +11,7 @@ group: utilities
 Use border utilities to apply border and border radius. `.border` apply border width to the element.
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-4">
+<div class="d-flex flex-items-center gap-4 flex-wrap">
 	<span class="width-6 height-6 border bd-default"></span>
 	<span class="width-6 height-6 border bd-black"></span>
 	<span class="width-6 height-6 border bd-secondary"></span>
@@ -42,7 +42,7 @@ Class | Properties
 
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-8 mt-8">
+<div class="d-flex flex-items-center gap-8 mt-8 flex-wrap">
 	<div class="d-flex flex-column flex-items-center gap-2">
 		<code>border</code>
 		<span class="width-6 height-6 border bd-secondary"></span>
@@ -76,7 +76,7 @@ Borders can be applied to individual sides.
 Use `.border-{side}-{width}` to apply border to particular side.
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-8">
+<div class="d-flex flex-items-center gap-8 flex-wrap">
 	<div class="d-flex flex-column flex-items-center gap-2">
 		<code>border-t-4</code>
 		<span class="width-6 height-6 border-t-4 bg-default bd-secondary"></span>
@@ -145,7 +145,7 @@ Class | Properties
 
 
 {{< rawhtml >}}
-<div class="d-flex flex-items-center gap-8 mt-8">
+<div class="d-flex flex-items-center gap-8 mt-8 flex-wrap">
 	<div class="d-flex flex-column flex-items-center gap-2">
 		<code>rounded</code>
 		<span class="width-6 height-6 rounded bg-secondary"></span>
