@@ -1,0 +1,190 @@
+@use "../../../src/scss/helpers/mixins/breakpoints" as m;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+	--scroll-size: 8px;
+	--scroll-radius: 10px;
+	--scroll-track-color: #f1f1f1;
+	--scroll-thumb-color: silver;
+	--scroll-thumb-hover-color: #a7a7a7;
+	--font-primary: "Inter", sans-serif;
+	--font-tertiary: "Fira Code", monospace;
+}
+
+a {
+	color: var(--link-default);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--slate--ultra);
+	letter-spacing: -0.033em;
+}
+
+h2 {
+	scroll-margin-top: 4rem;
+}
+
+ol {
+	padding-left: 2rem;
+	list-style: decimal;
+}
+
+.docs-sidebar {
+	position: sticky;
+	top: 4rem;
+	max-height: calc(100vh - 4rem);
+	height: 100%;
+}
+
+#TableOfContents ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	li a {
+		display: flex;
+		padding: 0.25rem;
+		border-radius: 6px;
+		font-size: 14px;
+		color: var(--gray);
+		&:hover {
+			background-color: var(--slate--xlight);
+		}
+	}
+
+	li > ul {
+		margin-left: 0.5rem;
+	}
+}
+
+.bg-code {
+	background-color: #282a36;
+}
+
+.callout a {
+	text-decoration: underline;
+}
+
+code {
+	color: var(--secondary--ultra);
+	background-color: var(--slate--xlight);
+	font-family: var(--font-tertiary);
+}
+
+pre code {
+	color: inherit;
+	background-color: inherit;
+	font-family: var(--font-tertiary);
+}
+
+.highlight {
+	overflow: auto;
+	margin: 1rem 0;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 6px;
+	background-color: #282a36;
+}
+
+pre {
+	margin: 0;
+}
+
+pre::before {
+	display: block;
+	margin-bottom: 0.5rem;
+	content: "";
+	background-image: url("/images/dots.svg");
+	background-size: 54px 14px;
+	height: 14px;
+	width: 54px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th,
+td {
+	padding: 8px 16px;
+}
+
+td {
+	color: var(--secondary--medium);
+	border-top: 1px solid var(--slate--light);
+	font-family: var(--font-tertiary);
+	font-weight: 500;
+	font-size: 14px;
+}
+
+th {
+	text-align: left;
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	color: var(--slate--ultra);
+	border-bottom: 1px solid var(--default);
+}
+
+tbody tr:last-child td {
+	border-bottom: 1px solid var(--default);
+}
+
+.scroll-thin {
+	scrollbar-color: var(--scroll-thumb-color, grey) var(--scroll-track-color);
+	scrollbar-width: thin;
+}
+.scroll-thin ::-webkit-scrollbar {
+	width: var(--scroll-size, 10px);
+	height: var(--scroll-size, 10px);
+}
+.scroll-thin ::-webkit-scrollbar-track {
+	background-color: var(--scroll-track-color);
+	border-radius: var(--scroll-radius);
+}
+.scroll-thin ::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb-color);
+	border-radius: var(--scroll-radius);
+}
+
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+	background: var(--scroll-thumb-hover-color);
+}
+
+.menu__link--active {
+	color: var(--secondary);
+	background-color: var(--secondary--xlight);
+}
+
+.backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	inset: 0;
+	opacity: 0;
+	transition: opacity 0.15s ease-in;
+	pointer-events: none;
+}
+
+.backdrop-show {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.site-nav {
+	@include m.mq("sm") {
+		transform: translate3d(-100%, 0, 0);
+		transition: 0.25s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	}
+}
+
+.nav-visible {
+	transform: none;
+}
