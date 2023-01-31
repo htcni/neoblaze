@@ -2,7 +2,7 @@
 layout: docs
 title: Badge
 subtitle: Badges shows status or unread notifications.
-source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_badge.scss
+source: https://github.com/htcni/neoblaze/blob/main/src/scss/components/_badges.scss
 group: components
 ---
 
