@@ -1,6 +1,6 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://neoblaze.vercel.app/'
 languageCode: en-us
-title: Neoblaze · Build beautiful interfaces with blazing speed.
+title: Neoblaze
 
 metaDataFormat: 'yaml'
 
@@ -8,12 +8,19 @@ publishDir: '_site'
 build:
   writeStats: true
 
+disableKinds: ['taxonomy', 'term', 'RSS']
+
 params:
-  current_version: '0.1.0'
+  current_version: '0.1.2'
+
+  subtitle: 'Build beautiful interfaces with blazing speed.'
+  description: 'Neoblaze is a modern css framework that helps you build beautiful interfaces with blazing speed.'
+  author: 'Nitin Bartwal'
+  twitter: 'https://twitter.com/bartwalX'
 
   repo: 'https://github.com/htcni/neoblaze'
   cdn:
-    css: 'https://somecdn.css'
+    css: 'https://cdn.jsdelivr.net/npm/neoblaze@0.1.2/'
 
 markup:
   highlight:

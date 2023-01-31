@@ -42,7 +42,7 @@ Use starter template for quick setup.
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Neoblaze</title>
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href='{{< param "cdn.css" >}}'>
 	</head>
 	<body>
 	<section class="section">
