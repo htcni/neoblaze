@@ -20,7 +20,7 @@ params:
 
   repo: 'https://github.com/htcni/neoblaze'
   cdn:
-    css: 'https://cdn.jsdelivr.net/npm/neoblaze@0.1.2/'
+    css: 'https://cdn.jsdelivr.net/npm/neoblaze@0.1.2/dist/css/neoblaze.min.css'
 
 markup:
   highlight:
