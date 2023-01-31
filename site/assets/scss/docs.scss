@@ -163,19 +163,22 @@ tbody tr:last-child td {
 }
 
 .backdrop {
+	opacity: 0;
+
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100vh;
 	width: 100%;
 	position: fixed;
 	inset: 0;
-	opacity: 0;
 	transition: opacity 0.15s ease-in;
 	pointer-events: none;
 }
 
 .backdrop-show {
-	opacity: 1;
-	pointer-events: all;
+	@include m.mq("sm") {
+		opacity: 1;
+		pointer-events: all;
+	}
 }
 
 .site-nav {

@@ -54,11 +54,3 @@ if (backdrop) {
 		body.classList.remove('overflow-hidden');
 	});
 }
-
-window.addEventListener('resize', () => {
-	if (window.innerWidth > 934) {
-		backdrop.classList.remove('backdrop-show');
-		docSidebar.classList.remove('nav-visible');
-		body.classList.remove('overflow-hidden');
-	}
-});
