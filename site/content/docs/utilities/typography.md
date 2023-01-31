@@ -257,10 +257,9 @@ For responsive variant use `list-{breakpoint}-{property}` like `list-sm-none`.
 
 Class | Properties 
 --- | --- |  
-`text-underline`   | text-decoration: underline;
-`text-overline`    | text-decoration: overline; 
-`text-line-through`| text-decoration: line-through; 
-`text-no-underline`| text-decoration: none; 
+`list-none`    | list-style: none;
+`list-disc`    | list-style: disc; 
+`list-decimal` | list-style: decimal; 
 
 {{< rawhtml >}}
 <div class="mt-8">
@@ -271,7 +270,9 @@ Class | Properties
 {{< /rawhtml >}}
 
 ``` html
-<p class="text-underline">Awesome CSS</p>
+<ul class="list-disc">
+	<li class="label-md">Awesome CSS</li>
+</ul>
 ``` 
 
 ##  Customize {.heading-xs .mt-6 .mb-2}
