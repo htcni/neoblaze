@@ -1,4 +1,10 @@
-<div class="docs-sidebar p-4">
-	<h4 class="mb-1 fg-tertiary">On this page</h4>
-	{{.TableOfContents}}
+<div class="docs-sidebar p-4 accordion d-sm-none">
+	<div class="accordion__item" data-accordion="open" aria-expanded="true">
+		<h3 class="accordion__header flex-justify-start gap-4 mb-1 fg-tertiary">
+			On this page
+		</h3>
+		<div class="accordion__content" aria-hidden="false">
+			{{.TableOfContents}}
+		</div>
+	</div>
 </div>

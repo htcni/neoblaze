@@ -1,0 +1,13 @@
+{{- $current := . -}}
+
+<ul class="breadcrumb d-flex gap-2 flex-items-center label">
+	{{ if $current.Parent }}
+	<li class="fg-slate text-capitalize">
+		{{ .Params.group }}
+		<span class="icon label-lg align-middle">
+			<i class="ri-arrow-right-s-line"></i>
+		</span>
+	</li>
+	<li class="fg-slate--ultra font-medium">{{ $current.Title }}</li>
+	{{end}}
+</ul>
