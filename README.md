@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://neoblaze.vercel.app/">
-		<img width="200px" alt="" src="./site/static/images/neoblaze_logo.svg">
+		<img width="200px" alt="neoblaze" src="https://raw.githubusercontent.com/htcni/neoblaze/0e6a9afc1a96a1f8423f1e3cb65c12c09b542102/site/static/images/neoblaze_logo.svg">
 	</a>
 </p>
 
@@ -42,7 +42,7 @@ You can import individual neoblaze modules:
 
 ## License
 
-[MIT](./LICENSE) &copy; [GitHub](https://github.com/)
+Code copyright 2023 Nitin Bartwal. Code released under [the MIT license](./LICENSE).
 
 
 [npm]: https://www.npmjs.com/
