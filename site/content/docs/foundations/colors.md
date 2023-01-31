@@ -3,7 +3,7 @@ layout: docs
 title: Colors
 subtitle: Breathe life into your design with beautiful colors.
 titleBg: bg-warning--xlight
-group: getting-started
+group: foundations
 ---
 
 ## Colors {.heading-xs .mt-6 .mb-2}
