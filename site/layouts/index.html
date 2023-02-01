@@ -2,7 +2,9 @@
 
 <main>
 	{{ partial "landing/hero" . }} {{ partial "landing/feature-example" . }} {{
-	partial "landing/grid-feature" . }} {{.Content}}
+	partial "landing/grid-feature" . }} {{ partial "landing/customizable-section"
+	. }} {{.Content}} {{ partial "landing/footer-cta.html" . }} {{ partial
+	"footer.html" . }}
 </main>
 
 {{ end }}

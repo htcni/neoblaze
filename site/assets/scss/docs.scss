@@ -191,3 +191,13 @@ tbody tr:last-child td {
 .nav-visible {
 	transform: none;
 }
+
+.footer {
+	background: var(--neutral--xlight);
+	border: none;
+	clip-path: ellipse(75% 100% at center top);
+	min-width: 340px;
+	@include m.mq("sm") {
+		clip-path: ellipse(105% 100% at center top);
+	}
+}
