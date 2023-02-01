@@ -8,7 +8,7 @@
 		"build": "npm-run-all build:*",
 		"watch:sass": "sass --no-source-map --watch assets/scss:assets/css",
 		"compile:sass": "sass --no-source-map assets/scss:assets/css --style=compressed",
-		"css:postcss": "postcss assets/css/*.css -r --no-map",
+		"css:postcss": "postcss assets/css/site.css -r --no-map",
 		"build:css": "npm-run-all compile:sass css:postcss",
 		"serve": "hugo server --port 8080 --gc --ignoreCache --disableFastRender",
 		"build:hugo": "hugo --cleanDestinationDir"
