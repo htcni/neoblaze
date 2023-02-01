@@ -1,7 +1,7 @@
 {
 	"name": "neoblaze",
 	"version": "0.1.2",
-	"homepage": "'https://neoblaze.vercel.app",
+	"homepage": "https://neoblaze.vercel.app",
 	"description": "Neoblaze is a modern css framework that helps you build beautiful interfaces with blazing speed.",
 	"author": {
 		"name": "Nitin Bartwal",
