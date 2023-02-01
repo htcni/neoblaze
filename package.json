@@ -51,5 +51,10 @@
 	"files": [
 		"dist",
 		"src"
-	]
+	],
+	"release": {
+		"branches": [
+			"main"
+		]
+	}
 }
