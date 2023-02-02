@@ -9,12 +9,25 @@
 <p align="center">Neoblaze helps you build responsive sites with blazing speed.</p>
 
 <p align="center">
+	<a aria-label="release" href="https://github.com/htcni/neoblaze/releases">
+		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/htcni/neoblaze">
+	</a>
+		<a aria-label="license" href="https://github.com/htcni/neoblaze/blob/main/LICENSE">
+		<img alt="License" src="https://img.shields.io/github/license/htcni/neoblaze">
+	</a>	
+		<a aria-label="npm" href="https://www.npmjs.com/package/neoblaze">
+		<img alt="npm" src="https://img.shields.io/npm/v/neoblaze">
+	</a>		
+	<a aria-label="downloads" href="https://www.npmjs.com/package/neoblaze">
+		<img alt="downloads" src="https://img.shields.io/npm/dm/neoblaze">
+	</a>	
+	<a aria-label="jsDeliver" href="https://www.jsdelivr.com/package/npm/neoblaze">
+		<img alt="jsDeliver" src="https://data.jsdelivr.com/v1/package/npm/neoblaze/badge">
+	</a>	
 	<a aria-label="last commit" href="https://github.com/htcni/neoblaze/commits/main">
 		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/htcni/neoblaze">
-	</a>
+	</a>	
 </p>
-
-## Documentation
 
 The documentation resides in the [site](site) directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on Vercel <https://neoblaze.vercel.app/>. 
 
