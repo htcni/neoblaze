@@ -38,3 +38,25 @@
 <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
 
 {{ partial "stylesheet" . }}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@bartwalX" />
+<meta name="twitter:creator" content="@bartwalX" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta
+	name="twitter:description"
+	content="{{ if .IsPage }}{{ .Params.subtitle }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="twitter:image" content="/images/social.png" />
+
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta
+	property="og:description"
+	content="{{ if .IsPage }}{{ .Params.subtitle }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta
+	property="og:type"
+	content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="/images/social.png" />
