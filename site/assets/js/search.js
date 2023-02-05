@@ -7,8 +7,5 @@ docsearch({
 	apiKey: '3e898afce3bbe63534904c20f404edad',
 	indexName: 'neoblaze',
 	container: searchElement,
-	searchParameters: {
-		facetFilters: ['language:en', `version:${siteDocsVersion}`],
-	},
 	debug: false,
 });
