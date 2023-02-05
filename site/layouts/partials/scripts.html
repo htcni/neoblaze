@@ -1,2 +1,5 @@
-{{ $js := resources.Get "js/site.js" }}
+{{ $js := resources.Get "js/site.js" }} {{ $jsSearch := resources.Get
+"js/search.js" }}
 <script src="{{ $js.Permalink | relURL }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script src="{{ $jsSearch.Permalink | relURL }}"></script>

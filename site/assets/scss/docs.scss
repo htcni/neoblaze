@@ -10,6 +10,8 @@
 	--scroll-thumb-hover-color: #a7a7a7;
 	--font-primary: "Inter", sans-serif;
 	--font-tertiary: "Fira Code", monospace;
+	--docsearch-primary-color: var(--secondary);
+	--docsearch-text-color: var(--secondary);
 }
 
 a {
@@ -200,4 +202,25 @@ tbody tr:last-child td {
 	@include m.mq("sm") {
 		clip-path: ellipse(105% 100% at center top);
 	}
+}
+
+.DocSearch-Button {
+	border-radius: 6px;
+	min-width: 250px;
+}
+
+@media (max-width: 58.375em) {
+	.DocSearch-Button {
+		background-color: var(--transparent);
+		min-width: auto;
+	}
+
+	.DocSearch-Button-Keys,
+	.DocSearch-Button-Placeholder {
+		display: none;
+	}
+}
+
+.DocSearch-Container {
+	z-index: 2000 !important;
 }
