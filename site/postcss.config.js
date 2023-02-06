@@ -13,7 +13,7 @@ module.exports = {
 				];
 			},
 			safelist: {
-				deep: [/data-.*/],
+				deep: [/data-.*/, /form-.*/],
 			},
 		}),
 	],
