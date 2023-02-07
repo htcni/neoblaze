@@ -1,0 +1,34 @@
+name: Feature request 🚀
+description:
+title: 'Neoblaze feature request'
+labels: [feature]
+assignees: []
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have [searched](https://github.com/htcni/neoblaze/issues) for duplicate or closed issues.
+          required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Provide detailed information for what we should add, including relevant links to prior art, screenshots, or live demos whenever possible.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation and context
+      description: Tell us why this change is needed or helpful, and what problems it may help solve.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: |
+        Links? References? Anything that will give us more context about the feature.
+    validations:
+      required: false
