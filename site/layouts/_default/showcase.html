@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<main class="py-8 container mx-auto px-6 px-xs-4">
+	<div class="measure text-center mx-auto">
+		<h4 class="title fg-primary mb-4">Showcase</h4>
+		<h2 class="heading leading-base">
+			Showcasing what people are building with Neoblaze.
+		</h2>
+		<p class="my-4">
+			Build amazing projects with Neoblaze and share it on twitter.
+			<a
+				class="btn btn-primary my-2 py-3 px-8"
+				href="https://twitter.com/intent/tweet?text=Made%20with%20Neoblaze!&hashtags=madewithneoblaze">
+				<span class="icon mr-1 label-md">
+					<i class="ri-twitter-fill"></i>
+				</span>
+				<span>#madewithneoblaze</span>
+			</a>
+		</p>
+	</div>
+
+	<div class="layout layout-3-col gap-6 mt-8">
+		{{ range $showcase := $.Site.Data.showcase }}
+		<a href="{{$showcase.url}}" class="rounded">
+			<div class="p-4 shadow bg-gray--xlight">
+				<div class="d-flex flex-column gap-1 p-1">
+					<span class="fg-secondary font-medium">{{$showcase.title}}</span>
+					<span class="fg-gray label">{{$showcase.category}}</span>
+				</div>
+				<img
+					src="{{$showcase.thumbnail}}"
+					alt="Showcase-{{$showcase.thumbnail}}"
+					class="rounded" />
+			</div>
+		</a>
+		{{end}}
+	</div>
+</main>
+
+{{ partial "footer.html" . }} {{ end }}
