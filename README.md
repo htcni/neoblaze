@@ -37,7 +37,11 @@ You can install `neoblaze` with this command:
 ```sh
 npm install neoblaze
 ```
+### CDN
 
+```sh
+<link href="https://cdn.jsdelivr.net/npm/neoblaze@0.1.3/dist/css/neoblaze.min.css" rel="stylesheet">
+```
 ## Usage
 The included source files are written in [Sass] using SCSS syntax.  After installation, you can import the CSS file into your project.
 
@@ -50,7 +54,8 @@ You can import individual neoblaze modules:
 ```scss
 @forward "~neoblaze/src/scss/utilities/_index.scss";
 ```
-
+## Contributing
+If you interested in contrbuting to Neoblaze please refer to [contributing guidelines](https://github.com/htcni/neoblaze/blob/main/.github/CONTRIBUTING.md).
 
 
 ## License
