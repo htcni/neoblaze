@@ -67,7 +67,7 @@ Adhering to the following process is the best way to get your work included in t
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/htcni/neoblaze.git
+   git clone https://github.com/<your-username>/neoblaze.git
    # Navigate to the newly cloned directory
    cd neoblaze
    # Assign the original repo to a remote called "upstream"
