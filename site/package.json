@@ -18,7 +18,7 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"autoprefixer": "^10.4.13",
-		"hugo-bin": "^0.95.0",
+		"hugo-bin": "^0.101.0",
 		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.18",
 		"postcss-cli": "^10.1.0",
