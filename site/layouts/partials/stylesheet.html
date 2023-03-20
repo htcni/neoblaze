@@ -1,8 +1,12 @@
 {{ $style := resources.Get "css/site.css" }} {{ $docs := resources.Get
 "css/docs.css" }}
+{{ if $style }}
 <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" />
+{{ end }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+{{ if $docs }}
 <link rel="stylesheet" href="{{ $docs.Permalink | relURL }}" />
+{{ end }}
 <link
 	href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
 	rel="stylesheet" />
